@@ -9,13 +9,18 @@ Every day, a GitHub Actions workflow runs a script that:
 1. Optionally reads a dedicated inbox (newsletters/alerts) over IMAP.
 2. Calls Claude (via the Anthropic API, using the `web_search` tool) to find and
    categorise credit-relevant news across your configured sectors and companies.
-3. Renders the result into `index.html`, with the newest edition on top and a small
-   colour-coded flag per item (Positive / Negative / Watch / Neutral) showing the
-   likely credit direction.
-4. Commits the updated page, which GitHub Pages then serves automatically.
+3. Renders **`index.html`** — today's edition only, in two columns (Industry News /
+   Company News), with a small colour-coded flag per item (Positive / Negative /
+   Watch / Neutral) showing the likely credit direction.
+4. Renders **`archive.html`** — every past edition, as a flat, searchable list with
+   a text search box and clickable tag chips (one per sector/company, plus one per
+   credit-flag) so you can filter down to, say, everything tagged "Vodafone" or
+   everything flagged "Negative", entirely client-side.
+5. Commits both pages, which GitHub Pages then serves automatically.
 
-A rendered example with sample headlines is in `preview.html` — open it in a browser
-to see the design before doing any setup.
+Rendered examples with sample headlines are in `preview.html` (today's-edition view)
+and `preview-archive.html` (the searchable archive) — open either in a browser to see
+the design before doing any setup.
 
 ---
 
@@ -23,13 +28,16 @@ to see the design before doing any setup.
 
 ```
 config.json                      Sectors, companies, sources, email settings (no secrets)
-digest_history.json              Rolling history of past editions (auto-updated)
+digest_history.json              Full history of past editions (auto-updated, feeds archive.html)
 requirements.txt                 Python dependencies
 scripts/generate_digest.py       The core script
-scripts/template.html            Page design (parchment/broadsheet style)
+scripts/template.html            Today's-edition page design (parchment/broadsheet style)
+scripts/archive_template.html    Searchable archive page design
 .github/workflows/daily-digest.yml   Runs the script daily and commits the result
-preview.html                     Sample rendered page, for a look before setup
-index.html                       The live page (created after your first run)
+preview.html                     Sample rendered "today" page, for a look before setup
+preview-archive.html             Sample rendered archive page, for a look before setup
+index.html                       The live "today" page (created after your first run)
+archive.html                     The live searchable archive (created after your first run)
 ```
 
 ---
@@ -109,8 +117,11 @@ secret, so you can edit it directly in the GitHub web UI (click the file → pen
   sites you trust (e.g. `"S&P Global Ratings"`, `"Upstream Online"`) as you notice
   gaps or want to steer sourcing. The model will still use general web search
   alongside these.
-- `history_editions_to_keep` — how many past daily editions stay on the page before
-  older ones roll off (default 30).
+- `history_editions_to_keep` — how many past daily editions are kept in
+  `digest_history.json` and shown in the searchable archive before the oldest ones
+  roll off (default 90, roughly 3 months). Raise or lower it freely; `index.html`
+  always shows only the single latest edition regardless of this setting, so it's
+  really just controlling how far back `archive.html` reaches.
 
 Changes take effect on the next scheduled or manually triggered run.
 

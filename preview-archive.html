@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Watchlist — Archive</title>
+<style>
+  :root {
+    --parchment: #f3ecdb;
+    --parchment-dark: #e8dfc7;
+    --ink: #2b2620;
+    --ink-soft: #55503f;
+    --rule: #c9bd9c;
+    --positive: #3f6b4a;
+    --negative: #9c3b34;
+    --watch: #a6791f;
+    --neutral: #6b6558;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.5;
+  }
+
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  header.masthead {
+    text-align: center;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 18px;
+    margin-bottom: 8px;
+  }
+
+  header.masthead .kicker {
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+
+  header.masthead h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+
+  header.masthead .subhead {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .back-link-row, .meta-row {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin: 14px 0;
+  }
+
+  .back-link-row a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 1px;
+  }
+
+  .back-link-row a:hover {
+    color: var(--negative);
+    border-bottom-color: var(--negative);
+  }
+
+  .controls {
+    margin: 28px 0 8px;
+    border: 1px solid var(--rule);
+    background: var(--parchment-dark);
+    border-radius: 6px;
+    padding: 16px 18px;
+  }
+
+  #search-box {
+    width: 100%;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    padding: 10px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--parchment);
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  #search-box:focus {
+    outline: 2px solid var(--ink-soft);
+    outline-offset: 1px;
+  }
+
+  .chip-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .chip-group:last-child { margin-bottom: 0; }
+
+  .chip-group-label {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .chip {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--rule);
+    background: var(--parchment);
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+
+  .chip:hover {
+    border-color: var(--ink-soft);
+  }
+
+  .chip.active {
+    background: var(--ink);
+    color: var(--parchment);
+    border-color: var(--ink);
+  }
+
+  .chip-positive.active { background: var(--positive); border-color: var(--positive); color: #fff; }
+  .chip-negative.active { background: var(--negative); border-color: var(--negative); color: #fff; }
+  .chip-watch.active    { background: var(--watch);    border-color: var(--watch);    color: #fff; }
+  .chip-neutral.active  { background: var(--neutral);  border-color: var(--neutral);  color: #fff; }
+
+  #clear-filters {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 6px;
+  }
+
+  #result-count {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin: 16px 0 12px;
+  }
+
+  #items {
+    margin-top: 8px;
+  }
+
+  article.item {
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px dashed var(--rule);
+  }
+
+  article.item:last-child { border-bottom: none; }
+
+  .flag {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    border-radius: 3px;
+    color: #fff;
+    white-space: nowrap;
+    margin-top: 3px;
+  }
+
+  .flag-positive { background: var(--positive); }
+  .flag-negative { background: var(--negative); }
+  .flag-watch    { background: var(--watch); }
+  .flag-neutral  { background: var(--neutral); }
+
+  .item-body { flex: 1 1 auto; }
+
+  .item-tag {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    margin-bottom: 3px;
+  }
+
+  .item-title { font-size: 17px; margin: 0 0 6px; }
+  .item-summary { margin: 0 0 6px; font-size: 15px; }
+
+  .item-source {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+
+  .item-source a { color: var(--ink-soft); }
+
+  .no-results {
+    text-align: center;
+    font-style: italic;
+    color: var(--ink-soft);
+    padding: 40px 0;
+  }
+
+  footer {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-top: 40px;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+  }
+
+  @media (max-width: 480px) {
+    header.masthead h1 { font-size: 26px; }
+    article.item { flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="kicker">Archive · 3 Editions</div>
+      <h1>The Watchlist</h1>
+      <div class="subhead">Searchable archive of past editions</div>
+    </header>
+
+    <div class="back-link-row"><a href="index.html">&larr; Back to today's edition</a></div>
+    <div class="meta-row">Last generated 03 Jul 2026, 10:05 UTC</div>
+
+    <div class="controls">
+      <input id="search-box" type="text" placeholder="Search headlines and summaries&hellip;" autocomplete="off">
+
+      <div class="chip-group" id="topic-chips">
+        <div class="chip-group-label">Filter by tag</div>
+        <button class="chip" data-filter-topic="BP plc">BP plc</button><button class="chip" data-filter-topic="NSG Group">NSG Group</button><button class="chip" data-filter-topic="Oil &amp; Gas">Oil &amp; Gas</button><button class="chip" data-filter-topic="Retail">Retail</button><button class="chip" data-filter-topic="Self storage">Self storage</button><button class="chip" data-filter-topic="Shell plc">Shell plc</button><button class="chip" data-filter-topic="Telecom">Telecom</button><button class="chip" data-filter-topic="Vodafone">Vodafone</button>
+      </div>
+
+      <div class="chip-group" id="flag-chips">
+        <div class="chip-group-label">Filter by credit signal</div>
+        <button class="chip chip-positive" data-filter-flag="positive">Positive</button><button class="chip chip-negative" data-filter-flag="negative">Negative</button><button class="chip chip-watch" data-filter-flag="watch">Watch</button><button class="chip chip-neutral" data-filter-flag="neutral">Neutral</button>
+      </div>
+
+      <button id="clear-filters">Clear all filters</button>
+    </div>
+
+    <div id="result-count"></div>
+
+    <div id="items">
+      
+        <article class="item" data-topic="Oil &amp; Gas" data-flag="watch" data-category="industry" data-search="brent slips below $68 on opec+ supply signals brent crude fell after reports that opec+ members are discussing a further output increase at their next meeting. oil &amp; gas reuters">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">Oil &amp; Gas &middot; Friday, 03 July 2026</div>
+            <h3 class="item-title">Brent slips below $68 on OPEC+ supply signals</h3>
+            <p class="item-summary">Brent crude fell after reports that OPEC+ members are discussing a further output increase at their next meeting.</p>
+            <div class="item-source"><a href="https://www.reuters.com" target="_blank" rel="noopener">Reuters</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Telecom" data-flag="negative" data-category="industry" data-search="ofcom opens review of wholesale fibre pricing the regulator launched a consultation on wholesale access pricing for full-fibre networks. telecom financial times">
+          <span class="flag flag-negative" title="Credit signal: Negative">Negative</span>
+          <div class="item-body">
+            <div class="item-tag">Telecom &middot; Friday, 03 July 2026</div>
+            <h3 class="item-title">Ofcom opens review of wholesale fibre pricing</h3>
+            <p class="item-summary">The regulator launched a consultation on wholesale access pricing for full-fibre networks.</p>
+            <div class="item-source"><a href="https://www.ft.com" target="_blank" rel="noopener">Financial Times</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Shell plc" data-flag="neutral" data-category="company" data-search="shell announces $3.5bn bond tap to refinance 2027 maturities shell priced a new dual-tranche bond, proceeds earmarked to refinance upcoming maturities. shell plc bloomberg">
+          <span class="flag flag-neutral" title="Credit signal: Neutral">Neutral</span>
+          <div class="item-body">
+            <div class="item-tag">Shell plc &middot; Friday, 03 July 2026</div>
+            <h3 class="item-title">Shell announces $3.5bn bond tap to refinance 2027 maturities</h3>
+            <p class="item-summary">Shell priced a new dual-tranche bond, proceeds earmarked to refinance upcoming maturities.</p>
+            <div class="item-source"><a href="https://www.bloomberg.com" target="_blank" rel="noopener">Bloomberg</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Vodafone" data-flag="positive" data-category="company" data-search="vodafone completes spain unit disposal vodafone confirmed completion of its previously announced spanish business disposal. vodafone vodafone group newsroom">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Vodafone &middot; Friday, 03 July 2026</div>
+            <h3 class="item-title">Vodafone completes Spain unit disposal</h3>
+            <p class="item-summary">Vodafone confirmed completion of its previously announced Spanish business disposal.</p>
+            <div class="item-source"><a href="https://www.vodafone.com/news" target="_blank" rel="noopener">Vodafone Group newsroom</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Retail" data-flag="neutral" data-category="industry" data-search="uk retail footfall flat in june, brc data shows the brc monthly footfall tracker showed little change versus may. retail brc">
+          <span class="flag flag-neutral" title="Credit signal: Neutral">Neutral</span>
+          <div class="item-body">
+            <div class="item-tag">Retail &middot; Thursday, 02 July 2026</div>
+            <h3 class="item-title">UK retail footfall flat in June, BRC data shows</h3>
+            <p class="item-summary">The BRC monthly footfall tracker showed little change versus May.</p>
+            <div class="item-source"><a href="https://brc.org.uk" target="_blank" rel="noopener">BRC</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="BP plc" data-flag="negative" data-category="company" data-search="bp downgraded to negative outlook on cash flow concerns a rating agency revised bp&#x27;s outlook to negative, citing softer near-term free cash flow. bp plc s&amp;p global ratings">
+          <span class="flag flag-negative" title="Credit signal: Negative">Negative</span>
+          <div class="item-body">
+            <div class="item-tag">BP plc &middot; Thursday, 02 July 2026</div>
+            <h3 class="item-title">BP downgraded to negative outlook on cash flow concerns</h3>
+            <p class="item-summary">A rating agency revised BP&#x27;s outlook to negative, citing softer near-term free cash flow.</p>
+            <div class="item-source"><a href="https://www.spglobal.com" target="_blank" rel="noopener">S&amp;P Global Ratings</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="NSG Group" data-flag="watch" data-category="company" data-search="nsg flags energy cost headwind nsg&#x27;s trading update pointed to elevated european energy costs weighing on margins. nsg group nikkei asia">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">NSG Group &middot; Wednesday, 01 July 2026</div>
+            <h3 class="item-title">NSG flags energy cost headwind</h3>
+            <p class="item-summary">NSG&#x27;s trading update pointed to elevated European energy costs weighing on margins.</p>
+            <div class="item-source"><a href="https://asia.nikkei.com" target="_blank" rel="noopener">Nikkei Asia</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Self storage" data-flag="positive" data-category="industry" data-search="uk self-storage occupancy ticks up in q2 industry data shows average occupancy improved modestly quarter-on-quarter. self storage property week">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Self storage &middot; Wednesday, 01 July 2026</div>
+            <h3 class="item-title">UK self-storage occupancy ticks up in Q2</h3>
+            <p class="item-summary">Industry data shows average occupancy improved modestly quarter-on-quarter.</p>
+            <div class="item-source"><a href="https://www.propertyweek.com" target="_blank" rel="noopener">Property Week</a></div>
+          </div>
+        </article>
+    </div>
+
+    <div class="no-results" id="no-results" style="display:none;">No items match your filters.</div>
+
+    <footer>
+      Generated automatically by Claude via the Anthropic API · Flags reflect an AI-assisted view of likely credit direction, not investment advice
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var searchBox = document.getElementById('search-box');
+      var items = Array.prototype.slice.call(document.querySelectorAll('#items .item'));
+      var topicChips = Array.prototype.slice.call(document.querySelectorAll('#topic-chips .chip'));
+      var flagChips = Array.prototype.slice.call(document.querySelectorAll('#flag-chips .chip'));
+      var clearBtn = document.getElementById('clear-filters');
+      var resultCount = document.getElementById('result-count');
+      var noResults = document.getElementById('no-results');
+
+      var activeTopics = new Set();
+      var activeFlags = new Set();
+
+      function applyFilters() {
+        var query = searchBox.value.trim().toLowerCase();
+        var visibleCount = 0;
+
+        items.forEach(function (item) {
+          var matchesQuery = !query || item.getAttribute('data-search').indexOf(query) !== -1;
+          var topic = item.getAttribute('data-topic');
+          var flag = item.getAttribute('data-flag');
+          var matchesTopic = activeTopics.size === 0 || activeTopics.has(topic);
+          var matchesFlag = activeFlags.size === 0 || activeFlags.has(flag);
+          var visible = matchesQuery && matchesTopic && matchesFlag;
+          item.style.display = visible ? '' : 'none';
+          if (visible) visibleCount++;
+        });
+
+        resultCount.textContent = visibleCount + (visibleCount === 1 ? ' item' : ' items') + ' shown';
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      topicChips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          var topic = chip.getAttribute('data-filter-topic');
+          if (activeTopics.has(topic)) {
+            activeTopics.delete(topic);
+            chip.classList.remove('active');
+          } else {
+            activeTopics.add(topic);
+            chip.classList.add('active');
+          }
+          applyFilters();
+        });
+      });
+
+      flagChips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          var flag = chip.getAttribute('data-filter-flag');
+          if (activeFlags.has(flag)) {
+            activeFlags.delete(flag);
+            chip.classList.remove('active');
+          } else {
+            activeFlags.add(flag);
+            chip.classList.add('active');
+          }
+          applyFilters();
+        });
+      });
+
+      clearBtn.addEventListener('click', function () {
+        activeTopics.clear();
+        activeFlags.clear();
+        searchBox.value = '';
+        topicChips.concat(flagChips).forEach(function (c) { c.classList.remove('active'); });
+        applyFilters();
+      });
+
+      searchBox.addEventListener('input', applyFilters);
+
+      applyFilters();
+    })();
+  </script>
+</body>
+</html>

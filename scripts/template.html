@@ -31,7 +31,7 @@
   }
 
   .wrap {
-    max-width: 760px;
+    max-width: 1040px;
     margin: 0 auto;
     padding: 40px 24px 80px;
   }
@@ -73,6 +73,26 @@
     margin: 10px 0 36px;
   }
 
+  .archive-link-row {
+    text-align: center;
+    margin: 8px 0 32px;
+  }
+
+  .archive-link {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 2px;
+  }
+
+  .archive-link:hover {
+    color: var(--negative);
+    border-bottom-color: var(--negative);
+  }
+
   .edition {
     margin-bottom: 48px;
   }
@@ -89,6 +109,22 @@
     text-transform: uppercase;
     color: var(--ink-soft);
     margin-bottom: 18px;
+  }
+
+  .columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .columns > section.category {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .columns > section.category + section.category {
+    border-left: 1px solid var(--rule);
+    padding-left: 32px;
   }
 
   section.category h2 {
@@ -180,6 +216,19 @@
     padding-top: 16px;
   }
 
+  @media (max-width: 700px) {
+    .columns {
+      flex-direction: column;
+      gap: 0;
+    }
+    .columns > section.category + section.category {
+      border-left: none;
+      padding-left: 0;
+      border-top: 1px solid var(--rule);
+      padding-top: 20px;
+    }
+  }
+
   @media (max-width: 480px) {
     header.masthead h1 { font-size: 30px; }
     article.item { flex-direction: column; gap: 6px; }
@@ -194,8 +243,15 @@
       <div class="subhead">Industry &amp; company news, read the way a credit analyst reads it</div>
     </header>
     <div class="generated-at">Last generated {{GENERATED_AT}}</div>
+    <div class="archive-link-row">
+      <a class="archive-link" href="archive.html" style="display:{{ARCHIVE_LINK_DISPLAY}};">Browse past editions &amp; search by tag &rarr;</a>
+    </div>
 
     {{EDITIONS}}
+
+    <div class="archive-link-row">
+      <a class="archive-link" href="archive.html" style="display:{{ARCHIVE_LINK_DISPLAY}};">Browse past editions &amp; search by tag &rarr;</a>
+    </div>
 
     <footer>
       Generated automatically by Claude via the Anthropic API · Flags reflect an AI-assisted view of likely credit direction, not investment advice

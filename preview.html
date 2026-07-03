@@ -31,7 +31,7 @@
   }
 
   .wrap {
-    max-width: 760px;
+    max-width: 1040px;
     margin: 0 auto;
     padding: 40px 24px 80px;
   }
@@ -73,6 +73,26 @@
     margin: 10px 0 36px;
   }
 
+  .archive-link-row {
+    text-align: center;
+    margin: 8px 0 32px;
+  }
+
+  .archive-link {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 2px;
+  }
+
+  .archive-link:hover {
+    color: var(--negative);
+    border-bottom-color: var(--negative);
+  }
+
   .edition {
     margin-bottom: 48px;
   }
@@ -89,6 +109,22 @@
     text-transform: uppercase;
     color: var(--ink-soft);
     margin-bottom: 18px;
+  }
+
+  .columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .columns > section.category {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .columns > section.category + section.category {
+    border-left: 1px solid var(--rule);
+    padding-left: 32px;
   }
 
   section.category h2 {
@@ -180,6 +216,19 @@
     padding-top: 16px;
   }
 
+  @media (max-width: 700px) {
+    .columns {
+      flex-direction: column;
+      gap: 0;
+    }
+    .columns > section.category + section.category {
+      border-left: none;
+      padding-left: 0;
+      border-top: 1px solid var(--rule);
+      padding-top: 20px;
+    }
+  }
+
   @media (max-width: 480px) {
     header.masthead h1 { font-size: 30px; }
     article.item { flex-direction: column; gap: 6px; }
@@ -193,12 +242,16 @@
       <h1>The Watchlist</h1>
       <div class="subhead">Industry &amp; company news, read the way a credit analyst reads it</div>
     </header>
-    <div class="generated-at">Last generated 03 Jul 2026, 09:14 UTC</div>
+    <div class="generated-at">Last generated 03 Jul 2026, 10:05 UTC</div>
+    <div class="archive-link-row">
+      <a class="archive-link" href="archive.html" style="display:inline-block;">Browse past editions &amp; search by tag &rarr;</a>
+    </div>
 
     
       <section class="edition">
         <div class="edition-date">Friday, 03 July 2026</div>
-        <section class="category">
+        <div class="columns">
+<section class="category">
 <h2>Industry News</h2>
 
         <article class="item">
@@ -206,7 +259,7 @@
           <div class="item-body">
             <div class="item-tag">Oil &amp; Gas</div>
             <h3 class="item-title">Brent slips below $68 on OPEC+ supply signals</h3>
-            <p class="item-summary">Brent crude fell after reports that OPEC+ members are discussing a further output increase at their next meeting. Sustained weakness would pressure upstream cash flow and leverage metrics across the sector.</p>
+            <p class="item-summary">Brent crude fell after reports that OPEC+ members are discussing a further output increase at their next meeting.</p>
             <div class="item-source"><a href="https://www.reuters.com" target="_blank" rel="noopener">Reuters</a></div>
           </div>
         </article>
@@ -215,17 +268,8 @@
           <div class="item-body">
             <div class="item-tag">Telecom</div>
             <h3 class="item-title">Ofcom opens review of wholesale fibre pricing</h3>
-            <p class="item-summary">The regulator launched a consultation on wholesale access pricing for full-fibre networks, which could compress margins for network owners if remedies are imposed. Outcome expected in H2.</p>
+            <p class="item-summary">The regulator launched a consultation on wholesale access pricing for full-fibre networks.</p>
             <div class="item-source"><a href="https://www.ft.com" target="_blank" rel="noopener">Financial Times</a></div>
-          </div>
-        </article>
-        <article class="item">
-          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
-          <div class="item-body">
-            <div class="item-tag">Self storage</div>
-            <h3 class="item-title">UK self-storage occupancy ticks up in Q2</h3>
-            <p class="item-summary">Industry data shows average occupancy improved modestly quarter-on-quarter as household moving activity picked up, a mild positive for revenue visibility across listed operators.</p>
-            <div class="item-source"><a href="https://www.propertyweek.com" target="_blank" rel="noopener">Property Week</a></div>
           </div>
         </article>
 </section><section class="category">
@@ -236,7 +280,7 @@
           <div class="item-body">
             <div class="item-tag">Shell plc</div>
             <h3 class="item-title">Shell announces $3.5bn bond tap to refinance 2027 maturities</h3>
-            <p class="item-summary">Shell priced a new dual-tranche bond, proceeds earmarked to refinance upcoming maturities and extend the debt ladder. Broadly neutral to credit given conservative leverage and strong liquidity.</p>
+            <p class="item-summary">Shell priced a new dual-tranche bond, proceeds earmarked to refinance upcoming maturities.</p>
             <div class="item-source"><a href="https://www.bloomberg.com" target="_blank" rel="noopener">Bloomberg</a></div>
           </div>
         </article>
@@ -244,60 +288,18 @@
           <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
           <div class="item-body">
             <div class="item-tag">Vodafone</div>
-            <h3 class="item-title">Vodafone completes Spain unit disposal, proceeds to debt paydown</h3>
-            <p class="item-summary">Vodafone confirmed completion of its previously announced Spanish business disposal, with the bulk of net proceeds directed to gross debt reduction, supporting its deleveraging path toward its stated leverage target.</p>
+            <h3 class="item-title">Vodafone completes Spain unit disposal</h3>
+            <p class="item-summary">Vodafone confirmed completion of its previously announced Spanish business disposal.</p>
             <div class="item-source"><a href="https://www.vodafone.com/news" target="_blank" rel="noopener">Vodafone Group newsroom</a></div>
           </div>
         </article>
-        <article class="item">
-          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
-          <div class="item-body">
-            <div class="item-tag">NSG Group</div>
-            <h3 class="item-title">NSG flags energy cost headwind in trading update</h3>
-            <p class="item-summary">NSG&#x27;s latest trading update pointed to elevated European energy costs weighing on margins in its glass manufacturing operations, a watch item for interest cover in coming quarters.</p>
-            <div class="item-source"><a href="https://asia.nikkei.com" target="_blank" rel="noopener">Nikkei Asia</a></div>
-          </div>
-        </article>
-        <article class="item">
-          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
-          <div class="item-body">
-            <div class="item-tag">Octopus Energy</div>
-            <h3 class="item-title">Newsletter flags Octopus Energy funding round talks</h3>
-            <p class="item-summary">An industry newsletter reported early-stage talks around a new funding round for Octopus Energy&#x27;s international expansion, which if concluded would strengthen the group&#x27;s capital base.</p>
-            <div class="item-source">Energy Sector Weekly (inbox)</div>
-          </div>
-        </article>
 </section>
+</div>
       </section>
 
-      <section class="edition">
-        <div class="edition-date">Thursday, 02 July 2026</div>
-        <section class="category">
-<h2>Industry News</h2>
-
-        <article class="item">
-          <span class="flag flag-neutral" title="Credit signal: Neutral">Neutral</span>
-          <div class="item-body">
-            <div class="item-tag">Retail</div>
-            <h3 class="item-title">UK retail footfall flat in June, BRC data shows</h3>
-            <p class="item-summary">The British Retail Consortium&#x27;s monthly footfall tracker showed little change versus May, suggesting a stable but unexciting demand backdrop for high-street-exposed credits heading into H2.</p>
-            <div class="item-source"><a href="https://brc.org.uk" target="_blank" rel="noopener">BRC</a></div>
-          </div>
-        </article>
-</section><section class="category">
-<h2>Company News</h2>
-
-        <article class="item">
-          <span class="flag flag-negative" title="Credit signal: Negative">Negative</span>
-          <div class="item-body">
-            <div class="item-tag">BP plc</div>
-            <h3 class="item-title">BP downgraded to negative outlook by one agency on cash flow concerns</h3>
-            <p class="item-summary">A rating agency revised BP&#x27;s outlook to negative, citing softer near-term free cash flow and the pace of the buyback programme relative to net debt reduction targets.</p>
-            <div class="item-source"><a href="https://www.spglobal.com" target="_blank" rel="noopener">S&amp;P Global Ratings</a></div>
-          </div>
-        </article>
-</section>
-      </section>
+    <div class="archive-link-row">
+      <a class="archive-link" href="archive.html" style="display:inline-block;">Browse past editions &amp; search by tag &rarr;</a>
+    </div>
 
     <footer>
       Generated automatically by Claude via the Anthropic API · Flags reflect an AI-assisted view of likely credit direction, not investment advice

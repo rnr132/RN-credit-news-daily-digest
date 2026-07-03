@@ -36,6 +36,7 @@ CONFIG_PATH = ROOT / "config.json"
 HISTORY_PATH = ROOT / "digest_history.json"
 TEMPLATE_PATH = ROOT / "scripts" / "template.html"
 OUTPUT_PATH = ROOT / "index.html"
+ARCHIVE_PATH = ROOT / "archive.html"
 
 ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
 VALID_FLAGS = {"positive", "negative", "watch", "neutral"}
@@ -362,19 +363,94 @@ def render_edition(edition: dict) -> str:
         )
 
     date_str = html.escape(edition["date_display"])
+    body = (
+        '<div class="columns">\n' + "".join(sections) + "\n</div>"
+        if sections
+        else '<p class="empty">No credit-relevant items found for this edition.</p>'
+    )
     return f"""
       <section class="edition">
         <div class="edition-date">{date_str}</div>
-        {"".join(sections) if sections else '<p class="empty">No credit-relevant items found for this edition.</p>'}
+        {body}
       </section>"""
 
 
 def render_html(history: list) -> str:
+    """Render the main index page. Shows only the latest edition, plus a link to
+    the searchable archive of everything else."""
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
-    editions_html = "\n".join(render_edition(ed) for ed in history)
     generated_at = datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC")
-    out = template.replace("{{EDITIONS}}", editions_html)
+
+    latest_html = render_edition(history[0]) if history else '<p class="empty">No editions yet.</p>'
+    has_archive = len(history) > 1
+
+    out = template.replace("{{EDITIONS}}", latest_html)
     out = out.replace("{{GENERATED_AT}}", html.escape(generated_at))
+    out = out.replace("{{ARCHIVE_LINK_DISPLAY}}", "inline-block" if has_archive else "none")
+    return out
+
+
+def render_archive_card(item: dict, date_display: str) -> str:
+    flag = item["credit_flag"]
+    label = FLAG_LABEL.get(flag, "Neutral")
+    title = html.escape(item["title"])
+    summary = html.escape(item["summary"])
+    topic = html.escape(item["topic"])
+    source = html.escape(item["source"])
+    url = html.escape(item["url"])
+    category = html.escape(item["category"])
+    date_esc = html.escape(date_display)
+
+    source_html = f'<a href="{url}" target="_blank" rel="noopener">{source}</a>' if url else source
+
+    # data-search holds a lowercase blob of everything text-searchable about the item
+    search_blob = html.escape(
+        f"{item['title']} {item['summary']} {item['topic']} {item['source']}".lower()
+    )
+
+    return f"""
+        <article class="item" data-topic="{topic}" data-flag="{flag}" data-category="{category}" data-search="{search_blob}">
+          <span class="flag flag-{flag}" title="Credit signal: {label}">{label}</span>
+          <div class="item-body">
+            <div class="item-tag">{topic} &middot; {date_esc}</div>
+            <h3 class="item-title">{title}</h3>
+            <p class="item-summary">{summary}</p>
+            <div class="item-source">{source_html}</div>
+          </div>
+        </article>"""
+
+
+def render_archive(history: list) -> str:
+    """Render a standalone, searchable archive page covering every edition in
+    history, with client-side text search and tag/topic/flag filter chips.
+    Filtering runs entirely in the browser (no server), so it works on a
+    static GitHub Pages site."""
+    template_path = ROOT / "scripts" / "archive_template.html"
+    template = template_path.read_text(encoding="utf-8")
+
+    all_topics = set()
+    cards = []
+    for edition in history:
+        for item in edition["items"]:
+            all_topics.add(item["topic"])
+            cards.append(render_archive_card(item, edition["date_display"]))
+
+    topic_buttons = "".join(
+        f'<button class="chip" data-filter-topic="{html.escape(t)}">{html.escape(t)}</button>'
+        for t in sorted(all_topics)
+    )
+    flag_buttons = "".join(
+        f'<button class="chip chip-{flag}" data-filter-flag="{flag}">{label}</button>'
+        for flag, label in FLAG_LABEL.items()
+    )
+
+    generated_at = datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC")
+
+    out = template.replace("{{ITEMS}}", "".join(cards))
+    out = out.replace("{{TOPIC_CHIPS}}", topic_buttons)
+    out = out.replace("{{FLAG_CHIPS}}", flag_buttons)
+    out = out.replace("{{GENERATED_AT}}", html.escape(generated_at))
+    out = out.replace("{{EDITION_COUNT}}", str(len(history)))
     return out
 
 
@@ -406,7 +482,8 @@ def main():
     save_history(history, config.get("history_editions_to_keep", 30))
 
     OUTPUT_PATH.write_text(render_html(history), encoding="utf-8")
-    print(f"Digest generated: {len(items)} items. Wrote {OUTPUT_PATH}")
+    ARCHIVE_PATH.write_text(render_archive(history), encoding="utf-8")
+    print(f"Digest generated: {len(items)} items. Wrote {OUTPUT_PATH} and {ARCHIVE_PATH}")
 
 
 if __name__ == "__main__":

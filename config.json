@@ -21,7 +21,7 @@
   "preferred_sources": [],
   "max_web_searches": 12,
   "model": "claude-sonnet-4-6",
-  "history_editions_to_keep": 30,
+  "history_editions_to_keep": 90,
   "email": {
     "enabled": false,
     "imap_host": "imap.gmail.com",
