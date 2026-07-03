@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Watchlist — Daily Credit Digest</title>
+<style>
+  :root {
+    --parchment: #f3ecdb;
+    --parchment-dark: #e8dfc7;
+    --ink: #2b2620;
+    --ink-soft: #55503f;
+    --rule: #c9bd9c;
+    --positive: #3f6b4a;
+    --negative: #9c3b34;
+    --watch: #a6791f;
+    --neutral: #6b6558;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--parchment);
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(0,0,0,0.02), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(0,0,0,0.02), transparent 45%);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.5;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  header.masthead {
+    text-align: center;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 18px;
+    margin-bottom: 8px;
+  }
+
+  header.masthead .kicker {
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+
+  header.masthead h1 {
+    font-size: 42px;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+
+  header.masthead .subhead {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .generated-at {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin: 10px 0 36px;
+  }
+
+  .edition {
+    margin-bottom: 48px;
+  }
+
+  .edition + .edition {
+    border-top: 1px solid var(--rule);
+    padding-top: 36px;
+  }
+
+  .edition-date {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+  }
+
+  section.category h2 {
+    font-size: 20px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 6px;
+    margin: 0 0 16px;
+  }
+
+  section.category {
+    margin-bottom: 28px;
+  }
+
+  article.item {
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px dashed var(--rule);
+  }
+
+  article.item:last-child {
+    border-bottom: none;
+  }
+
+  .flag {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    border-radius: 3px;
+    color: #fff;
+    white-space: nowrap;
+    margin-top: 3px;
+  }
+
+  .flag-positive { background: var(--positive); }
+  .flag-negative { background: var(--negative); }
+  .flag-watch    { background: var(--watch); }
+  .flag-neutral  { background: var(--neutral); }
+
+  .item-body { flex: 1 1 auto; }
+
+  .item-tag {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    margin-bottom: 3px;
+  }
+
+  .item-title {
+    font-size: 17px;
+    margin: 0 0 6px;
+  }
+
+  .item-summary {
+    margin: 0 0 6px;
+    color: var(--ink);
+    font-size: 15px;
+  }
+
+  .item-source {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+
+  .item-source a {
+    color: var(--ink-soft);
+  }
+
+  .empty {
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  footer {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-top: 40px;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+  }
+
+  @media (max-width: 480px) {
+    header.masthead h1 { font-size: 30px; }
+    article.item { flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="kicker">Daily Edition · Credit Coverage</div>
+      <h1>The Watchlist</h1>
+      <div class="subhead">Industry &amp; company news, read the way a credit analyst reads it</div>
+    </header>
+    <div class="generated-at">Last generated {{GENERATED_AT}}</div>
+
+    {{EDITIONS}}
+
+    <footer>
+      Generated automatically by Claude via the Anthropic API · Flags reflect an AI-assisted view of likely credit direction, not investment advice
+    </footer>
+  </div>
+</body>
+</html>
