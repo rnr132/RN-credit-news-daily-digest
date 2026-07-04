@@ -1,1 +1,116 @@
-[]
+[
+  {
+    "date": "2026-07-04",
+    "date_display": "Saturday, 04 July 2026",
+    "items": [
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Brent crude retreats to ~$72/bbl as Hormuz shipping recovers",
+        "summary": "Brent crude has fallen sharply from a peak above $119/bbl in early March 2026 to approximately $72/bbl this week, as Saudi Arabia's crude exports rebounded to around 90% of pre-war levels and US-Iran ceasefire talks continued to advance. The rapid price retreat compresses upstream realisation margins for oil majors and removes the working-capital tailwind that inflated Q1 earnings, creating a more challenging backdrop for Q2 results (BP reports 29 July, Shell 30 July). For high-yield E&P credits with price decks set at elevated levels, the move is a meaningful negative.",
+        "credit_flag": "negative",
+        "source": "Trading Economics / Forbes",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Q1 net debt rises to $25.3bn; hybrid bond redemption programme accelerated",
+        "summary": "BP's Q1 2026 results showed a $3bn quarter-on-quarter increase in net debt to $25.3bn, largely driven by a $6bn working capital build linked to the Middle East-driven commodity price spike. Encouragingly, management simultaneously announced plans to reduce perpetual hybrid bond capital by $4.3bn to approximately $9bn by end-2027 — redeeming €2.5bn of hybrids with March 2026 call dates without replacement — funded partly by $9-10bn of targeted divestment proceeds in 2026 including the ~$6bn Castrol sale. The reduction in hybrid equity credit awarded by rating agencies to BP's capital structure warrants monitoring, though the deleveraging trajectory toward a $14-18bn net debt target by 2027 remains constructive for senior bondholders.",
+        "credit_flag": "watch",
+        "source": "BP plc",
+        "url": "https://www.bp.com/en/global/corporate/investors/results-reporting-and-presentations/quarterly-results-and-webcast.html"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Q2 results due 30 July; ARC Resources deal adds $4bn capex load",
+        "summary": "Shell's Q1 2026 adjusted earnings of $6.9bn were strong but masked an $11.2bn working-capital outflow driven by commodity price volatility, leaving gearing at 23%. The group has simultaneously committed to acquiring ARC Resources for ~$13.6bn equity value, lifting full-year 2026 cash capex guidance to $24-26bn — a $3-5bn increase versus 2025. Analysts expect Q2 results on 30 July to reflect lower volumes from higher maintenance activity and a weaker price environment as Brent has retreated sharply; the combination of elevated capex and softer prices is a modest negative for near-term free cash flow and leverage metrics.",
+        "credit_flag": "watch",
+        "source": "Shell plc / IG UK",
+        "url": "https://www.ig.com/uk/news-and-trade-ideas/shell-q2-results-preview-lng-trading--middle-east-risks-and-shar-260629"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT and Verizon agree $4bn international business joint venture",
+        "summary": "BT Group and Verizon confirmed on 29 June 2026 a 50:50 joint venture combining their international enterprise operations, with Verizon paying BT a $625m equalisation payment. The combined entity will serve over 3,000 clients in more than 180 countries with approximately $4bn in annual revenue. For BT, the deal removes low-margin international operations from its balance sheet, triggers a guidance rebase (free cash flow target of £3bn by end-decade maintained on the ex-international perimeter), and monetises an asset that had drawn limited buyer interest — a modestly positive credit event that simplifies the group and brings in near-term cash, though final completion is subject to regulatory approval expected in 2027.",
+        "credit_flag": "positive",
+        "source": "Bloomberg / BT Group Newsroom",
+        "url": "https://newsroom.bt.com/bt-group-and-verizon-to-form-joint-venture-creating-a-scaled-international-connectivity-platform-for-multinational-customers/"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT appoints new CFO Patricia Cobian effective 20 July 2026",
+        "summary": "BT confirmed that Patricia Cobian — formerly CFO at Virgin Media O2 — joins the BT Group Board as an Executive Director and CFO on 20 July 2026, succeeding Simon Lowth who retires after nine years. A CFO transition at a group with ~£18bn of net debt, a capital-intensive FTTP build-out programme, and a major joint-venture deal pending regulatory approval represents a key-person risk for debt investors to monitor, even if the succession was managed in an orderly manner.",
+        "credit_flag": "watch",
+        "source": "Simply Wall St / BT Group",
+        "url": "https://newsroom.bt.com/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone FY26 revenue +8% to €40.5bn; Q1 FY27 trading update due 27 July",
+        "summary": "Vodafone's FY26 full-year results confirmed organic service revenue growth of 5.4% and adjusted EBITDAaL up 4.5%, with net debt of €25.4bn and adjusted free cash flow of €2.6bn — at the upper end of guidance. The VodafoneThree UK merger integration and German revenue recovery are emerging as supportive themes; a Q1 FY27 trading update on 27 July will be the first read-across on integration momentum. With net debt still more than double market cap at the time of the worst leverage, the continued deleveraging trajectory and upcoming trading update are the key credit catalysts this week.",
+        "credit_flag": "positive",
+        "source": "Vodafone Group / Investegate",
+        "url": "https://www.investegate.co.uk/announcement/rns/vodafone-group--vod/fy26-preliminary-results/9562943"
+      },
+      {
+        "category": "industry",
+        "topic": "Energy suppliers",
+        "title": "Ofgem lifts UK energy price cap 13% from 1 July to £1,663/year",
+        "summary": "Ofgem's quarterly reset raised the default tariff cap by 13% from 1 July 2026, driven by higher wholesale gas prices stemming from Middle East conflict disruptions. Gas unit rates rise 24% while electricity rises approximately 5%, with roughly 33 million accounts on standard variable tariffs affected. For UK energy retailers such as Octopus Energy, a higher cap improves the headroom between procurement costs and the maximum billable rate, relieving margin pressure — though a further forecast increase in October raises the risk of rising bad debts and customer churn toward fixed-rate products.",
+        "credit_flag": "positive",
+        "source": "Ofgem",
+        "url": "https://www.ofgem.gov.uk/press-release/energy-price-cap-will-rise-13-july"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy Generation reaches £8.5bn AUM; Cornish wind turbine crowdfund sells out",
+        "summary": "Octopus Energy Generation announced it has crossed £8.5bn in renewable assets under management after deploying £930m into clean energy projects in the past six months alone, adding nine institutional fund mandates and securing the Renewable Power Capital 1GW European mandate. Separately, the company's Collective retail green-finance platform fully funded a Cornish wind repowering project in 86 minutes, raising £550,000. The rapid AUM growth and diversified institutional funding base reduce reliance on any single capital source and support the group's ability to finance its generation pipeline without overleveraging the retail energy subsidiary.",
+        "credit_flag": "positive",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/07/03/octopus-energy-generation-reaches-8-5-billion-in-renewable-assets/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Kraken AI platform spinout on track; $1bn round values unit at $8.65bn",
+        "summary": "Octopus Energy's Kraken Technologies spinout — backed by a $1bn inaugural funding round led by D1 Capital Partners with Fidelity International and Ontario Teachers' — is progressing toward a planned mid-2026 demerger, with Octopus retaining a ~14% stake. Kraken's contracted revenues have grown over fourfold in three years to exceed $500m annually across 70 million utility accounts. The demerger separates utility-tech risk from the retail energy supply business, which could improve credit metrics of the remaining Octopus Energy entity by removing capital-intensive technology development costs from its balance sheet.",
+        "credit_flag": "positive",
+        "source": "ESG News / Net Zero Investor",
+        "url": "https://esgnews.com/octopus-energy-spins-out-kraken-in-1-billion-raise-valuing-utility-ai-platform-at-8-65-billion/"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo's $3.7bn NSG buyout clears EU regulators; shareholder vote passed in late June",
+        "summary": "The European Commission approved Apollo Global Management's ~$3.7bn acquisition of Nippon Sheet Glass (NSG Group) in May 2026, finding no competition concerns, and the NSG shareholder meeting to approve the deal was scheduled for late June. A key feature of the transaction is that NSG's principal lenders will convert a portion of their outstanding loans to equity, materially de-levering the balance sheet — NSG has carried heavy debt since its £2.2bn acquisition of Pilkington in 2006. For existing NSG debt holders, the debt-to-equity conversion and Apollo's equity injection are credit-positive, but the go-private transition reduces public reporting transparency.",
+        "credit_flag": "positive",
+        "source": "Glass International / Apollo Global Management",
+        "url": "https://www.glass-international.com/news/nsg-acquisition-approved-by-european-commission"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore H1 FY2026: revenue +8.7% to £122.5m; interim dividend marginally raised",
+        "summary": "Safestore's interim results for the half year ended 30 April 2026 showed revenue of £122.5m, up 8.7% year-on-year, with underlying profit before tax rising 2.3% to £44.6m. The interim dividend was lifted slightly to 10.2p per share (from 10.1p). Net income fell sharply in statutory terms due to lower property revaluation gains versus the prior period — a non-cash effect — but the LTV ratio of 28.1% and interest cover of 4.0x from the FY2025 year-end remain supportive for credit. Elevated interest rates continue to weigh on financing costs and cap rates for the REIT-structured portfolio, keeping leverage metrics on watch.",
+        "credit_flag": "neutral",
+        "source": "Simply Wall St / Safestore Corporate",
+        "url": "https://corporate.safestore.com/media-centre/latest-news/"
+      },
+      {
+        "category": "industry",
+        "topic": "Telecom",
+        "title": "UK telecom sector: 5G investment costs and debt loads remain elevated",
+        "summary": "BT carries approximately £18bn in net debt while simultaneously funding an FTTP rollout targeting 25 million premises by end-2026 and absorbing the costs of the new Verizon joint venture. Vodafone's net debt stands at €25.4bn following portfolio rationalisation, with the VodafoneThree UK integration adding near-term execution risk and spectrum spend. Both groups face a structural challenge of balancing network capex, debt reduction, and shareholder returns — the core credit tension for the sector heading into the second half of 2026.",
+        "credit_flag": "watch",
+        "source": "Capital.com / TIKR",
+        "url": "https://capital.com/en-int/analysis/british-telecom-bt-share-price-forecast"
+      }
+    ]
+  }
+]

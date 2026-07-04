@@ -2,21 +2,380 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Watchlist — Daily Credit Digest</title>
 <style>
-  body { font-family: Georgia, serif; background: #f3ecdb; color: #2b2620;
-         display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
-  .box { text-align: center; max-width: 480px; padding: 24px; }
-  h1 { font-size: 28px; }
-  p { color: #55503f; }
+  :root {
+    --parchment: #f3ecdb;
+    --parchment-dark: #e8dfc7;
+    --ink: #2b2620;
+    --ink-soft: #55503f;
+    --rule: #c9bd9c;
+    --positive: #3f6b4a;
+    --negative: #9c3b34;
+    --watch: #a6791f;
+    --neutral: #6b6558;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--parchment);
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(0,0,0,0.02), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(0,0,0,0.02), transparent 45%);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.5;
+  }
+
+  .wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  header.masthead {
+    text-align: center;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 18px;
+    margin-bottom: 8px;
+  }
+
+  header.masthead .kicker {
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+
+  header.masthead h1 {
+    font-size: 42px;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+
+  header.masthead .subhead {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .generated-at {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin: 10px 0 36px;
+  }
+
+  .archive-link-row {
+    text-align: center;
+    margin: 8px 0 32px;
+  }
+
+  .archive-link {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 2px;
+  }
+
+  .archive-link:hover {
+    color: var(--negative);
+    border-bottom-color: var(--negative);
+  }
+
+  .edition {
+    margin-bottom: 48px;
+  }
+
+  .edition + .edition {
+    border-top: 1px solid var(--rule);
+    padding-top: 36px;
+  }
+
+  .edition-date {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+  }
+
+  .columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .columns > section.category {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .columns > section.category + section.category {
+    border-left: 1px solid var(--rule);
+    padding-left: 32px;
+  }
+
+  section.category h2 {
+    font-size: 20px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 6px;
+    margin: 0 0 16px;
+  }
+
+  section.category {
+    margin-bottom: 28px;
+  }
+
+  article.item {
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px dashed var(--rule);
+  }
+
+  article.item:last-child {
+    border-bottom: none;
+  }
+
+  .flag {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    border-radius: 3px;
+    color: #fff;
+    white-space: nowrap;
+    margin-top: 3px;
+  }
+
+  .flag-positive { background: var(--positive); }
+  .flag-negative { background: var(--negative); }
+  .flag-watch    { background: var(--watch); }
+  .flag-neutral  { background: var(--neutral); }
+
+  .item-body { flex: 1 1 auto; }
+
+  .item-tag {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    margin-bottom: 3px;
+  }
+
+  .item-title {
+    font-size: 17px;
+    margin: 0 0 6px;
+  }
+
+  .item-summary {
+    margin: 0 0 6px;
+    color: var(--ink);
+    font-size: 15px;
+  }
+
+  .item-source {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+
+  .item-source a {
+    color: var(--ink-soft);
+  }
+
+  .empty {
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  footer {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-top: 40px;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+  }
+
+  @media (max-width: 700px) {
+    .columns {
+      flex-direction: column;
+      gap: 0;
+    }
+    .columns > section.category + section.category {
+      border-left: none;
+      padding-left: 0;
+      border-top: 1px solid var(--rule);
+      padding-top: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header.masthead h1 { font-size: 30px; }
+    article.item { flex-direction: column; gap: 6px; }
+  }
 </style>
 </head>
 <body>
-  <div class="box">
-    <h1>The Watchlist</h1>
-    <p>This page will populate after the first Action run generates a digest.
-    See <code>preview.html</code> and <code>preview-archive.html</code> in the repo
-    for a look at the design, and the README for setup steps.</p>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="kicker">Daily Edition · Credit Coverage</div>
+      <h1>The Watchlist</h1>
+      <div class="subhead">Industry &amp; company news, read the way a credit analyst reads it</div>
+    </header>
+    <div class="generated-at">Last generated 04 Jul 2026, 21:42 UTC</div>
+    <div class="archive-link-row">
+      <a class="archive-link" href="archive.html" style="display:none;">Browse past editions &amp; search by tag &rarr;</a>
+    </div>
+
+    
+      <section class="edition">
+        <div class="edition-date">Saturday, 04 July 2026</div>
+        <div class="columns">
+<section class="category">
+<h2>Industry News</h2>
+
+        <article class="item">
+          <span class="flag flag-negative" title="Credit signal: Negative">Negative</span>
+          <div class="item-body">
+            <div class="item-tag">Oil &amp; Gas</div>
+            <h3 class="item-title">Brent crude retreats to ~$72/bbl as Hormuz shipping recovers</h3>
+            <p class="item-summary">Brent crude has fallen sharply from a peak above $119/bbl in early March 2026 to approximately $72/bbl this week, as Saudi Arabia&#x27;s crude exports rebounded to around 90% of pre-war levels and US-Iran ceasefire talks continued to advance. The rapid price retreat compresses upstream realisation margins for oil majors and removes the working-capital tailwind that inflated Q1 earnings, creating a more challenging backdrop for Q2 results (BP reports 29 July, Shell 30 July). For high-yield E&amp;P credits with price decks set at elevated levels, the move is a meaningful negative.</p>
+            <div class="item-source"><a href="https://tradingeconomics.com/commodity/brent-crude-oil" target="_blank" rel="noopener">Trading Economics / Forbes</a></div>
+          </div>
+        </article>
+        <article class="item">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Energy suppliers</div>
+            <h3 class="item-title">Ofgem lifts UK energy price cap 13% from 1 July to £1,663/year</h3>
+            <p class="item-summary">Ofgem&#x27;s quarterly reset raised the default tariff cap by 13% from 1 July 2026, driven by higher wholesale gas prices stemming from Middle East conflict disruptions. Gas unit rates rise 24% while electricity rises approximately 5%, with roughly 33 million accounts on standard variable tariffs affected. For UK energy retailers such as Octopus Energy, a higher cap improves the headroom between procurement costs and the maximum billable rate, relieving margin pressure — though a further forecast increase in October raises the risk of rising bad debts and customer churn toward fixed-rate products.</p>
+            <div class="item-source"><a href="https://www.ofgem.gov.uk/press-release/energy-price-cap-will-rise-13-july" target="_blank" rel="noopener">Ofgem</a></div>
+          </div>
+        </article>
+        <article class="item">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">Telecom</div>
+            <h3 class="item-title">UK telecom sector: 5G investment costs and debt loads remain elevated</h3>
+            <p class="item-summary">BT carries approximately £18bn in net debt while simultaneously funding an FTTP rollout targeting 25 million premises by end-2026 and absorbing the costs of the new Verizon joint venture. Vodafone&#x27;s net debt stands at €25.4bn following portfolio rationalisation, with the VodafoneThree UK integration adding near-term execution risk and spectrum spend. Both groups face a structural challenge of balancing network capex, debt reduction, and shareholder returns — the core credit tension for the sector heading into the second half of 2026.</p>
+            <div class="item-source"><a href="https://capital.com/en-int/analysis/british-telecom-bt-share-price-forecast" target="_blank" rel="noopener">Capital.com / TIKR</a></div>
+          </div>
+        </article>
+</section><section class="category">
+<h2>Company News</h2>
+
+        <article class="item">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">BP plc</div>
+            <h3 class="item-title">BP Q1 net debt rises to $25.3bn; hybrid bond redemption programme accelerated</h3>
+            <p class="item-summary">BP&#x27;s Q1 2026 results showed a $3bn quarter-on-quarter increase in net debt to $25.3bn, largely driven by a $6bn working capital build linked to the Middle East-driven commodity price spike. Encouragingly, management simultaneously announced plans to reduce perpetual hybrid bond capital by $4.3bn to approximately $9bn by end-2027 — redeeming €2.5bn of hybrids with March 2026 call dates without replacement — funded partly by $9-10bn of targeted divestment proceeds in 2026 including the ~$6bn Castrol sale. The reduction in hybrid equity credit awarded by rating agencies to BP&#x27;s capital structure warrants monitoring, though the deleveraging trajectory toward a $14-18bn net debt target by 2027 remains constructive for senior bondholders.</p>
+            <div class="item-source"><a href="https://www.bp.com/en/global/corporate/investors/results-reporting-and-presentations/quarterly-results-and-webcast.html" target="_blank" rel="noopener">BP plc</a></div>
+          </div>
+        </article>
+        <article class="item">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">Shell plc</div>
+            <h3 class="item-title">Shell Q2 results due 30 July; ARC Resources deal adds $4bn capex load</h3>
+            <p class="item-summary">Shell&#x27;s Q1 2026 adjusted earnings of $6.9bn were strong but masked an $11.2bn working-capital outflow driven by commodity price volatility, leaving gearing at 23%. The group has simultaneously committed to acquiring ARC Resources for ~$13.6bn equity value, lifting full-year 2026 cash capex guidance to $24-26bn — a $3-5bn increase versus 2025. Analysts expect Q2 results on 30 July to reflect lower volumes from higher maintenance activity and a weaker price environment as Brent has retreated sharply; the combination of elevated capex and softer prices is a modest negative for near-term free cash flow and leverage metrics.</p>
+            <div class="item-source"><a href="https://www.ig.com/uk/news-and-trade-ideas/shell-q2-results-preview-lng-trading--middle-east-risks-and-shar-260629" target="_blank" rel="noopener">Shell plc / IG UK</a></div>
+          </div>
+        </article>
+        <article class="item">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">British Telecom</div>
+            <h3 class="item-title">BT and Verizon agree $4bn international business joint venture</h3>
+            <p class="item-summary">BT Group and Verizon confirmed on 29 June 2026 a 50:50 joint venture combining their international enterprise operations, with Verizon paying BT a $625m equalisation payment. The combined entity will serve over 3,000 clients in more than 180 countries with approximately $4bn in annual revenue. For BT, the deal removes low-margin international operations from its balance sheet, triggers a guidance rebase (free cash flow target of £3bn by end-decade maintained on the ex-international perimeter), and monetises an asset that had drawn limited buyer interest — a modestly positive credit event that simplifies the group and brings in near-term cash, though final completion is subject to regulatory approval expected in 2027.</p>
+            <div class="item-source"><a href="https://newsroom.bt.com/bt-group-and-verizon-to-form-joint-venture-creating-a-scaled-international-connectivity-platform-for-multinational-customers/" target="_blank" rel="noopener">Bloomberg / BT Group Newsroom</a></div>
+          </div>
+        </article>
+        <article class="item">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">British Telecom</div>
+            <h3 class="item-title">BT appoints new CFO Patricia Cobian effective 20 July 2026</h3>
+            <p class="item-summary">BT confirmed that Patricia Cobian — formerly CFO at Virgin Media O2 — joins the BT Group Board as an Executive Director and CFO on 20 July 2026, succeeding Simon Lowth who retires after nine years. A CFO transition at a group with ~£18bn of net debt, a capital-intensive FTTP build-out programme, and a major joint-venture deal pending regulatory approval represents a key-person risk for debt investors to monitor, even if the succession was managed in an orderly manner.</p>
+            <div class="item-source"><a href="https://newsroom.bt.com/" target="_blank" rel="noopener">Simply Wall St / BT Group</a></div>
+          </div>
+        </article>
+        <article class="item">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Vodafone</div>
+            <h3 class="item-title">Vodafone FY26 revenue +8% to €40.5bn; Q1 FY27 trading update due 27 July</h3>
+            <p class="item-summary">Vodafone&#x27;s FY26 full-year results confirmed organic service revenue growth of 5.4% and adjusted EBITDAaL up 4.5%, with net debt of €25.4bn and adjusted free cash flow of €2.6bn — at the upper end of guidance. The VodafoneThree UK merger integration and German revenue recovery are emerging as supportive themes; a Q1 FY27 trading update on 27 July will be the first read-across on integration momentum. With net debt still more than double market cap at the time of the worst leverage, the continued deleveraging trajectory and upcoming trading update are the key credit catalysts this week.</p>
+            <div class="item-source"><a href="https://www.investegate.co.uk/announcement/rns/vodafone-group--vod/fy26-preliminary-results/9562943" target="_blank" rel="noopener">Vodafone Group / Investegate</a></div>
+          </div>
+        </article>
+        <article class="item">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Octopus Energy</div>
+            <h3 class="item-title">Octopus Energy Generation reaches £8.5bn AUM; Cornish wind turbine crowdfund sells out</h3>
+            <p class="item-summary">Octopus Energy Generation announced it has crossed £8.5bn in renewable assets under management after deploying £930m into clean energy projects in the past six months alone, adding nine institutional fund mandates and securing the Renewable Power Capital 1GW European mandate. Separately, the company&#x27;s Collective retail green-finance platform fully funded a Cornish wind repowering project in 86 minutes, raising £550,000. The rapid AUM growth and diversified institutional funding base reduce reliance on any single capital source and support the group&#x27;s ability to finance its generation pipeline without overleveraging the retail energy subsidiary.</p>
+            <div class="item-source"><a href="https://www.energylivenews.com/2026/07/03/octopus-energy-generation-reaches-8-5-billion-in-renewable-assets/" target="_blank" rel="noopener">Energy Live News</a></div>
+          </div>
+        </article>
+        <article class="item">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Octopus Energy</div>
+            <h3 class="item-title">Kraken AI platform spinout on track; $1bn round values unit at $8.65bn</h3>
+            <p class="item-summary">Octopus Energy&#x27;s Kraken Technologies spinout — backed by a $1bn inaugural funding round led by D1 Capital Partners with Fidelity International and Ontario Teachers&#x27; — is progressing toward a planned mid-2026 demerger, with Octopus retaining a ~14% stake. Kraken&#x27;s contracted revenues have grown over fourfold in three years to exceed $500m annually across 70 million utility accounts. The demerger separates utility-tech risk from the retail energy supply business, which could improve credit metrics of the remaining Octopus Energy entity by removing capital-intensive technology development costs from its balance sheet.</p>
+            <div class="item-source"><a href="https://esgnews.com/octopus-energy-spins-out-kraken-in-1-billion-raise-valuing-utility-ai-platform-at-8-65-billion/" target="_blank" rel="noopener">ESG News / Net Zero Investor</a></div>
+          </div>
+        </article>
+        <article class="item">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">NSG Group</div>
+            <h3 class="item-title">Apollo&#x27;s $3.7bn NSG buyout clears EU regulators; shareholder vote passed in late June</h3>
+            <p class="item-summary">The European Commission approved Apollo Global Management&#x27;s ~$3.7bn acquisition of Nippon Sheet Glass (NSG Group) in May 2026, finding no competition concerns, and the NSG shareholder meeting to approve the deal was scheduled for late June. A key feature of the transaction is that NSG&#x27;s principal lenders will convert a portion of their outstanding loans to equity, materially de-levering the balance sheet — NSG has carried heavy debt since its £2.2bn acquisition of Pilkington in 2006. For existing NSG debt holders, the debt-to-equity conversion and Apollo&#x27;s equity injection are credit-positive, but the go-private transition reduces public reporting transparency.</p>
+            <div class="item-source"><a href="https://www.glass-international.com/news/nsg-acquisition-approved-by-european-commission" target="_blank" rel="noopener">Glass International / Apollo Global Management</a></div>
+          </div>
+        </article>
+        <article class="item">
+          <span class="flag flag-neutral" title="Credit signal: Neutral">Neutral</span>
+          <div class="item-body">
+            <div class="item-tag">Safestore</div>
+            <h3 class="item-title">Safestore H1 FY2026: revenue +8.7% to £122.5m; interim dividend marginally raised</h3>
+            <p class="item-summary">Safestore&#x27;s interim results for the half year ended 30 April 2026 showed revenue of £122.5m, up 8.7% year-on-year, with underlying profit before tax rising 2.3% to £44.6m. The interim dividend was lifted slightly to 10.2p per share (from 10.1p). Net income fell sharply in statutory terms due to lower property revaluation gains versus the prior period — a non-cash effect — but the LTV ratio of 28.1% and interest cover of 4.0x from the FY2025 year-end remain supportive for credit. Elevated interest rates continue to weigh on financing costs and cap rates for the REIT-structured portfolio, keeping leverage metrics on watch.</p>
+            <div class="item-source"><a href="https://corporate.safestore.com/media-centre/latest-news/" target="_blank" rel="noopener">Simply Wall St / Safestore Corporate</a></div>
+          </div>
+        </article>
+</section>
+</div>
+      </section>
+
+    <div class="archive-link-row">
+      <a class="archive-link" href="archive.html" style="display:none;">Browse past editions &amp; search by tag &rarr;</a>
+    </div>
+
+    <footer>
+      Generated automatically by Claude via the Anthropic API · Flags reflect an AI-assisted view of likely credit direction, not investment advice
+    </footer>
   </div>
 </body>
 </html>

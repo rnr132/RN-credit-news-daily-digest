@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Watchlist — Archive</title>
+<style>
+  :root {
+    --parchment: #f3ecdb;
+    --parchment-dark: #e8dfc7;
+    --ink: #2b2620;
+    --ink-soft: #55503f;
+    --rule: #c9bd9c;
+    --positive: #3f6b4a;
+    --negative: #9c3b34;
+    --watch: #a6791f;
+    --neutral: #6b6558;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.5;
+  }
+
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  header.masthead {
+    text-align: center;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 18px;
+    margin-bottom: 8px;
+  }
+
+  header.masthead .kicker {
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+
+  header.masthead h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+
+  header.masthead .subhead {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .back-link-row, .meta-row {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin: 14px 0;
+  }
+
+  .back-link-row a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 1px;
+  }
+
+  .back-link-row a:hover {
+    color: var(--negative);
+    border-bottom-color: var(--negative);
+  }
+
+  .controls {
+    margin: 28px 0 8px;
+    border: 1px solid var(--rule);
+    background: var(--parchment-dark);
+    border-radius: 6px;
+    padding: 16px 18px;
+  }
+
+  #search-box {
+    width: 100%;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    padding: 10px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--parchment);
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  #search-box:focus {
+    outline: 2px solid var(--ink-soft);
+    outline-offset: 1px;
+  }
+
+  .chip-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .chip-group:last-child { margin-bottom: 0; }
+
+  .chip-group-label {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .chip {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--rule);
+    background: var(--parchment);
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+
+  .chip:hover {
+    border-color: var(--ink-soft);
+  }
+
+  .chip.active {
+    background: var(--ink);
+    color: var(--parchment);
+    border-color: var(--ink);
+  }
+
+  .chip-positive.active { background: var(--positive); border-color: var(--positive); color: #fff; }
+  .chip-negative.active { background: var(--negative); border-color: var(--negative); color: #fff; }
+  .chip-watch.active    { background: var(--watch);    border-color: var(--watch);    color: #fff; }
+  .chip-neutral.active  { background: var(--neutral);  border-color: var(--neutral);  color: #fff; }
+
+  #clear-filters {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 6px;
+  }
+
+  #result-count {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin: 16px 0 12px;
+  }
+
+  #items {
+    margin-top: 8px;
+  }
+
+  article.item {
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px dashed var(--rule);
+  }
+
+  article.item:last-child { border-bottom: none; }
+
+  .flag {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    border-radius: 3px;
+    color: #fff;
+    white-space: nowrap;
+    margin-top: 3px;
+  }
+
+  .flag-positive { background: var(--positive); }
+  .flag-negative { background: var(--negative); }
+  .flag-watch    { background: var(--watch); }
+  .flag-neutral  { background: var(--neutral); }
+
+  .item-body { flex: 1 1 auto; }
+
+  .item-tag {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    margin-bottom: 3px;
+  }
+
+  .item-title { font-size: 17px; margin: 0 0 6px; }
+  .item-summary { margin: 0 0 6px; font-size: 15px; }
+
+  .item-source {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+
+  .item-source a { color: var(--ink-soft); }
+
+  .no-results {
+    text-align: center;
+    font-style: italic;
+    color: var(--ink-soft);
+    padding: 40px 0;
+  }
+
+  footer {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-top: 40px;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+  }
+
+  @media (max-width: 480px) {
+    header.masthead h1 { font-size: 26px; }
+    article.item { flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="kicker">Archive · 1 Editions</div>
+      <h1>The Watchlist</h1>
+      <div class="subhead">Searchable archive of past editions</div>
+    </header>
+
+    <div class="back-link-row"><a href="index.html">&larr; Back to today's edition</a></div>
+    <div class="meta-row">Last generated 04 Jul 2026, 21:42 UTC</div>
+
+    <div class="controls">
+      <input id="search-box" type="text" placeholder="Search headlines and summaries&hellip;" autocomplete="off">
+
+      <div class="chip-group" id="topic-chips">
+        <div class="chip-group-label">Filter by tag</div>
+        <button class="chip" data-filter-topic="BP plc">BP plc</button><button class="chip" data-filter-topic="British Telecom">British Telecom</button><button class="chip" data-filter-topic="Energy suppliers">Energy suppliers</button><button class="chip" data-filter-topic="NSG Group">NSG Group</button><button class="chip" data-filter-topic="Octopus Energy">Octopus Energy</button><button class="chip" data-filter-topic="Oil &amp; Gas">Oil &amp; Gas</button><button class="chip" data-filter-topic="Safestore">Safestore</button><button class="chip" data-filter-topic="Shell plc">Shell plc</button><button class="chip" data-filter-topic="Telecom">Telecom</button><button class="chip" data-filter-topic="Vodafone">Vodafone</button>
+      </div>
+
+      <div class="chip-group" id="flag-chips">
+        <div class="chip-group-label">Filter by credit signal</div>
+        <button class="chip chip-positive" data-filter-flag="positive">Positive</button><button class="chip chip-negative" data-filter-flag="negative">Negative</button><button class="chip chip-watch" data-filter-flag="watch">Watch</button><button class="chip chip-neutral" data-filter-flag="neutral">Neutral</button>
+      </div>
+
+      <button id="clear-filters">Clear all filters</button>
+    </div>
+
+    <div id="result-count"></div>
+
+    <div id="items">
+      
+        <article class="item" data-topic="Oil &amp; Gas" data-flag="negative" data-category="industry" data-search="brent crude retreats to ~$72/bbl as hormuz shipping recovers brent crude has fallen sharply from a peak above $119/bbl in early march 2026 to approximately $72/bbl this week, as saudi arabia&#x27;s crude exports rebounded to around 90% of pre-war levels and us-iran ceasefire talks continued to advance. the rapid price retreat compresses upstream realisation margins for oil majors and removes the working-capital tailwind that inflated q1 earnings, creating a more challenging backdrop for q2 results (bp reports 29 july, shell 30 july). for high-yield e&amp;p credits with price decks set at elevated levels, the move is a meaningful negative. oil &amp; gas trading economics / forbes">
+          <span class="flag flag-negative" title="Credit signal: Negative">Negative</span>
+          <div class="item-body">
+            <div class="item-tag">Oil &amp; Gas &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">Brent crude retreats to ~$72/bbl as Hormuz shipping recovers</h3>
+            <p class="item-summary">Brent crude has fallen sharply from a peak above $119/bbl in early March 2026 to approximately $72/bbl this week, as Saudi Arabia&#x27;s crude exports rebounded to around 90% of pre-war levels and US-Iran ceasefire talks continued to advance. The rapid price retreat compresses upstream realisation margins for oil majors and removes the working-capital tailwind that inflated Q1 earnings, creating a more challenging backdrop for Q2 results (BP reports 29 July, Shell 30 July). For high-yield E&amp;P credits with price decks set at elevated levels, the move is a meaningful negative.</p>
+            <div class="item-source"><a href="https://tradingeconomics.com/commodity/brent-crude-oil" target="_blank" rel="noopener">Trading Economics / Forbes</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="BP plc" data-flag="watch" data-category="company" data-search="bp q1 net debt rises to $25.3bn; hybrid bond redemption programme accelerated bp&#x27;s q1 2026 results showed a $3bn quarter-on-quarter increase in net debt to $25.3bn, largely driven by a $6bn working capital build linked to the middle east-driven commodity price spike. encouragingly, management simultaneously announced plans to reduce perpetual hybrid bond capital by $4.3bn to approximately $9bn by end-2027 — redeeming €2.5bn of hybrids with march 2026 call dates without replacement — funded partly by $9-10bn of targeted divestment proceeds in 2026 including the ~$6bn castrol sale. the reduction in hybrid equity credit awarded by rating agencies to bp&#x27;s capital structure warrants monitoring, though the deleveraging trajectory toward a $14-18bn net debt target by 2027 remains constructive for senior bondholders. bp plc bp plc">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">BP plc &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">BP Q1 net debt rises to $25.3bn; hybrid bond redemption programme accelerated</h3>
+            <p class="item-summary">BP&#x27;s Q1 2026 results showed a $3bn quarter-on-quarter increase in net debt to $25.3bn, largely driven by a $6bn working capital build linked to the Middle East-driven commodity price spike. Encouragingly, management simultaneously announced plans to reduce perpetual hybrid bond capital by $4.3bn to approximately $9bn by end-2027 — redeeming €2.5bn of hybrids with March 2026 call dates without replacement — funded partly by $9-10bn of targeted divestment proceeds in 2026 including the ~$6bn Castrol sale. The reduction in hybrid equity credit awarded by rating agencies to BP&#x27;s capital structure warrants monitoring, though the deleveraging trajectory toward a $14-18bn net debt target by 2027 remains constructive for senior bondholders.</p>
+            <div class="item-source"><a href="https://www.bp.com/en/global/corporate/investors/results-reporting-and-presentations/quarterly-results-and-webcast.html" target="_blank" rel="noopener">BP plc</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Shell plc" data-flag="watch" data-category="company" data-search="shell q2 results due 30 july; arc resources deal adds $4bn capex load shell&#x27;s q1 2026 adjusted earnings of $6.9bn were strong but masked an $11.2bn working-capital outflow driven by commodity price volatility, leaving gearing at 23%. the group has simultaneously committed to acquiring arc resources for ~$13.6bn equity value, lifting full-year 2026 cash capex guidance to $24-26bn — a $3-5bn increase versus 2025. analysts expect q2 results on 30 july to reflect lower volumes from higher maintenance activity and a weaker price environment as brent has retreated sharply; the combination of elevated capex and softer prices is a modest negative for near-term free cash flow and leverage metrics. shell plc shell plc / ig uk">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">Shell plc &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">Shell Q2 results due 30 July; ARC Resources deal adds $4bn capex load</h3>
+            <p class="item-summary">Shell&#x27;s Q1 2026 adjusted earnings of $6.9bn were strong but masked an $11.2bn working-capital outflow driven by commodity price volatility, leaving gearing at 23%. The group has simultaneously committed to acquiring ARC Resources for ~$13.6bn equity value, lifting full-year 2026 cash capex guidance to $24-26bn — a $3-5bn increase versus 2025. Analysts expect Q2 results on 30 July to reflect lower volumes from higher maintenance activity and a weaker price environment as Brent has retreated sharply; the combination of elevated capex and softer prices is a modest negative for near-term free cash flow and leverage metrics.</p>
+            <div class="item-source"><a href="https://www.ig.com/uk/news-and-trade-ideas/shell-q2-results-preview-lng-trading--middle-east-risks-and-shar-260629" target="_blank" rel="noopener">Shell plc / IG UK</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="British Telecom" data-flag="positive" data-category="company" data-search="bt and verizon agree $4bn international business joint venture bt group and verizon confirmed on 29 june 2026 a 50:50 joint venture combining their international enterprise operations, with verizon paying bt a $625m equalisation payment. the combined entity will serve over 3,000 clients in more than 180 countries with approximately $4bn in annual revenue. for bt, the deal removes low-margin international operations from its balance sheet, triggers a guidance rebase (free cash flow target of £3bn by end-decade maintained on the ex-international perimeter), and monetises an asset that had drawn limited buyer interest — a modestly positive credit event that simplifies the group and brings in near-term cash, though final completion is subject to regulatory approval expected in 2027. british telecom bloomberg / bt group newsroom">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">British Telecom &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">BT and Verizon agree $4bn international business joint venture</h3>
+            <p class="item-summary">BT Group and Verizon confirmed on 29 June 2026 a 50:50 joint venture combining their international enterprise operations, with Verizon paying BT a $625m equalisation payment. The combined entity will serve over 3,000 clients in more than 180 countries with approximately $4bn in annual revenue. For BT, the deal removes low-margin international operations from its balance sheet, triggers a guidance rebase (free cash flow target of £3bn by end-decade maintained on the ex-international perimeter), and monetises an asset that had drawn limited buyer interest — a modestly positive credit event that simplifies the group and brings in near-term cash, though final completion is subject to regulatory approval expected in 2027.</p>
+            <div class="item-source"><a href="https://newsroom.bt.com/bt-group-and-verizon-to-form-joint-venture-creating-a-scaled-international-connectivity-platform-for-multinational-customers/" target="_blank" rel="noopener">Bloomberg / BT Group Newsroom</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="British Telecom" data-flag="watch" data-category="company" data-search="bt appoints new cfo patricia cobian effective 20 july 2026 bt confirmed that patricia cobian — formerly cfo at virgin media o2 — joins the bt group board as an executive director and cfo on 20 july 2026, succeeding simon lowth who retires after nine years. a cfo transition at a group with ~£18bn of net debt, a capital-intensive fttp build-out programme, and a major joint-venture deal pending regulatory approval represents a key-person risk for debt investors to monitor, even if the succession was managed in an orderly manner. british telecom simply wall st / bt group">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">British Telecom &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">BT appoints new CFO Patricia Cobian effective 20 July 2026</h3>
+            <p class="item-summary">BT confirmed that Patricia Cobian — formerly CFO at Virgin Media O2 — joins the BT Group Board as an Executive Director and CFO on 20 July 2026, succeeding Simon Lowth who retires after nine years. A CFO transition at a group with ~£18bn of net debt, a capital-intensive FTTP build-out programme, and a major joint-venture deal pending regulatory approval represents a key-person risk for debt investors to monitor, even if the succession was managed in an orderly manner.</p>
+            <div class="item-source"><a href="https://newsroom.bt.com/" target="_blank" rel="noopener">Simply Wall St / BT Group</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Vodafone" data-flag="positive" data-category="company" data-search="vodafone fy26 revenue +8% to €40.5bn; q1 fy27 trading update due 27 july vodafone&#x27;s fy26 full-year results confirmed organic service revenue growth of 5.4% and adjusted ebitdaal up 4.5%, with net debt of €25.4bn and adjusted free cash flow of €2.6bn — at the upper end of guidance. the vodafonethree uk merger integration and german revenue recovery are emerging as supportive themes; a q1 fy27 trading update on 27 july will be the first read-across on integration momentum. with net debt still more than double market cap at the time of the worst leverage, the continued deleveraging trajectory and upcoming trading update are the key credit catalysts this week. vodafone vodafone group / investegate">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Vodafone &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">Vodafone FY26 revenue +8% to €40.5bn; Q1 FY27 trading update due 27 July</h3>
+            <p class="item-summary">Vodafone&#x27;s FY26 full-year results confirmed organic service revenue growth of 5.4% and adjusted EBITDAaL up 4.5%, with net debt of €25.4bn and adjusted free cash flow of €2.6bn — at the upper end of guidance. The VodafoneThree UK merger integration and German revenue recovery are emerging as supportive themes; a Q1 FY27 trading update on 27 July will be the first read-across on integration momentum. With net debt still more than double market cap at the time of the worst leverage, the continued deleveraging trajectory and upcoming trading update are the key credit catalysts this week.</p>
+            <div class="item-source"><a href="https://www.investegate.co.uk/announcement/rns/vodafone-group--vod/fy26-preliminary-results/9562943" target="_blank" rel="noopener">Vodafone Group / Investegate</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Energy suppliers" data-flag="positive" data-category="industry" data-search="ofgem lifts uk energy price cap 13% from 1 july to £1,663/year ofgem&#x27;s quarterly reset raised the default tariff cap by 13% from 1 july 2026, driven by higher wholesale gas prices stemming from middle east conflict disruptions. gas unit rates rise 24% while electricity rises approximately 5%, with roughly 33 million accounts on standard variable tariffs affected. for uk energy retailers such as octopus energy, a higher cap improves the headroom between procurement costs and the maximum billable rate, relieving margin pressure — though a further forecast increase in october raises the risk of rising bad debts and customer churn toward fixed-rate products. energy suppliers ofgem">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Energy suppliers &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">Ofgem lifts UK energy price cap 13% from 1 July to £1,663/year</h3>
+            <p class="item-summary">Ofgem&#x27;s quarterly reset raised the default tariff cap by 13% from 1 July 2026, driven by higher wholesale gas prices stemming from Middle East conflict disruptions. Gas unit rates rise 24% while electricity rises approximately 5%, with roughly 33 million accounts on standard variable tariffs affected. For UK energy retailers such as Octopus Energy, a higher cap improves the headroom between procurement costs and the maximum billable rate, relieving margin pressure — though a further forecast increase in October raises the risk of rising bad debts and customer churn toward fixed-rate products.</p>
+            <div class="item-source"><a href="https://www.ofgem.gov.uk/press-release/energy-price-cap-will-rise-13-july" target="_blank" rel="noopener">Ofgem</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Octopus Energy" data-flag="positive" data-category="company" data-search="octopus energy generation reaches £8.5bn aum; cornish wind turbine crowdfund sells out octopus energy generation announced it has crossed £8.5bn in renewable assets under management after deploying £930m into clean energy projects in the past six months alone, adding nine institutional fund mandates and securing the renewable power capital 1gw european mandate. separately, the company&#x27;s collective retail green-finance platform fully funded a cornish wind repowering project in 86 minutes, raising £550,000. the rapid aum growth and diversified institutional funding base reduce reliance on any single capital source and support the group&#x27;s ability to finance its generation pipeline without overleveraging the retail energy subsidiary. octopus energy energy live news">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Octopus Energy &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">Octopus Energy Generation reaches £8.5bn AUM; Cornish wind turbine crowdfund sells out</h3>
+            <p class="item-summary">Octopus Energy Generation announced it has crossed £8.5bn in renewable assets under management after deploying £930m into clean energy projects in the past six months alone, adding nine institutional fund mandates and securing the Renewable Power Capital 1GW European mandate. Separately, the company&#x27;s Collective retail green-finance platform fully funded a Cornish wind repowering project in 86 minutes, raising £550,000. The rapid AUM growth and diversified institutional funding base reduce reliance on any single capital source and support the group&#x27;s ability to finance its generation pipeline without overleveraging the retail energy subsidiary.</p>
+            <div class="item-source"><a href="https://www.energylivenews.com/2026/07/03/octopus-energy-generation-reaches-8-5-billion-in-renewable-assets/" target="_blank" rel="noopener">Energy Live News</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Octopus Energy" data-flag="positive" data-category="company" data-search="kraken ai platform spinout on track; $1bn round values unit at $8.65bn octopus energy&#x27;s kraken technologies spinout — backed by a $1bn inaugural funding round led by d1 capital partners with fidelity international and ontario teachers&#x27; — is progressing toward a planned mid-2026 demerger, with octopus retaining a ~14% stake. kraken&#x27;s contracted revenues have grown over fourfold in three years to exceed $500m annually across 70 million utility accounts. the demerger separates utility-tech risk from the retail energy supply business, which could improve credit metrics of the remaining octopus energy entity by removing capital-intensive technology development costs from its balance sheet. octopus energy esg news / net zero investor">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Octopus Energy &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">Kraken AI platform spinout on track; $1bn round values unit at $8.65bn</h3>
+            <p class="item-summary">Octopus Energy&#x27;s Kraken Technologies spinout — backed by a $1bn inaugural funding round led by D1 Capital Partners with Fidelity International and Ontario Teachers&#x27; — is progressing toward a planned mid-2026 demerger, with Octopus retaining a ~14% stake. Kraken&#x27;s contracted revenues have grown over fourfold in three years to exceed $500m annually across 70 million utility accounts. The demerger separates utility-tech risk from the retail energy supply business, which could improve credit metrics of the remaining Octopus Energy entity by removing capital-intensive technology development costs from its balance sheet.</p>
+            <div class="item-source"><a href="https://esgnews.com/octopus-energy-spins-out-kraken-in-1-billion-raise-valuing-utility-ai-platform-at-8-65-billion/" target="_blank" rel="noopener">ESG News / Net Zero Investor</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="NSG Group" data-flag="positive" data-category="company" data-search="apollo&#x27;s $3.7bn nsg buyout clears eu regulators; shareholder vote passed in late june the european commission approved apollo global management&#x27;s ~$3.7bn acquisition of nippon sheet glass (nsg group) in may 2026, finding no competition concerns, and the nsg shareholder meeting to approve the deal was scheduled for late june. a key feature of the transaction is that nsg&#x27;s principal lenders will convert a portion of their outstanding loans to equity, materially de-levering the balance sheet — nsg has carried heavy debt since its £2.2bn acquisition of pilkington in 2006. for existing nsg debt holders, the debt-to-equity conversion and apollo&#x27;s equity injection are credit-positive, but the go-private transition reduces public reporting transparency. nsg group glass international / apollo global management">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">NSG Group &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">Apollo&#x27;s $3.7bn NSG buyout clears EU regulators; shareholder vote passed in late June</h3>
+            <p class="item-summary">The European Commission approved Apollo Global Management&#x27;s ~$3.7bn acquisition of Nippon Sheet Glass (NSG Group) in May 2026, finding no competition concerns, and the NSG shareholder meeting to approve the deal was scheduled for late June. A key feature of the transaction is that NSG&#x27;s principal lenders will convert a portion of their outstanding loans to equity, materially de-levering the balance sheet — NSG has carried heavy debt since its £2.2bn acquisition of Pilkington in 2006. For existing NSG debt holders, the debt-to-equity conversion and Apollo&#x27;s equity injection are credit-positive, but the go-private transition reduces public reporting transparency.</p>
+            <div class="item-source"><a href="https://www.glass-international.com/news/nsg-acquisition-approved-by-european-commission" target="_blank" rel="noopener">Glass International / Apollo Global Management</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Safestore" data-flag="neutral" data-category="company" data-search="safestore h1 fy2026: revenue +8.7% to £122.5m; interim dividend marginally raised safestore&#x27;s interim results for the half year ended 30 april 2026 showed revenue of £122.5m, up 8.7% year-on-year, with underlying profit before tax rising 2.3% to £44.6m. the interim dividend was lifted slightly to 10.2p per share (from 10.1p). net income fell sharply in statutory terms due to lower property revaluation gains versus the prior period — a non-cash effect — but the ltv ratio of 28.1% and interest cover of 4.0x from the fy2025 year-end remain supportive for credit. elevated interest rates continue to weigh on financing costs and cap rates for the reit-structured portfolio, keeping leverage metrics on watch. safestore simply wall st / safestore corporate">
+          <span class="flag flag-neutral" title="Credit signal: Neutral">Neutral</span>
+          <div class="item-body">
+            <div class="item-tag">Safestore &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">Safestore H1 FY2026: revenue +8.7% to £122.5m; interim dividend marginally raised</h3>
+            <p class="item-summary">Safestore&#x27;s interim results for the half year ended 30 April 2026 showed revenue of £122.5m, up 8.7% year-on-year, with underlying profit before tax rising 2.3% to £44.6m. The interim dividend was lifted slightly to 10.2p per share (from 10.1p). Net income fell sharply in statutory terms due to lower property revaluation gains versus the prior period — a non-cash effect — but the LTV ratio of 28.1% and interest cover of 4.0x from the FY2025 year-end remain supportive for credit. Elevated interest rates continue to weigh on financing costs and cap rates for the REIT-structured portfolio, keeping leverage metrics on watch.</p>
+            <div class="item-source"><a href="https://corporate.safestore.com/media-centre/latest-news/" target="_blank" rel="noopener">Simply Wall St / Safestore Corporate</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Telecom" data-flag="watch" data-category="industry" data-search="uk telecom sector: 5g investment costs and debt loads remain elevated bt carries approximately £18bn in net debt while simultaneously funding an fttp rollout targeting 25 million premises by end-2026 and absorbing the costs of the new verizon joint venture. vodafone&#x27;s net debt stands at €25.4bn following portfolio rationalisation, with the vodafonethree uk integration adding near-term execution risk and spectrum spend. both groups face a structural challenge of balancing network capex, debt reduction, and shareholder returns — the core credit tension for the sector heading into the second half of 2026. telecom capital.com / tikr">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">Telecom &middot; Saturday, 04 July 2026</div>
+            <h3 class="item-title">UK telecom sector: 5G investment costs and debt loads remain elevated</h3>
+            <p class="item-summary">BT carries approximately £18bn in net debt while simultaneously funding an FTTP rollout targeting 25 million premises by end-2026 and absorbing the costs of the new Verizon joint venture. Vodafone&#x27;s net debt stands at €25.4bn following portfolio rationalisation, with the VodafoneThree UK integration adding near-term execution risk and spectrum spend. Both groups face a structural challenge of balancing network capex, debt reduction, and shareholder returns — the core credit tension for the sector heading into the second half of 2026.</p>
+            <div class="item-source"><a href="https://capital.com/en-int/analysis/british-telecom-bt-share-price-forecast" target="_blank" rel="noopener">Capital.com / TIKR</a></div>
+          </div>
+        </article>
+    </div>
+
+    <div class="no-results" id="no-results" style="display:none;">No items match your filters.</div>
+
+    <footer>
+      Generated automatically by Claude via the Anthropic API · Flags reflect an AI-assisted view of likely credit direction, not investment advice
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var searchBox = document.getElementById('search-box');
+      var items = Array.prototype.slice.call(document.querySelectorAll('#items .item'));
+      var topicChips = Array.prototype.slice.call(document.querySelectorAll('#topic-chips .chip'));
+      var flagChips = Array.prototype.slice.call(document.querySelectorAll('#flag-chips .chip'));
+      var clearBtn = document.getElementById('clear-filters');
+      var resultCount = document.getElementById('result-count');
+      var noResults = document.getElementById('no-results');
+
+      var activeTopics = new Set();
+      var activeFlags = new Set();
+
+      function applyFilters() {
+        var query = searchBox.value.trim().toLowerCase();
+        var visibleCount = 0;
+
+        items.forEach(function (item) {
+          var matchesQuery = !query || item.getAttribute('data-search').indexOf(query) !== -1;
+          var topic = item.getAttribute('data-topic');
+          var flag = item.getAttribute('data-flag');
+          var matchesTopic = activeTopics.size === 0 || activeTopics.has(topic);
+          var matchesFlag = activeFlags.size === 0 || activeFlags.has(flag);
+          var visible = matchesQuery && matchesTopic && matchesFlag;
+          item.style.display = visible ? '' : 'none';
+          if (visible) visibleCount++;
+        });
+
+        resultCount.textContent = visibleCount + (visibleCount === 1 ? ' item' : ' items') + ' shown';
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      topicChips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          var topic = chip.getAttribute('data-filter-topic');
+          if (activeTopics.has(topic)) {
+            activeTopics.delete(topic);
+            chip.classList.remove('active');
+          } else {
+            activeTopics.add(topic);
+            chip.classList.add('active');
+          }
+          applyFilters();
+        });
+      });
+
+      flagChips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          var flag = chip.getAttribute('data-filter-flag');
+          if (activeFlags.has(flag)) {
+            activeFlags.delete(flag);
+            chip.classList.remove('active');
+          } else {
+            activeFlags.add(flag);
+            chip.classList.add('active');
+          }
+          applyFilters();
+        });
+      });
+
+      clearBtn.addEventListener('click', function () {
+        activeTopics.clear();
+        activeFlags.clear();
+        searchBox.value = '';
+        topicChips.concat(flagChips).forEach(function (c) { c.classList.remove('active'); });
+        applyFilters();
+      });
+
+      searchBox.addEventListener('input', applyFilters);
+
+      applyFilters();
+    })();
+  </script>
+</body>
+</html>
