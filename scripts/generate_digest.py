@@ -230,17 +230,23 @@ def call_claude(config: dict, prompt: str) -> list:
 
     messages = [{"role": "user", "content": prompt}]
     body = {
-        "model": config.get("model", "claude-sonnet-4-6"),
-        "max_tokens": 4000,
+        "model": config.get("model", "claude-haiku-4-5-20251001"),
+        "max_tokens": 1800,
         "messages": messages,
-        "tools": [{"type": "web_search_20250305", "name": "web_search"}],
+        "tools": [{
+            "type": "web_search_20250305",
+            "name": "web_search",
+            "max_uses": config.get("max_web_searches", 8),
+        }],
     }
 
     collected_text = []
 
     # Loop to let the model use web_search across multiple turns if it wants to,
-    # stopping once it returns a normal (non tool-use) end turn.
-    for _ in range(6):
+    # stopping once it returns a normal (non tool-use) end turn. Capped at 3 turns
+    # to bound cost — each turn re-sends the growing conversation, so more turns
+    # multiplies token spend fast.
+    for _ in range(3):
         resp = requests.post(ANTHROPIC_API_URL, headers=headers, json=body, timeout=120)
         resp.raise_for_status()
         data = resp.json()
