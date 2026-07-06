@@ -1,5 +1,137 @@
 [
   {
+    "date": "2026-07-06",
+    "date_display": "Monday, 06 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP restructures into two segments and plans $4.3bn hybrid bond reduction",
+        "summary": "From 1 July 2026, BP reorganised into just two business segments — Upstream and Downstream — replacing its prior three-segment structure, while simultaneously announcing plans to reduce perpetual hybrid bond capital from ~$13.3bn to approximately $9bn through redemptions without replacement. The hybrid reduction is credit-positive as it deleverages the balance sheet, but the pace of execution remains subject to market conditions; BP reiterates its net debt target of $14–18bn by end-2027 and its goal of maintaining 'A'-grade credit metrics.",
+        "credit_flag": "positive",
+        "source": "BP plc",
+        "url": "https://www.bp.com/press-and-publications/press-releases/bp-simplifies-organizational-structure-and-announces-leadership-appointments"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP deputy CEO and EVP People retire; leadership continuity risk flagged",
+        "summary": "Deputy CEO Carol Howle and EVP People, Culture & Communications Kerry Dryburgh are both departing in Q3 2026, representing a significant dual exit from BP's senior ranks during a critical restructuring period. While CEO Meg O'Neill has appointed replacements effective 1 August 2026, the simultaneous departure of two C-suite executives adds execution risk to the ongoing two-segment reorganisation and balance-sheet repair programme, which creditors will be watching closely.",
+        "credit_flag": "watch",
+        "source": "BP plc",
+        "url": "https://www.bp.com/press-and-publications/press-releases/bp-announces-leadership-appointments"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell sells Gulf of America deepwater assets for $850m to Talos Energy",
+        "summary": "Shell Offshore agreed on 30 June 2026 to sell its interests in the Coulomb field and in the BP-operated Na Kika platform to Talos Energy and Ridgewood Energy for gross consideration of approximately $1.7bn (net to Talos: $850m), with an effective date of 1 July 2025. The disposal generates cash proceeds that can be deployed toward shareholder returns or debt reduction, consistent with Shell's portfolio rationalisation strategy, though net debt has already risen to $52.6bn at end-Q1 2026, pushing gearing to 23.2%.",
+        "credit_flag": "positive",
+        "source": "PR Newswire",
+        "url": "http://www.prnewswire.com/news-releases/talos-energy-announces-strategic-acquisition-of-gulf-of-america-deepwater-oil-assets-302815021.html"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT and Verizon create $4bn international enterprise JV; BT receives $625m payment",
+        "summary": "BT Group and Verizon Communications signed an agreement on 29 June 2026 to combine their international enterprise operations into a 50:50 joint venture targeting $4bn in combined annual revenue across 180 countries, with Verizon paying BT an equalisation payment of $625m. For BT's credit, the deal removes a cash-consuming international unit and delivers an immediate cash inflow, though the JV is not expected to complete until 2027 pending regulatory clearances, and the $625m is modest against BT's ~£20bn net debt load and a pension deficit that recently widened.",
+        "credit_flag": "positive",
+        "source": "BT Group Newsroom",
+        "url": "https://newsroom.bt.com/bt-group-and-verizon-to-form-joint-venture-creating-a-scaled-international-connectivity-platform-for-multinational-customers/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone Q1 FY27 trading update due 27 July; final dividend of €0.023625 payable 30 July",
+        "summary": "Vodafone has flagged its Q1 FY27 trading update for 27 July 2026, with the final FY26 dividend of €0.023625 per share payable three days later on 30 July. The dual cash event — dividend payment and upcoming revenue disclosure — will be closely watched by creditors monitoring Vodafone's progress on deleveraging toward the lower half of its 2.25–2.75x net debt/EBITDAaL target range in its slimmed-down European-focused portfolio.",
+        "credit_flag": "neutral",
+        "source": "Vodafone",
+        "url": "https://www.vodafone.com/investors/performance-and-reports/financial-calendar"
+      },
+      {
+        "category": "industry",
+        "topic": "Energy suppliers",
+        "title": "Ofgem raises UK energy price cap 13% from 1 July, driven by Middle East gas prices",
+        "summary": "Ofgem's price cap rose 13% to £1,862/year for a typical dual-fuel household from 1 July 2026, driven by a 28% rise in wholesale gas prices over the prior three months linked to Middle East conflict. Higher allowed revenues ease near-term working capital pressure for UK energy suppliers including Octopus Energy, but the October cap is also widely expected to rise further, keeping bad-debt provisions elevated and increasing political risk of regulatory intervention.",
+        "credit_flag": "watch",
+        "source": "Ofgem",
+        "url": "https://www.ofgem.gov.uk/press-release/energy-price-cap-will-rise-13-july"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy Generation hits £8.5bn AUM; Kraken spinoff approaches mid-2026 target",
+        "summary": "Octopus Energy Generation reached £8.5bn in assets under management as of early July 2026, deploying £930m into clean energy projects in the past six months, and has been appointed investment manager for Renewable Power Capital's 1 GW European portfolio. Concurrently, the planned spinout of Kraken Technologies — valued at $8.65bn after a $1bn standalone funding round — was originally targeted for mid-2026 and, if completed, will crystallise significant value for Octopus while removing a major tech asset from its balance sheet, simplifying the group's credit profile.",
+        "credit_flag": "positive",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/07/03/octopus-energy-generation-reaches-8-5-billion-in-renewable-assets/"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "NSG Group Apollo buyout clears late-June AGM; debt-to-equity swap proceeds",
+        "summary": "NSG Group's $3.7bn (JPY ~590bn) acquisition by Apollo-managed funds received the required shareholder approval at the late-June 2026 AGM, with Class A preferred shareholders converting to common stock to support the resolution. A key credit-positive element is the quasi debt-equity swap of JPY 140bn by principal lenders, which directly reduces NSG's ~JPY 570bn debt burden — much of it inherited from the £2.2bn Pilkington acquisition in 2006 — though completion remains subject to regulatory clearances, with closing targeted around March 2027.",
+        "credit_flag": "positive",
+        "source": "Apollo Global Management",
+        "url": "https://www.apollo.com/insights-news/pressreleases/2026/03/apollo-funds-announce-strategic-investment-in-nsg-group-a-global-leader-in-glass-manufacturing-3260933"
+      },
+      {
+        "category": "company",
+        "topic": "Posten Bring",
+        "title": "Posten Bring restructures and targets 25% indirect cost cut after Q1 profit slump",
+        "summary": "Posten Bring announced a group restructuring involving a geographical reorganisation of its logistics division, an undisclosed number of job cuts across its ~12,600-strong workforce, and a targeted 25% reduction in indirect costs by 2027. The moves follow weaker Q1 2026 results in which soaring fuel costs wiped out parcel volume growth and materially compressed operating profits, highlighting the vulnerability of logistics margins to energy cost inflation even for an investment-grade state-owned issuer rated 'A' by Scope.",
+        "credit_flag": "negative",
+        "source": "CEP-Research",
+        "url": "https://www.cep-research.com/2026/07/03/posten-bring-restructures-and-cuts-costs/"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore H1 2026 results show revenue growth offset by elevated interest costs",
+        "summary": "Safestore's half-year 2026 results (published 11 June) showed revenue and underlying profit advancing, but elevated financing costs and muted property revaluation gains continue to weigh on reported profits, echoing the 63% decline in reported pre-tax profit seen in the prior comparable period. With the interim dividend ex-date having passed on 12 July 2026, credit analysts will focus on whether occupancy-led REVPAF gains and new store contributions — targeting £35–40m of incremental EBITDA on stabilisation — can sustainably outpace the rising interest charge from expansion borrowings.",
+        "credit_flag": "watch",
+        "source": "ad-hoc-news / Safestore Corporate",
+        "url": "https://corporate.safestore.com/"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Middle East conflict keeps oil & gas sector on geopolitical credit watch",
+        "summary": "Fitch's February 2026 rating review assumed Brent averaging ~$63/bbl in 2026, but ongoing Middle East tensions have sustained above-base wholesale energy prices and driven the 13% UK price cap rise effective 1 July. For integrated oil majors such as BP and Shell, higher realised prices support cash generation, but also increase political and regulatory scrutiny on windfall profits; Fitch noted net debt at both majors is projected to rise over 2025–2026 as shareholder distributions are partly debt-funded.",
+        "credit_flag": "watch",
+        "source": "Fitch Ratings / Ofgem",
+        "url": "https://dmarketforces.com/fitch-rates-shell-petroleum-b-v-aa-with-stable-outlook/"
+      },
+      {
+        "category": "industry",
+        "topic": "European postal services",
+        "title": "Postal logistics margins squeezed by fuel costs; structural shift to parcels under strain",
+        "summary": "Posten Bring's Q1 2026 earnings deterioration illustrates a sector-wide credit risk: fuel cost spikes can rapidly erode the margin gains from parcel volume growth that European postal operators rely upon to offset secular letter revenue decline. With the restructuring announced this week, bond-holders should monitor whether Posten can sustain EBITDA margins above the ~10% level that underpins its Scope 'A' issuer rating and its NOK 4.5bn bond stack maturing 2026–2031.",
+        "credit_flag": "negative",
+        "source": "CEP-Research / Scope Ratings",
+        "url": "https://www.cep-research.com/2026/07/03/posten-bring-restructures-and-cuts-costs/"
+      },
+      {
+        "category": "industry",
+        "topic": "Telecom",
+        "title": "BT-Verizon JV signals accelerating consolidation in international enterprise telecoms",
+        "summary": "The BT–Verizon 50:50 joint venture — combining $4bn of annual revenue and serving 3,000+ multinationals across 180 countries — establishes a new precedent for shedding low-margin international units via JV rather than outright sale, preserving commercial relationships while freeing capital. For telecoms credit broadly, the transaction signals that operators are increasingly willing to pool infrastructure to reduce leverage, a trend that could prompt similar structures at other European carriers with sub-scale international operations.",
+        "credit_flag": "neutral",
+        "source": "The Register",
+        "url": "https://www.theregister.com/networks/2026/06/29/bt-and-verizon-spin-off-international-networking-arms-into-4b-joint-venture/5263655"
+      },
+      {
+        "category": "industry",
+        "topic": "Glass manufacturing",
+        "title": "NSG privatisation marks major credit event for global glass sector",
+        "summary": "Apollo's ~$3.7bn take-private of NSG Group, combined with a JPY 140bn debt-to-equity conversion by principal lenders, is the most significant capital structure event in the global flat glass industry in years, directly addressing the debt overhang that dates to NSG's 2006 Pilkington acquisition. Competitors Saint-Gobain, Asahi, and Guardian may face some competitive pressure as a recapitalised NSG accelerates investment in energy-efficient and solar glass, though delisting also removes transparency for counterparties holding bilateral credit exposures.",
+        "credit_flag": "watch",
+        "source": "Glass International",
+        "url": "https://www.glass-international.com/news/nsg-group-in-3-7-billion-glass-acquisition"
+      }
+    ]
+  },
+  {
     "date": "2026-07-04",
     "date_display": "Saturday, 04 July 2026",
     "items": [
