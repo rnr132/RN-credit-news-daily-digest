@@ -5,9 +5,7 @@
     "Retail",
     "Glass manufacturing",
     "Self storage",
-    "Energy suppliers",
-    "Online marketplaces",
-    "European postal services"
+    "Energy suppliers"
   ],
   "companies": [
     "BP plc",
@@ -17,14 +15,12 @@
     "Unilever",
     "NSG Group",
     "Safestore",
-    "Octopus Energy",
-    "Posten Bring",
-    "Vend Marketplaces"
+    "Octopus Energy"
   ],
   "geography": "UK and Europe primarily. Include North America only for large, globally relevant players (e.g. supermajors, global telecom/retail names) where the news is credit-relevant to the wider group.",
   "preferred_sources": [],
-  "max_web_searches": 12,
-  "model": "claude-sonnet-4-6",
+  "max_web_searches": 8,
+  "model": "claude-haiku-4-5-20251001",
   "history_editions_to_keep": 90,
   "email": {
     "enabled": false,
