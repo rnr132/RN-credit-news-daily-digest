@@ -199,14 +199,16 @@ INBOX CONTENT
 {email_block}
 
 OUTPUT FORMAT
-Respond with ONLY a JSON array (no markdown fences, no preamble, no commentary) of
-objects, each with exactly these fields:
+Respond with ONLY a JSON array (no markdown fences, no preamble, no commentary, no
+citation markup such as <cite> tags — plain text only) of objects, each with exactly
+these fields:
   "category": "industry" or "company"
   "topic": the sector name (for industry items) or company name (for company items) —
            must match one of the coverage names above as closely as possible
   "title": a short headline, in your own words, under 100 characters
-  "summary": 2-3 sentences in your own words explaining the news and why it matters
-             from a credit perspective. Never quote source text verbatim.
+  "summary": 2-3 sentences (aim for under 300 characters) in your own words explaining
+             the news and why it matters from a credit perspective. Never quote
+             source text verbatim, and never include citation tags or brackets.
   "credit_flag": one of "positive", "negative", "watch", "neutral" — your assessment of
                  the likely direction of credit impact
   "source": either the publication name (e.g. "Reuters") or, for inbox items, the sender
@@ -231,7 +233,7 @@ def call_claude(config: dict, prompt: str) -> list:
     messages = [{"role": "user", "content": prompt}]
     body = {
         "model": config.get("model", "claude-haiku-4-5-20251001"),
-        "max_tokens": 1800,
+        "max_tokens": 2800,
         "messages": messages,
         "tools": [{
             "type": "web_search_20250305",
@@ -273,6 +275,12 @@ def call_claude(config: dict, prompt: str) -> list:
 
 
 def parse_json_items(text: str) -> list:
+    # Defensive: strip any citation markup the model may have inserted despite
+    # instructions not to (Anthropic auto-inserts these when web_search is used).
+    # Keep the inner text, drop the tag itself, e.g. <cite index="1-2">X</cite> -> X
+    text = re.sub(r'<cite[^>]*>(.*?)</cite>', r'\1', text, flags=re.DOTALL)
+    text = re.sub(r'</?cite[^>]*>', '', text)
+
     cleaned = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.MULTILINE).strip()
     match = re.search(r"\[.*\]", cleaned, flags=re.DOTALL)
     if match:
