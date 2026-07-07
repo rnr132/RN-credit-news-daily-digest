@@ -2,7 +2,7 @@ name: Daily Watchlist Digest
 
 on:
   schedule:
-    - cron: "15 6 * * *"
+    - cron: "29 7 * * *"
   workflow_dispatch: {}
 
 permissions:
