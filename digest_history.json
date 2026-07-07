@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-07-07",
+    "date_display": "Tuesday, 07 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "Q1 2026 profit surge on oil volatility, strategic shift confirmed",
+        "summary": "BP more than doubled Q1 profit on strong trading desk performance amid Middle East geopolitical turmoil, despite near-zero production growth. Strategic pivot back to oil and gas under new CEO O'Neill is delivering results, though shareholder tensions persist over long-term direction.",
+        "credit_flag": "positive",
+        "source": "OilPrice.com",
+        "url": "https://oilprice.com/Energy/Crude-Oil/Inside-BPs-Dramatic-Pivot-Back-to-Oil-and-Gas.html"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Share price decline reflects oil price normalization and geopolitical easing",
+        "summary": "Shell shares down ~20% from recent highs as oil prices normalize amid easing Middle East tensions. Dividend coverage remains secure with high ratios, but valuation pressure and volatility in commodity-linked earnings remain credit considerations for bondholders.",
+        "credit_flag": "watch",
+        "source": "The Twelfth Magpie",
+        "url": "https://www.twelfthmagpie.com/2026/07/02/shell-and-bp-shares-have-tanked-could-they-be-worth-considering-for-dividend-income-in-july/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "FY26 guidance achieved, leverage concerns as UK deal impacts balance sheet",
+        "summary": "Vodafone delivered upper-end FY26 guidance with €2.6bn free cash flow and 4.5% organic EBITDA growth. UK VodafoneThree buyout for £4.3bn completed ahead of schedule; leverage temporarily rises above target range but expected to return to lower half by end FY27.",
+        "credit_flag": "watch",
+        "source": "Quartr/investor reports",
+        "url": "https://quartr.com/events/vodafone-group-plc-vod-q4-2026_3ss6WJQL"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "FY26 guidance maintained at bottom end; Foods-McCormick deal on track",
+        "summary": "Unilever reaffirmed FY26 guidance for growth at bottom end of 4-6% range with 2% volume and modest margin improvement. Foods-McCormick combination expected to close by mid-2027; €6bn buyback programme ongoing. Execution risk remains with macroeconomic uncertainty.",
+        "credit_flag": "neutral",
+        "source": "Unilever investor relations",
+        "url": "https://www.unilever.com/files/unilever-pre-close-aide-memoire-q2-2026.pdf"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo acquisition near completion; capital restructuring strengthens balance sheet",
+        "summary": "Apollo Funds' €3.7bn investment in NSG approved at June shareholder meeting; transaction completing ~March 2027. Principal lenders converting portion of debt to equity, stabilizing balance sheet. 2030 profitability target of 10%+ reflecting restructuring ambitions.",
+        "credit_flag": "positive",
+        "source": "Apollo/NSG announcements",
+        "url": "https://www.apollo.com/insights-news/pressreleases/2026/03/apollo-funds-announce-strategic-investment-in-nsg-group-a-global-leader-in-glass-manufacturing-3260933"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Q1 revenue growth 7.9%, occupancy rises to 75.9%, expansion momentum sustained",
+        "summary": "Safestore delivered 7.9% Q1 revenue growth to £61.2m with occupancy up to 75.9% and REVPAF +5.5%. European expansion continuing with new Paris stores opening; disciplined capital allocation supporting cash generation and dividend coverage in stable market.",
+        "credit_flag": "positive",
+        "source": "AJ Bell",
+        "url": "https://www.ajbell.co.uk/news/articles/safestore-revenue-grows-first-quarter-occupancy-increases"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Renewable asset base reaches £8.5bn; asset manager platform expands",
+        "summary": "Octopus Energy Generation tripled managed renewable assets since 2021 to £8.5bn, with Sky fund approaching £3bn capital. Renewable Power Capital portfolio addition and institutional mandates support diversified revenue. Supply business pricing below price cap maintains customer support strategy.",
+        "credit_flag": "positive",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/07/03/octopus-energy-generation-reaches-8-5-billion-in-renewable-assets/"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "FY26 results flat; net debt at 3.3x EBITDA with leverage pressure",
+        "summary": "BT posted flat FY26 EPS on declining revenues (-3.5%) amid competitive telecom headwinds. Net debt/EBITDA at ~3.3x with interest coverage around 3x—limited financial flexibility if rates persist. Radianz asset sale progressing but margin pressure remains credit concern.",
+        "credit_flag": "negative",
+        "source": "Simply Wall St/Finimize",
+        "url": "https://simplywall.st/stocks/gb/telecom/lse-bt.a/bt-group-shares/past"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Middle East ceasefire progress eases geopolitical premium; oil prices normalizing",
+        "summary": "US-Iran interim agreement and Strait of Hormuz normalization reducing supply risk premium. Brent trading ~$72/bbl as Gulf exports recover toward pre-war levels. Yet unresolved diplomatic issues and residual supply tightness could support prices if tensions resurface—credit outlook remains volatile for integrated majors.",
+        "credit_flag": "watch",
+        "source": "MUFG Research/IEA",
+        "url": "https://www.mufgresearch.com/macro/middle-east-daily-03-july-2026/"
+      },
+      {
+        "category": "industry",
+        "topic": "Energy suppliers",
+        "title": "Ofgem price cap rises 13.5% in July; wholesale volatility persists",
+        "summary": "Ofgem price cap rising £221 to £1,862 from July 1 due to Middle East crisis and elevated wholesale gas prices. Suppliers facing margin pressure despite stabilizing oil flows. Octopus and peers managing below-cap positioning; customer financial distress support funds under strain.",
+        "credit_flag": "negative",
+        "source": "Octopus Energy/Ofgem",
+        "url": "https://octopus.energy/press/more-news-press-releases/octopus-energy-keeps-prices-below-the-cap-as-energy-bills-rise-again-and-calls-on-government-to-slash-unnecessary-costs/"
+      }
+    ]
+  },
+  {
     "date": "2026-07-06",
     "date_display": "Monday, 06 July 2026",
     "items": [
