@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-07-08",
+    "date_display": "Wednesday, 08 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Q2 gas trading strength offsets production disruptions from Middle East conflict",
+        "summary": "Shell raised Q2 integrated gas production guidance modestly and signaled significantly stronger gas trading results, helping mitigate damage to Qatar operations from regional conflict. Q1 adjusted earnings reached $6.9 billion with strong refining margins expected to remain elevated, supporting dividend and shareholder returns amid oil market volatility.",
+        "credit_flag": "positive",
+        "source": "Bloomberg, Reuters, Shell",
+        "url": "https://www.globalbankingandfinance.com/shell-raises-guidance-slightly-q2-integrated-gas-production/"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "Stake sale to Equinor enhances capital efficiency amid favorable energy prices",
+        "summary": "BP is streamlining its portfolio by selling a 37.2% stake in Bay du Nord offshore project to Equinor to enhance capital efficiency and redirect investments toward higher-return projects. Move aligns with BP's simplified structure and new upstream/downstream segment model, improving execution and reducing complexity in capital deployment.",
+        "credit_flag": "positive",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/quote/BP/"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo Funds acquisition complete with lender-to-equity conversion supporting balance sheet",
+        "summary": "Apollo Funds' $3.7 billion acquisition of NSG Group is on track for March 2027 completion following late-June shareholder approval. Transaction includes principal lenders converting a portion of loans to equity, reinforcing commitment and providing more stable balance sheet structure to support growth initiatives in architectural, automotive and solar glass.",
+        "credit_flag": "positive",
+        "source": "Apollo, NSG Group",
+        "url": "https://www.apollo.com/insights-news/pressreleases/2026/03/apollo-funds-announce-strategic-investment-in-nsg-group-a-global-leader-in-glass-manufacturing-3260933"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "VodafoneThree buyout for £4.3bn to drive consolidation and margin expansion",
+        "summary": "Vodafone agreed in May 2026 to acquire full ownership of VodafoneThree joint venture for £4.3 billion, expected to complete in H2 2026. Acquisition removes CK Hutchison dilution, simplifies structure and creates platform for stronger UK mobile profitability, supporting debt reduction from improved cash generation.",
+        "credit_flag": "positive",
+        "source": "Vodafone FY26 Preliminary Results",
+        "url": "https://www.investegate.co.uk/announcement/rns/vodafone-group--vod/fy26-preliminary-results/9562943"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Strong Q1 volume growth and margin guidance reconfirmed amid portfolio restructuring",
+        "summary": "Unilever reported Q1 2026 underlying sales growth of 3.8% with 2.9% volume growth, led by Power Brands at 5% growth. Full-year guidance reconfirmed for 4-6% underlying sales growth and modest operating margin improvement. Foods-McCormick combination expected to unlock $600 million annual synergies while transforming Unilever into pure-play HPC business.",
+        "credit_flag": "positive",
+        "source": "Unilever Q1 2026 Results",
+        "url": "https://www.unilever.com/files/unilever-q1-2026-full-announcement.pdf"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Emerging demand recovery and rate-cycle tailwinds support inflection point narrative",
+        "summary": "Latest analysis suggests Safestore at inflection point as UK housing market recovery gains traction and interest-rate decline expectations support tenant demand. Trading updates through 2026 will test occupancy and pricing discipline, with refinancing opportunities potentially improving as debt matures. Dividend yield at attractive 5.1% reflects market skepticism on recovery.",
+        "credit_flag": "watch",
+        "source": "Kalkine",
+        "url": "https://kalkine.co.uk/news/real-estate/safestore-holdings-could-self-storage-demand-turn-this-reit-into-2026s-quiet-recovery-story"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Renewable assets reach £8.5bn AUM; expansion into residential batteries and truck charging",
+        "summary": "Octopus Energy Generation reached £8.5 billion in managed renewable assets, deploying £930 million in past six months. Launched Nook plug-in home battery range and announced Swaptopus EV truck battery-swapping JV with CATL, expanding integrated energy services. Strong institutional fund mandates diversify revenue and demonstrate operational scale.",
+        "credit_flag": "positive",
+        "source": "Energy Live News, pv-magazine",
+        "url": "https://www.energylivenews.com/2026/07/03/octopus-energy-generation-reaches-8-5-billion-in-renewable-assets/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "UK market leadership consolidated with 7.5 million accounts post-Shell integration",
+        "summary": "Octopus Energy now serves approximately 7.5 million UK accounts after absorbing Shell Energy and Bulb, establishing market dominance. Strong customer satisfaction ratings and service resilience positioning company well for energy price volatility. Tariff innovation and smart network services create switching friction and recurring revenue.",
+        "credit_flag": "positive",
+        "source": "EnergyPlus, multiple suppliers",
+        "url": "https://www.energyplus.co.uk/suppliers/octopus-energy/tariffs"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Middle East conflict sustains high trading volatility and elevated refining margins",
+        "summary": "Regional conflict continues driving exceptional volatility in crude and gas markets, benefiting supermajor trading desks and downstream operations. Both BP and Shell signaling strong Q1 and expected Q2 trading profits from market dislocations. Elevated realised margins in refining and chemicals support near-term cash flow but create downside risk if tensions ease.",
+        "credit_flag": "watch",
+        "source": "Bloomberg, Reuters, Shell, BP",
+        "url": "https://www.globalbankingandfinance.com/shell-raises-guidance-slightly-q2-integrated-gas-production/"
+      },
+      {
+        "category": "industry",
+        "topic": "Telecom",
+        "title": "Cost transformation and fibre capex driving FCF recovery; leverage remains elevated",
+        "summary": "BT Group reported cost transformation contributing to EBITDA and normalized free cash flow growth despite flat top-line momentum. Full-year results in May showed EPS miss but improved operational cash flow supporting debt service and fibre infrastructure investment. Leverage still elevated; refinancing risk and dividend sustainability dependent on sustained capex discipline.",
+        "credit_flag": "watch",
+        "source": "TipRanks, BT Group",
+        "url": "https://www.tipranks.com/stocks/gb:bt.a"
+      }
+    ]
+  },
+  {
     "date": "2026-07-07",
     "date_display": "Tuesday, 07 July 2026",
     "items": [
