@@ -6,6 +6,111 @@
       {
         "category": "company",
         "topic": "Shell plc",
+        "title": "Shell Q2 2026 trading profits beat expectations on Middle East volatility",
+        "summary": "Shell reported strong oil and gas trading results for Q2 2026 ahead of full earnings, benefiting from geopolitical-driven market volatility. Gas trading performance came in significantly higher than Q1, supporting improved earnings guidance amid elevated Brent crude averaging ~£97/barrel.",
+        "credit_flag": "positive",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-07/shell-signals-strong-oil-and-gas-trading-profit-on-iran-war"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP reorganizes into two-segment structure to accelerate operational delivery",
+        "summary": "BP streamlined its organizational structure effective 1 July 2026, consolidating from three segments into Upstream and Downstream units. Leadership appointments include Gordon Birrell as EVP Upstream and Richard Harding as interim EVP Downstream, aimed at reducing complexity and strengthening execution.",
+        "credit_flag": "watch",
+        "source": "BP Press Release",
+        "url": "https://www.bp.com/press-and-publications/press-releases/bp-simplifies-organizational-structure-and-announces-leadership-appointments"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo to acquire NSG Group for $3.7bn; balance sheet strengthened via debt-to-equity swap",
+        "summary": "Apollo Funds agreed to acquire Nippon Sheet Glass (NSG) for $3.7 billion enterprise value, with lenders converting portion of outstanding debt to equity to strengthen the balance sheet. Transaction expected to close by March 2027 following June 2026 shareholder vote, addressing NSG's long-standing debt burden from Pilkington acquisition.",
+        "credit_flag": "positive",
+        "source": "Glass International",
+        "url": "https://www.glass-international.com/news/nsg-group-in-3-7-billion-glass-acquisition"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "(untitled)",
+        "summary": "Fundsmith founder Terry Smith publicly criticized Unilever's decision to spin off and merge its Foods business with McCormick (creating ~$66bn enterprise value), claiming management had previously stated no further major disposals would follow the 2025 ice cream demerger. Deal raised concerns among shareholders about debt levels in enlarged food entity.",
+        "credit_flag": "watch",
+        "source": "Grocery Gazette",
+        "url": "https://www.grocerygazette.co.uk/2026/07/08/terry-smith-accuses-unilever-of-misleading-investors-over-food-spin-off/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy Generation reaches £8.5bn renewable assets; accelerates global deployment",
+        "summary": "Octopus Energy Generation announced £8.5 billion in assets under management, deploying £930m in clean energy projects over past six months. Company appointed investment manager for Renewable Power Capital's 1 GW European portfolio and flagged nearly tripling managed renewable assets since 2021 through nine new institutional mandates.",
+        "credit_flag": "positive",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/07/03/octopus-energy-generation-reaches-8-5-billion-in-renewable-assets/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus launches home battery range and battery-swapping JV targeting European expansion",
+        "summary": "Octopus Energy unveiled Nook residential battery systems (2 kWh plug-in and 5 kWh wall-mounted units) launching across five European markets from 2027. Company also announced Swaptopus joint venture with CATL for European EV battery-swapping network, with first UK hubs opening 2027 and plans to expand across Europe by 2035.",
+        "credit_flag": "positive",
+        "source": "pv magazine Global",
+        "url": "https://www.pv-magazine.com/2026/07/07/octopus-energy-launches-plug-in-home-battery/"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Oil prices soften on oversupply fears; supermajor cash generation and buybacks under pressure",
+        "summary": "Morgan Stanley's downward oil price forecast drove energy sector declines, with BP and Shell down over 15% from YTD highs and Brent crude falling to ~£70. Shell previously guided potential future buyback reductions if low-price environment persists, while BP's Q1 profits more than doubled but second-half guidance now challenged by commodity pressure.",
+        "credit_flag": "negative",
+        "source": "Invezz",
+        "url": "https://invezz.com/nz/news/2026/06/30/bp-shell-chevron-shares-on-edge-as-morgan-stanley-slashes-oil-forecast/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone FY2026 results: loss narrowed 93%, but balance sheet resilience and German execution remain key risks",
+        "summary": "Vodafone's FY2026 net loss improved dramatically to €289m (from €4.3bn prior year) with underlying revenue up 8% to €40.5bn, though EPS missed estimates. Analysts flagged high external borrowing and interest coverage concerns, with execution on German turnaround and complex restructuring critical for credit quality as company pursues cost cuts.",
+        "credit_flag": "watch",
+        "source": "Simply Wall St",
+        "url": "https://simplywall.st/stocks/gb/telecom/lse-vod/vodafone-group-shares"
+      },
+      {
+        "category": "industry",
+        "topic": "Telecom",
+        "title": "UK telecom sector realignment: BT's overhaul re-energizes competition; Vodafone and Virgin Media O2 face margin pressure",
+        "summary": "BT's aggressive cost-cutting and UK-focused strategy under CEO Allison Kirkby, combined with planned merger integration of Vodafone and Three creating UK's largest mobile operator, is reshaping sector dynamics. Virgin Media O2 faces competitive intensity and margin pressure while VodafoneThree pursues network integration to unlock synergies; Openreach subscriber losses add sector tension.",
+        "credit_flag": "watch",
+        "source": "Simply Wall St",
+        "url": "https://simplywall.st/stocks/gb/telecom/lse-vod/vodafone-group-shares/news/bt-stock-and-uk-telecom-shares-to-watch-after-its-turnaround/"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore poised for demand recovery as housing activity and occupancy stabilize mid-2026",
+        "summary": "Safestore is positioned for recovery with stabilizing new-customer pricing, recovering housing activity, and 5.1% dividend yield. European store maturation curves, refinancing outcomes as debt matures, and sensitivity to rate-cut expectations remain credit watch points. Structural undersupply in UK and Europe relative to North America provides longer-term tailwind.",
+        "credit_flag": "positive",
+        "source": "Kalkine Media",
+        "url": "https://kalkine.co.uk/news/real-estate/safestore-holdings-could-self-storage-demand-turn-this-reit-into-2026s-quiet-recovery-story"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever completes €1.5bn buyback by early July; 2026 guidance reconfirmed at guidance bottom end",
+        "summary": "Unilever completed its €1.5 billion share buyback programme on or before 6 July 2026, with full-year FY2026 guidance reaffirmed at bottom end of 4-6% underlying sales growth range and modest margin improvement vs. 20.0% in FY2025. Cash synergies from Foods-McCormick transaction expected to support €6bn total buybacks 2026-2029.",
+        "credit_flag": "neutral",
+        "source": "Unilever Investor Relations",
+        "url": "https://www.unilever.com/news/press-and-media/press-releases/2026/strong-volume-growth-full-year-outlook-reconfirmed/"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-08",
+    "date_display": "Wednesday, 08 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
         "title": "Q2 gas trading strength offsets production disruptions from Middle East conflict",
         "summary": "Shell raised Q2 integrated gas production guidance modestly and signaled significantly stronger gas trading results, helping mitigate damage to Qatar operations from regional conflict. Q1 adjusted earnings reached $6.9 billion with strong refining margins expected to remain elevated, supporting dividend and shareholder returns amid oil market volatility.",
         "credit_flag": "positive",
