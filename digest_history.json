@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-07-10",
+    "date_display": "Friday, 10 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Q2 trading results benefit from Iran war volatility",
+        "summary": "Shell flagged strong oil and gas trading results in Q2 2026, with gas trading significantly higher than Q1 as market turmoil from the Iran conflict drove volatility. However, gas production was constrained by Middle East disruptions affecting Qatar output, with integrated gas forecast down sharply to 610,000-650,000 boe/d from 909,000 boe/d in Q1. Refining margins improved to circa $20/bbl helping offset production headwinds.",
+        "credit_flag": "watch",
+        "source": "Bloomberg/TT News",
+        "url": "https://www.ttnews.com/articles/shell-oil-gas-strong-war"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP restructures into two-segment model, management changes announced",
+        "summary": "BP announced organizational restructuring effective 1 July 2026, moving from three to two business segments (Upstream and Downstream) to reduce complexity and accelerate execution. Gordon Birrell appointed EVP Upstream; Richard Harding interim EVP Downstream with permanent recruitment underway. CEO Meg O'Neill highlighted this as key step toward a simpler, stronger balance sheet and sustainable growth.",
+        "credit_flag": "neutral",
+        "source": "BP",
+        "url": "https://www.bp.com/press-and-publications/press-releases/bp-simplifies-organizational-structure-and-announces-leadership-appointments"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Oil prices recover on renewed Hormuz tensions despite structural weakness",
+        "summary": "As of 10 July, Brent crude was circa $76/bbl after renewed US-Iran fighting curtailed Strait of Hormuz traffic this week. While Brent and WTI set for modest weekly gains (~5-6%), prices remain well below March peaks, reflecting improved supply outlook and easing of near-term disruption fears. Morgan Stanley oil forecast cuts from early July added downward pressure.",
+        "credit_flag": "negative",
+        "source": "Reuters",
+        "url": "https://finance.yahoo.com/news/oil-edges-lower-heads-weekly-013333926.html"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone VodafoneThree buyout to increase leverage by 0.4x, expected H2 2026",
+        "summary": "Vodafone announced 5 May agreement to acquire CK Hutchison's remaining 49% stake in VodafoneThree joint venture for £4.3 billion, targeting full ownership. Transaction expected to complete H2 2026 subject to NSI Act approval. Pro forma net debt/EBITDA leverage to increase ~0.4x to circa 2.6x. Company will fund from existing cash; VodafoneThree targeting £11bn network investment over decade with payback from 2029.",
+        "credit_flag": "negative",
+        "source": "Investegate/SEC",
+        "url": "https://www.investegate.co.uk/announcement/rns/vodafone-group--vod/fy26-preliminary-results/9562943"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever reconfirms FY26 guidance at lower end, McCormick deal progresses",
+        "summary": "Unilever maintained FY26 guidance at bottom end of 4-6% underlying sales growth with minimum 2% volume growth. Q1 delivered 3.8% USG (2.9% volume). McCormick combination deal on track; target secondary listing by end-July, details by end-September, deal close mid-2027. €1.5bn buyback completed 6 July. European market softness offset by emerging market momentum, India particularly strong.",
+        "credit_flag": "neutral",
+        "source": "Bez-Kabli/CNBC",
+        "url": "https://www.bez-kabli.pl/unilever-shares-buyback-plan-and-july-results-bring-volume-recovery-into-focus/"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "NSG Group Apollo acquisition nearing close; debt burden easing through deal",
+        "summary": "Apollo Funds $3.7bn acquisition of NSG Group progresses toward expected completion March 2027. Shareholders approved deal in late June. Principal lenders transitioning portion of outstanding loans to equity, strengthening balance sheet. NSG had struggled with high debt (~$3.48bn with 23.5% YoY increase in FY2026/3) and weak free cash flow ($7m vs $63.5m prior year). Deal restructures leverage and supports capex investment.",
+        "credit_flag": "positive",
+        "source": "Glass International/NSG",
+        "url": "https://www.glass-international.com/news/nsg-group-in-3-7-billion-glass-acquisition"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore at potential inflection point as occupancy and pricing stabilise",
+        "summary": "Safestore positioned at inflection point with occupancy and pricing appearing to stabilise mid-2026 as UK housing activity begins recovery. Trailing dividend yield circa 5.1% reflects recent de-rating. European expansion continues with entry into Italy (December 2024). Next trading update expected mid-year; investors monitoring same-store revenue growth, rental rates and capex discipline amid refinancing cycle.",
+        "credit_flag": "watch",
+        "source": "Kalkine",
+        "url": "https://kalkine.co.uk/news/real-estate/safestore-holdings-could-self-storage-demand-turn-this-reit-into-2026s-quiet-recovery-story"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus faces union recognition drive; 7.5m accounts post-Bulb integration",
+        "summary": "GMB Union preparing formal proposal for voluntary recognition at Octopus Energy, the UK's largest energy supplier now with 7.5m accounts following Shell Energy and Bulb absorptions. CEO Greg Jackson has resisted unionisation citing all-employee share ownership model and focus on avoiding bureaucratic constraints. Labor tension emerging as potential operational risk as company scales.",
+        "credit_flag": "watch",
+        "source": "No2NuclearPower",
+        "url": "https://www.no2nuclearpower.org.uk/news/octopus-6-7-26/"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT-Verizon international joint venture progresses; Martijn Blanken appointed",
+        "summary": "BT and Verizon confirmed Martijn Blanken as CEO-designate of proposed international joint venture (pending transaction close). Blanken joins BT from 1 September 2026 with three decades senior telecoms and infrastructure leadership experience. Clive Selley continues BT International CEO to ensure continuity through JV transition. Deal represents material strategic realignment for BT's international operations.",
+        "credit_flag": "neutral",
+        "source": "Verizon",
+        "url": "https://www.verizon.com/about/news/verizon-bt-group-international-joint-venture"
+      }
+    ]
+  },
+  {
     "date": "2026-07-09",
     "date_display": "Thursday, 09 July 2026",
     "items": [
