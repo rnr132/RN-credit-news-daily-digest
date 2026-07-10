@@ -31,7 +31,7 @@ jobs:
           WATCHLIST_ARCHIVE_DIR: 'docs/archive'
           # Writes output straight into the Pages-served folder.
           OUTPUT_DIR: 'docs/ideas'
-        run: python watchlist_article_ideas.py
+        run: python scripts/watchlist_article_ideas.py
 
       - name: Commit and push output
         run: |
