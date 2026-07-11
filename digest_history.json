@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-07-11",
+    "date_display": "Saturday, 11 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Q2 trading profit boosted by Iran conflict volatility",
+        "summary": "Shell expects significantly higher oil and gas trading profits in Q2 2026 due to market turmoil from the Middle East war, offsetting production losses from Qatar disruption. Strong trading performance driven by volatile commodity markets benefits the company's earnings mix despite geopolitical headwinds affecting supply.",
+        "credit_flag": "positive",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-07/shell-signals-strong-oil-and-gas-trading-profit-on-iran-war"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP reorganizes structure into two business segments",
+        "summary": "BP simplified its organizational structure to two segments (Upstream and Downstream) effective July 1, 2026, appointing new leadership to streamline decision-making and reduce complexity. The move is aimed at accelerating execution and improving operational clarity as the company strengthens its balance sheet.",
+        "credit_flag": "neutral",
+        "source": "BP",
+        "url": "https://www.bp.com/press-and-publications/press-releases/bp-simplifies-organizational-structure-and-announces-leadership-appointments"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Xavier Niel acquires 16.2% stake in Vodafone for £4.4 billion",
+        "summary": "French entrepreneur Xavier Niel purchased a 16.2% stake in Vodafone from Emirates Telecommunications Group, becoming the largest shareholder. The move signals strategic investor confidence in Vodafone's simplified portfolio and stronger growth outlook following three years of restructuring, with stock surging 13% on the news.",
+        "credit_flag": "positive",
+        "source": "GuruFocus",
+        "url": "https://www.gurufocus.com/news/8953197/vod-xavier-niel-acquires-162-stake-in-vodafone-for-59-billion"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever guides 2026 growth at bottom of range amid slower conditions",
+        "summary": "Unilever reduced full-year 2026 guidance to approximately 4% underlying sales growth (bottom of its 4-6% range) citing slower market conditions, though still expecting at least 2% volume growth and modest operating margin expansion. The company faces selective commodity pressure and currency headwinds despite completing its €800m productivity program.",
+        "credit_flag": "watch",
+        "source": "SEC Filings",
+        "url": "https://www.sec.gov/Archives/edgar/data/217410/000165495426001155/a6773s.htm"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "NSG shareholder approval of Apollo $3.7bn acquisition completed",
+        "summary": "NSG Group's shareholders approved the Apollo Funds acquisition at the June 2026 AGM, with the deal expected to close around March 2027. Apollo's investment and principal lenders' debt-to-equity conversion will strengthen NSG's balance sheet and enable growth investments, addressing long-standing debt burden from the Pilkington acquisition.",
+        "credit_flag": "positive",
+        "source": "Glass International",
+        "url": "https://www.glass-international.com/news/nsg-group-in-3-7-billion-glass-acquisition"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore positioned at demand inflection point as UK housing recovers",
+        "summary": "Safestore Holdings is seeing emerging signs of demand recovery in mid-2026 as UK housing transactions stabilize and interest rate expectations shift lower, supporting both occupancy and pricing. The company's focus on European expansion and refinancing outcomes will be key credit themes as sector dynamics improve from pandemic-era normalization.",
+        "credit_flag": "positive",
+        "source": "Kalkine",
+        "url": "https://kalkine.co.uk/news/real-estate/safestore-holdings-could-self-storage-demand-turn-this-reit-into-2026s-quiet-recovery-story"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus faces union recognition challenge from GMB union",
+        "summary": "GMB union is preparing a formal voluntary recognition proposal at Octopus Energy, following grievances over workloads, training and worker representation. The dispute marks a governance and labor relations test as the company transitions from challenger brand to Britain's largest household energy supplier, with management resistance to unionization.",
+        "credit_flag": "watch",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/07/08/octopus-union-rights-battle-underway/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Generation reaches £8.5 billion in managed renewable assets",
+        "summary": "Octopus Energy Generation expanded its renewable assets under management to £8.5 billion following a year of global expansion, with portfolio now at 5.7 GW. The growth reflects strong institutional investor demand for clean energy and supports the group's decarbonization strategy, diversifying cash flows beyond domestic retail supply.",
+        "credit_flag": "positive",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/07/03/octopus-energy-generation-reaches-8-5-billion-in-renewable-assets/"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT in talks to exit TNT Sports joint venture with Warner Bros Discovery",
+        "summary": "BT Group is in advanced talks to sell its 50% stake in TNT Sports to Warner Bros Discovery, a move that would exit the company from sports broadcasting. The potential deal addresses BT's strategy to refocus on core UK domestic telecom operations and manage capital allocation priorities.",
+        "credit_flag": "positive",
+        "source": "Simply Wall St",
+        "url": "https://simplywall.st/stocks/gb/telecom/lse-bt.a/bt-group-shares/past"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Oil price weakness pressures majors amid market softening",
+        "summary": "Morgan Stanley and Wall Street banks cut oil forecasts amid signs of a global supply glut, with Brent crude falling to $70/bbl. Major oil companies face margin pressure in H2 2026 if prices persist, potentially triggering buyback reductions and affecting shareholder returns despite strong Q2 earnings from elevated prices.",
+        "credit_flag": "negative",
+        "source": "Invezz",
+        "url": "https://invezz.com/nz/news/2026/06/30/bp-shell-chevron-shares-on-edge-as-morgan-stanley-slashes-oil-forecast/"
+      }
+    ]
+  },
+  {
     "date": "2026-07-10",
     "date_display": "Friday, 10 July 2026",
     "items": [
