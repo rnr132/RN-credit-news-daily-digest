@@ -1,5 +1,119 @@
 [
   {
+    "date": "2026-07-12",
+    "date_display": "Sunday, 12 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell reports strong Q2 trading gains on Iran conflict disruption",
+        "summary": "Shell flagged significantly higher gas trading results in Q2 2026 despite Middle East supply disruptions impacting Qatar LNG output. Trading gains offset production setbacks, with integrated gas trading expected to outperform Q1. Strong trading performance underpins earnings outlook ahead of July 30 results.",
+        "credit_flag": "positive",
+        "source": "Bloomberg / TT News",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-07/shell-signals-strong-oil-and-gas-trading-profit-on-iran-war"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP restructures into two-segment model to accelerate delivery",
+        "summary": "BP reorganized from three business segments to two (Upstream and Downstream) effective July 1, 2026, appointing Gordon Birrell as EVP Upstream and Richard Harding as interim EVP Downstream. Reorganization aims to simplify operations, reduce complexity and strengthen execution to support balance sheet stabilization.",
+        "credit_flag": "neutral",
+        "source": "BP official announcement",
+        "url": "https://www.bp.com/press-and-publications/press-releases/bp-simplifies-organizational-structure-and-announces-leadership-appointments"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Iran conflict lifts energy traders' profits despite commodity weakness",
+        "summary": "Oil majors including Shell and BP benefited from elevated trading volatility and margins caused by Middle East conflict supply disruptions. Refining margins improved as majors processed additional jet and diesel, offsetting weaker production in Middle East but highlighting commodity price sensitivity.",
+        "credit_flag": "watch",
+        "source": "OilPrice.com / TT News",
+        "url": "https://oilprice.com/Company-News/Shell-Flags-Stronger-Trading-Despite-Middle-East-Impact-on-Q2-Gas-Output.html"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "VodafoneThree merger completed; heightened UK competitive pressure on BT",
+        "summary": "Vodafone's merger with Three completed, creating UK's largest mobile operator. Merger reshapes competitive landscape and increases pressure on BT's Openreach broadband division. VodafoneThree outlined long-term investment in 5G standalone and broadband partnerships, intensifying competition in UK telecom market.",
+        "credit_flag": "negative",
+        "source": "Kalkine Media",
+        "url": "https://kalkinemedia.com/uk/stocks/communication/could-vodafonethrees-network-investment-plan-redraw-the-uk-telecom-map"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone targets upper end of FY26 guidance despite Germany stagnation",
+        "summary": "Vodafone expects to deliver upper end of adjusted EBITDAaL guidance of 11.3-11.6bn euros and adjusted FCF of 2.4-2.6bn despite minimal growth in core German market at 0.7%. Share price weakness reflects execution and leverage concerns despite stated momentum.",
+        "credit_flag": "watch",
+        "source": "TelecomTV",
+        "url": "https://www.telecomtv.com/content/access-evolution/what-s-up-with-vodafone-bt-mtn-54791/"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT reached 21.4m FTTP premises; targeting 25m by end-2026",
+        "summary": "BT rolled out fiber-to-premises access network to 21.4 million premises in Q3, including 5.9m in rural areas, maintaining eighth consecutive quarter of 1m+ premise rollouts. Targets 25m total by end-2026, supporting strategic shift to fiber and 5G as BT refocuses on UK market.",
+        "credit_flag": "positive",
+        "source": "TelecomTV",
+        "url": "https://www.telecomtv.com/content/access-evolution/what-s-up-with-vodafone-bt-mtn-54791/"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever completes Q2 buyback; Foods-McCormick deal progressing to mid-2027 close",
+        "summary": "Unilever completed 1.5bn euro share buyback program by July 6; 6bn total buyback planned 2026-2029. McCormick deal closing targeted mid-2027; anticipated to yield 15.7bn USD in cash proceeds to offset separation costs and maintain 2.0x leverage post-close.",
+        "credit_flag": "positive",
+        "source": "Unilever official announcement",
+        "url": "https://www.unilever.com/news/press-and-media/press-releases/2026/strong-volume-growth-full-year-outlook-reconfirmed/"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo acquisition of NSG nearing close; debt restructuring progressing",
+        "summary": "Apollo-managed funds' 3.7bn USD acquisition of NSG Group expected to complete March 2027. Transaction includes principal lenders converting portion of outstanding loans to equity, stabilizing balance sheet. NSG to use proceeds for debt paydown and investments in manufacturing technology under Apollo's operational support.",
+        "credit_flag": "positive",
+        "source": "Glass International / Apollo",
+        "url": "https://www.glass-international.com/news/nsg-group-in-3-7-billion-glass-acquisition"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "NSG targets 10% operating profit by 2030 via strategic investments",
+        "summary": "NSG Group outlined 2030 Vision targeting 10% operating profit (up 3% from 2027 forecast) leveraging four strategic pillars: business development, decarbonisation, digital transformation and diverse talent. Advanced glass coating facilities underway in Japan and Poland; horizontal PV cover glass recycling successfully demonstrated.",
+        "credit_flag": "positive",
+        "source": "Glass International",
+        "url": "https://www.glass-international.com/news/nsg-plans-new-initiatives-for-sales-growth"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore navigates occupancy recovery as interest rate backdrop improves",
+        "summary": "Safestore positioned for demand recovery as UK housing transactions stabilize following rate cycle peak. Sector consensus sees structural runway underutilized; focus on managing pricing discipline, occupancy optimization and European portfolio maturation. Refinancing outcomes and capex guidance monitoring critical for credit profile.",
+        "credit_flag": "watch",
+        "source": "Kalkine Media",
+        "url": "https://kalkine.co.uk/news/real-estate/safestore-holdings-could-self-storage-demand-turn-this-reit-into-2026s-quiet-recovery-story"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "GMB Union seeks recognition at Octopus; CEO opposes unionisation citing share ownership",
+        "summary": "GMB Union preparing formal voluntary recognition proposal at Octopus Energy amid workforce push, making it unique among large UK suppliers without union recognition. CEO Greg Jackson argues share ownership negates need for unionisation, but move reflects broader labour relations risk and potential cost implications.",
+        "credit_flag": "watch",
+        "source": "Financial Times / No2NuclearPower",
+        "url": "https://www.no2nuclearpower.org.uk/news/octopus-6-7-26/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy Generation reaches 8.5bn GBP in renewable assets",
+        "summary": "Octopus Energy Generation expanded asset base to 8.5bn GBP with 5.7 GW portfolio following rapid expansion since 2021. Added nine institutional fund mandates from pension schemes and insurers. Growth supports diversification strategy and long-term credit profile through renewable energy infrastructure ownership.",
+        "credit_flag": "positive",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/07/03/octopus-energy-generation-reaches-8-5-billion-in-renewable-assets/"
+      }
+    ]
+  },
+  {
     "date": "2026-07-11",
     "date_display": "Saturday, 11 July 2026",
     "items": [
