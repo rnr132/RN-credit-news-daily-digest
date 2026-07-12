@@ -244,6 +244,11 @@ def load_week_from_archive(archive_dir: str, days: int = 7) -> str:
     Assumes daily digests are stored as dated files (e.g. YYYY-MM-DD.md or .json)
     in archive_dir. Adjust the glob pattern below to match your actual
     Watchlist archive naming convention.
+
+    Kept for backward compatibility with layouts that use a per-day-file
+    archive folder. The Watchlist project's default layout instead stores
+    everything in a single digest_history.json file — see
+    load_week_from_history_json() below, which is tried first in main().
     """
     import glob
 
@@ -265,24 +270,90 @@ def load_week_from_archive(archive_dir: str, days: int = 7) -> str:
     return "\n\n".join(combined)
 
 
+def load_week_from_history_json(history_path: str, days: int = 7) -> str:
+    """
+    Read the last N days of editions from the single-file JSON history
+    produced by generate_digest.py (a list of edition objects, each with
+    "date" (YYYY-MM-DD), "date_display", and "items" — where each item has
+    category/topic/title/summary/credit_flag/source/url).
+
+    This is the loader that matches the Watchlist project's actual layout
+    (digest_history.json at the repo root), as opposed to the per-day-file
+    archive folder assumed by load_week_from_archive() above.
+    """
+    if not os.path.isfile(history_path):
+        return ""
+
+    try:
+        with open(history_path, "r", encoding="utf-8") as f:
+            history = json.load(f)
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"[!] Could not read/parse {history_path}: {e}")
+        return ""
+
+    cutoff = datetime.now() - timedelta(days=days)
+    combined = []
+
+    for edition in history:
+        date_str = edition.get("date", "")
+        try:
+            edition_date = datetime.strptime(date_str, "%Y-%m-%d")
+        except ValueError:
+            continue
+        if edition_date < cutoff:
+            continue
+
+        heading = edition.get("date_display", date_str)
+        lines = [f"### {heading}"]
+        for item in edition.get("items", []):
+            category = item.get("category", "?").upper()
+            topic = item.get("topic", "?")
+            title = item.get("title", "")
+            flag = item.get("credit_flag", "?")
+            summary = item.get("summary", "")
+            source = item.get("source", "")
+            lines.append(
+                f"- [{category} / {topic}] {title} (Flag: {flag}) — {summary} (Source: {source})"
+            )
+
+        if len(lines) > 1:  # only include days that actually had items
+            combined.append("\n".join(lines))
+
+    return "\n\n".join(combined)
+
+
 def main():
     """
     Main workflow: read watchlist data, generate ideas, score them, output.
     """
 
-    # Preferred path: read directly from the Watchlist archive directory.
-    # Fallback: env var, useful for local testing or manual override.
+    # Preferred: read the single digest_history.json file used by this
+    # project's daily digest generator (path configurable via
+    # WATCHLIST_HISTORY_FILE, defaults to "digest_history.json" at repo root).
+    # Falls back to a per-day-file archive folder (WATCHLIST_ARCHIVE_DIR) for
+    # older/alternate layouts, then to a raw manual override
+    # (WATCHLIST_WEEK_DATA) for local testing.
+    history_file = os.environ.get("WATCHLIST_HISTORY_FILE", "digest_history.json")
     archive_dir = os.environ.get("WATCHLIST_ARCHIVE_DIR", "")
     watchlist_data = ""
 
-    if archive_dir and os.path.isdir(archive_dir):
+    if history_file and os.path.isfile(history_file):
+        watchlist_data = load_week_from_history_json(history_file)
+        if watchlist_data:
+            print(f"[*] Loaded weekly data from {history_file}")
+
+    if not watchlist_data and archive_dir and os.path.isdir(archive_dir):
         watchlist_data = load_week_from_archive(archive_dir)
-    else:
+        if watchlist_data:
+            print(f"[*] Loaded weekly data from archive folder {archive_dir}")
+
+    if not watchlist_data:
         watchlist_data = os.environ.get("WATCHLIST_WEEK_DATA", "")
 
     if not watchlist_data:
-        print("Error: No watchlist data found. Set WATCHLIST_ARCHIVE_DIR to your "
-              "archive folder, or WATCHLIST_WEEK_DATA for a manual override.")
+        print("Error: No watchlist data found. Checked WATCHLIST_HISTORY_FILE "
+              f"('{history_file}'), WATCHLIST_ARCHIVE_DIR ('{archive_dir}'), "
+              "and WATCHLIST_WEEK_DATA — none produced usable content.")
         return
     
     print("[*] Generating 3 article ideas from weekly watchlist...")
@@ -311,7 +382,7 @@ def main():
     output = format_output(ranked, week_start)
     
     # Write to file (defaults to current dir; set OUTPUT_DIR to write
-    # straight into your GitHub Pages source folder, e.g. "docs/ideas")
+    # straight into your GitHub Pages source folder, e.g. "article_ideas")
     output_dir = os.environ.get("OUTPUT_DIR", ".")
     os.makedirs(output_dir, exist_ok=True)
 
