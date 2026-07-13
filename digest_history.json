@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-07-13",
+    "date_display": "Monday, 13 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Q2 Cash Test: Working Capital Release Expected",
+        "summary": "BP forecasts $1-6 billion working capital inflow in Q2 2026 vs Q1's $6 billion build, with management emphasis on balance sheet discipline under new CEO. Cash conversion quality remains under scrutiny ahead of mid-quarter earnings as crude pressures offset strong trading results.",
+        "credit_flag": "watch",
+        "source": "Bloomberg, TechStock2",
+        "url": "https://ts2.tech/en/bp-stock-jumps-2-before-q2-update-the-cash-test-behind-its-shell-catch-up/"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Raises Q2 Gas & LNG Guidance on Iran War Trading Windfall",
+        "summary": "Shell upgraded integrated gas production guidance to 610-650 kboed from 580-640 kboed, with gas trading results significantly higher than Q1 as volatility benefits offset Qatar supply disruption. Citi lifted Q2 EPS forecast 13% on stronger trading and resilient chemicals operations.",
+        "credit_flag": "positive",
+        "source": "Energy Connects, Bloomberg",
+        "url": "https://www.energyconnects.com/news/gas-lng/2026/july/shell-lifts-gas-outlook-for-second-quarter-of-2026-as-lng-production-increases/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Xavier Niel Becomes Largest Shareholder Via $6bn E& Stake Acquisition",
+        "summary": "French billionaire Niel's family vehicle acquired 16.2% of Vodafone for £4.4bn ($5.9bn), 13% above close price, becoming largest shareholder. Analysts expect potential acceleration of cost-cutting and strategic influence, with Q2 results due 27 July amid VodafoneThree integration tracking.",
+        "credit_flag": "positive",
+        "source": "Reuters, Gulf Business",
+        "url": "https://www.brecorder.com/news/40429723/telecom-shares-boost-uks-ftse-100"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "H1 2026 Results Due 28 July; Volume Growth Beat Tempers Margin Pressures",
+        "summary": "Unilever reports 3.8% Q1 USG with strong 2.9% volume growth, exceeding consensus expectations. FY guidance reaffirmed at 4-6% range bottom-end with modest margin improvement; McCormick Foods deal pending. H1 results 28 July critical for tracking volume momentum and inflation headwinds.",
+        "credit_flag": "watch",
+        "source": "Unilever, TradersUnion",
+        "url": "https://www.unilever.com/investors/results-events/upcoming-results/"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT FY26 Net Debt Rose 1% to £19.97bn; TNT Sports Divestment Under Review",
+        "summary": "BT reported FY26 net profit up 2% to £1.08bn, but net debt increased £150m to £19.97bn as underlying EBITDA barely moved. Management targeting CapEx cuts of £1bn+ and £3bn normalized FCF by decade-end. TNT Sports stake sale to Warner Bros in advanced talks.",
+        "credit_flag": "watch",
+        "source": "Reuters, Simply Wall St",
+        "url": "https://simplywall.st/stocks/gb/telecom/lse-bt.a/bt-group-shares/past"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo Funds Acquisition Nears Close; Debt-to-Equity Conversion to Stabilize Balance Sheet",
+        "summary": "Apollo's $3.7bn acquisition expected complete March 2027 involves lender loan-to-equity conversion, strengthening NSG's balance sheet after Pilkington debt burden. Group progressing solar glass capacity expansions and PV recycling technologies supporting decarbonization strategy.",
+        "credit_flag": "positive",
+        "source": "Apollo, Glass International",
+        "url": "https://www.apollo.com/insights-news/pressreleases/2026/03/apollo-funds-announce-strategic-investment-in-nsg-group-a-global-leader-in-glass-manufacturing-3260933"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Self-Storage Demand Recovery Forming as Housing Activity Stabilizes",
+        "summary": "Mid-2026 backdrop increasingly supportive with housing transaction recovery underway and enquiry volumes potentially strengthening. European portfolio maturation and debt refinancing outcomes key focuses; dividend yield at rare 5.1% level historically offers recovery optionality.",
+        "credit_flag": "watch",
+        "source": "Kalkine Media",
+        "url": "https://kalkine.co.uk/news/real-estate/safestore-holdings-could-self-storage-demand-turn-this-reit-into-2026s-quiet-recovery-story"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "GMB Union Pushes for Recognition at UK's Largest Energy Supplier",
+        "summary": "GMB Union submitting formal voluntary recognition proposal amid concerns over workloads and worker representation, marking test of Octopus's challenger-brand image as it scales into conventional employer. Risk of operational disruption and cost pressures if formal recognition secured.",
+        "credit_flag": "negative",
+        "source": "Energy Live News, HR Magazine",
+        "url": "https://www.energylivenews.com/2026/07/08/octopus-union-rights-battle-underway/"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Middle East Supply Disruption Extends Trading Volatility Into H2 2026",
+        "summary": "Iran conflict continues to disrupt LNG shipments through Hormuz with additional tanker strikes reported 7 July. Brent crude down to $70/bbl from $97 average in Q2, pressuring sector earnings guidance; producers hedging through stronger gas trading offsetting weaker production volumes.",
+        "credit_flag": "negative",
+        "source": "Reuters, TT News",
+        "url": "https://www.ttnews.com/articles/shell-oil-gas-strong-war"
+      },
+      {
+        "category": "industry",
+        "topic": "Telecom",
+        "title": "VodafoneThree Integration Reshapes UK Market; BT Openreach Under Pressure",
+        "summary": "Completed VodafoneThree merger creates largest UK mobile operator with enhanced network investment plans, intensifying competition for BT Group's Openreach broadband division. Niel's strategic stake adds consolidation catalyst across fragmented European telecom sector.",
+        "credit_flag": "negative",
+        "source": "Kalkine Media",
+        "url": "https://kalkinemedia.com/uk/stocks/communication/could-vodafonethrees-network-investment-plan-redraw-the-uk-telecom-map"
+      }
+    ]
+  },
+  {
     "date": "2026-07-12",
     "date_display": "Sunday, 12 July 2026",
     "items": [
