@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-07-14",
+    "date_display": "Tuesday, 14 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP writedown energy transition assets, refocuses on oil and gas",
+        "summary": "BP announced a $1 billion impairment on gas and low-carbon energy assets in Q2 2026 as CEO Meg O'Neill executes strategy to refocus the company on core oil and gas operations. The trading update signals management is prioritizing debt reduction and disciplined capital allocation, though working capital management remains a key credit metric to monitor given Q1 cash conversion challenges.",
+        "credit_flag": "watch",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-14/bp-flags-1-billion-writedown-from-gas-and-low-carbon-business"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell raises Q2 gas output guidance, benefits from strong trading",
+        "summary": "Shell upgraded integrated gas production guidance to 610k-650k boed (from 580k-640k) and flagged significantly higher gas trading results despite Qatar disruptions. Refining margins expanded to $29.60/barrel, underpinning stronger Q2 cash generation and trading performance ahead of July 29 earnings, supported by Iran-driven supply disruptions and elevated commodity prices.",
+        "credit_flag": "positive",
+        "source": "Energy Connects",
+        "url": "https://www.energyconnects.com/news/gas-lng/2026/july/shell-lifts-gas-outlook-for-second-quarter-of-2026-as-lng-production-increases/"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Middle East tensions boost supermajor cash flows via trading gains",
+        "summary": "US-Iran escalation including port blockade and escort operations has driven oil prices to one-month highs (Brent $86+/barrel) and exceptional volatility that benefits trading desks. Both BP and Shell report robust oil and gas trading performance offset by production disruptions; supermajor downstream margins expanding as supply tightness supports fuel crack spreads.",
+        "credit_flag": "positive",
+        "source": "Invezz",
+        "url": "https://invezz.com/in/news/2026/07/14/shell-bp-and-other-energy-stocks-jump-as-crude-oil-prices-rebound/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone Q2 results on deck; minority investor engagement confirmed",
+        "summary": "Vodafone reports Q2 results July 27 with guidance targets for FY27 EBITDA of €11.9-€12.2bn. VodafoneThree buyout (£4.3bn) completed ahead of schedule with leverage maintained in target range. Portfolio simplification ongoing; investor sentiment bullish following three-year restructuring, though UK competitive intensity and government engagement on minority investor stakes remain credit watch items.",
+        "credit_flag": "neutral",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/vodafone-group-spikes-13-story-200305870.html"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT-Verizon 50/50 JV agreement announced; $625m cash inflow expected",
+        "summary": "BT and Verizon signed agreement (June 29) to form 50:50 joint venture combining international enterprise operations, expected to serve 3,000+ customers across 180 countries with $4bn combined revenue. Verizon will pay BT $625 million equalization payment; closure expected 2027 subject to regulatory approval. Removes low-margin international business, allowing BT to refocus on UK fibre/5G and improves near-term cash position.",
+        "credit_flag": "positive",
+        "source": "TCCA",
+        "url": "https://tcca.info/bt-group-and-verizon-to-form-joint-venture-creating-a-scaled-international-connectivity-platform-for-multinational-customers/"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Q1 volume growth strong; McCormick Foods deal on track for mid-2027",
+        "summary": "Unilever delivered 3.8% underlying sales growth in Q1 2026 (2.9% volume-driven) with Power Brands up 5% and emerging market momentum offsetting developed market weakness. McCormick Foods combination (announced March) proceeds toward mid-2027 close; management expects €6bn buyback funding from Food divestment proceeds 2026-2029, supporting capital return amid modest margin guidance.",
+        "credit_flag": "neutral",
+        "source": "Unilever",
+        "url": "https://www.unilever.com/news/press-and-media/press-releases/2026/strong-volume-growth-full-year-outlook-reconfirmed/"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo $3.7bn buyout moving toward March 2027 close",
+        "summary": "Apollo Funds' $3.7bn acquisition of NSG Group (announced March) progresses toward expected close around March 2027, subject to regulatory approval. NSG's principal lenders are transitioning ~JPY189bn of Pilkington debt to equity, materially improving balance sheet structure. Apollo investment provides capital for decarbonization and growth capex; NSG benefits from improved financial flexibility to address legacy Pilkington debt burden.",
+        "credit_flag": "positive",
+        "source": "Glass International",
+        "url": "https://www.glass-international.com/news/nsg-group-in-3-7-billion-glass-acquisition"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Union recognition push tests challenger-brand credentials as scale grows",
+        "summary": "GMB Union preparing formal voluntary recognition proposal at Octopus Energy following collective grievance from heat-pump and EV installers citing workload and representation concerns. Octopus remains only large UK energy supplier without union recognition; management resistance flagged by union, setting up potential arbitration dispute. Growing workforce (7+ million customers post-Shell absorption) and labour standards pressure could raise operating cost headwinds.",
+        "credit_flag": "watch",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/07/08/octopus-union-rights-battle-underway/"
+      },
+      {
+        "category": "industry",
+        "topic": "Telecom",
+        "title": "Vodafone minority stake and BT international exit reshape UK landscape",
+        "summary": "Sector consolidation and capital moves under way: Vodafone welcoming strategic minority investor (Niel/L Catterton fund) post-Three acquisition; BT de-risking low-margin international ops via Verizon JV. Competitive intensity in UK fibre and 5G investment cycling continues, with debt service obligations and capex demands pressing across the sector amid softer consumer and SME demand.",
+        "credit_flag": "watch",
+        "source": "Reuters",
+        "url": ""
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Self-storage demand recovery narrative emerges as rates normalize",
+        "summary": "Safestore trading through 2026 will test recovery thesis as UK housing market and enquiry volumes stabilize post-2022 pandemic boom. Occupancy below historical highs but stabilizing; European development pipeline maturing. Refinancing and rate-cycle sensitivity remain key risk factors; dividend yield (5.1%) attractive but dependent on occupancy and pricing discipline holding as market normalizes.",
+        "credit_flag": "watch",
+        "source": "Kalkine",
+        "url": "https://kalkine.co.uk/news/real-estate/safestore-holdings-could-self-storage-demand-turn-this-reit-into-2026s-quiet-recovery-story"
+      }
+    ]
+  },
+  {
     "date": "2026-07-13",
     "date_display": "Monday, 13 July 2026",
     "items": [
