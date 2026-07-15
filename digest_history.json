@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-07-15",
+    "date_display": "Wednesday, 15 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP flags $1B impairment from low-carbon assets amid strategic reset",
+        "summary": "BP announced a $1 billion writedown related to its gas and low-carbon energy business in Q2 2026 as new CEO Meg O'Neill refocuses the company on core oil and gas. Q2 trading was stronger with improved downstream refining margins, but working capital management remains a key test for debt reduction targets.",
+        "credit_flag": "watch",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-14/bp-flags-1-billion-writedown-from-gas-and-low-carbon-business"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell raises FY26 guidance on integrated gas output amid Iran tensions",
+        "summary": "Shell upgraded integrated gas production guidance to 610k-650k boe/d for Q2, up from prior 580k-640k, supported by strong oil and gas trading profits as geopolitical disruptions tighten supply. Elevated crude prices and trading margins should drive bumper Q2 earnings, with July 30 full results expected.",
+        "credit_flag": "positive",
+        "source": "Invezz",
+        "url": "https://invezz.com/news/2026/07/14/shell-bp-and-other-energy-stocks-jump-as-crude-oil-prices-rebound/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Xavier Niel acquires 16.2% stake for $6B, becomes largest shareholder",
+        "summary": "French billionaire Xavier Niel's Vega vehicle acquired Emirates Telecom's 16.2% stake in Vodafone for approximately $6 billion at 112.5 pence per share, a 13% premium. Niel signals engagement with UK government; the deal validates Vodafone's restructuring and upcoming Q2 results on July 27 should show VodafoneThree integration progress.",
+        "credit_flag": "positive",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-10/emirates-telecom-to-sell-vodafone-stake-in-6-billion-deal"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT and Verizon form international JV; guidance adjusted for accounting change",
+        "summary": "BT announced a joint venture with Verizon to create a scaled international communications platform, and adjusted FY26 financial guidance due to a change in accounting treatment. Upcoming July AGM will provide governance and capital allocation clarity for shareholders focused on fiber capex and debt management.",
+        "credit_flag": "neutral",
+        "source": "BT Newsroom",
+        "url": "https://newsroom.bt.com/"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo Funds acquisition approaching completion; balance sheet stabilization expected",
+        "summary": "Apollo's $3.7 billion acquisition of NSG is on track for completion by March 2027, subject to regulatory approval. Deal structure includes Apollo equity investment and conversion of principal lenders' loans to equity, addressing NSG's long-standing debt burden since the 2006 Pilkington acquisition.",
+        "credit_flag": "positive",
+        "source": "Glass International",
+        "url": "https://www.glass-international.com/news/nsg-plans-new-initiatives-for-sales-growth"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Q1 2026 volume-led growth confirms FY26 guidance; 4-6% range maintained",
+        "summary": "Unilever delivered 3.8% Q1 underlying sales growth with 2.9% volume contribution, driven by Power Brands strength. FY26 guidance remains at 4-6% range (bottom end expected); McCormick Foods combination proceeding on track, with €600M cost synergies targeted post-close. 1.5B buyback program completing as planned.",
+        "credit_flag": "positive",
+        "source": "Unilever",
+        "url": "https://www.unilever.com/news/press-and-media/press-releases/2026/strong-volume-growth-full-year-outlook-reconfirmed/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy Generation hits £8.5B AUM; union recognition bid underway",
+        "summary": "Octopus Energy Generation reached £8.5 billion in renewable assets under management following £930M deployment in past six months, with new Sky fund approaching £3B committed capital. However, GMB union is preparing formal recognition request citing workload and training concerns, posing labour relations risk as Octopus scales as UK's largest household energy supplier.",
+        "credit_flag": "watch",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/07/08/octopus-union-rights-battle-underway/"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "US-Iran tensions drive crude rally; supermajors benefit from trading and upstream upside",
+        "summary": "US Iran port blockade and escort operations have reignited oil price strength amid dangerously low global inventories. Both Shell and BP are positioned to benefit from expanded upstream cash flows and exceptional trading desks, though rapid de-escalation risk remains. Q2 earnings visibility is strong across the sector.",
+        "credit_flag": "positive",
+        "source": "Invezz",
+        "url": "https://invezz.com/news/2026/07/14/shell-bp-and-other-energy-stocks-jump-as-crude-oil-prices-rebound/"
+      },
+      {
+        "category": "industry",
+        "topic": "Telecom",
+        "title": "Consolidation wave accelerates as Niel targets growth through M&A; regulatory scrutiny expected",
+        "summary": "Niel's Vodafone investment signals a broader telecom consolidation theme in Europe, adding to earlier Verizon-BT JV announcement. Investors are watching for regulatory responses and competitive implications, particularly around network investment and broadband partnerships that could pressure margins.",
+        "credit_flag": "neutral",
+        "source": "Investing.com",
+        "url": "https://www.investing.com/news/stock-market-news/why-is-vodafone-stock-rallying-today-93CH-4787601"
+      }
+    ]
+  },
+  {
     "date": "2026-07-14",
     "date_display": "Tuesday, 14 July 2026",
     "items": [
