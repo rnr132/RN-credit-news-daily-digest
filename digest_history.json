@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-07-16",
+    "date_display": "Thursday, 16 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell boosting Q2 gas production forecast amid geopolitical volatility",
+        "summary": "Shell raised its second-quarter gas production forecast and signalled significantly stronger gas trading, driving a 2.4% share price gain. The company's cash capital expenditure guidance for 2026 is now $24-$26 billion (including $4 billion for the ARC Resources acquisition), with net debt at $52.6 billion and gearing at 23.2%, reflecting balance sheet pressure from elevated lease liabilities related to Middle East shipping disruptions.",
+        "credit_flag": "watch",
+        "source": "Bloomberg/Reuters",
+        "url": "https://tradersunion.com/news/financial-news/show/2603538-ftse-100-shell-energy-gains/"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP affirmed at A+ with stable outlook; progressing debt reduction",
+        "summary": "Fitch Ratings affirmed BP's A+ credit rating with stable outlook in May 2026, citing progress toward net debt reduction targets through planned divestments. BP expects to hit the lower end of its $14-18 billion net debt target by end-2026, supported by $9-10 billion in divestments, while maintaining investment-grade credit quality.",
+        "credit_flag": "positive",
+        "source": "Fitch Ratings",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/bp-stock-gb0007980591-fitch-affirms-a-rating-as-energy-giant-targets/69333223"
+      },
+      {
+        "category": "industry",
+        "topic": "Energy suppliers",
+        "title": "UK energy price cap rises 13% from July 1 amid Middle East conflict",
+        "summary": "Ofgem announced a 13% increase in the energy price cap effective July 1, 2026, driven by higher wholesale gas prices (up 24%) caused by Middle East geopolitical tensions and Strait of Hormuz disruptions. The cap is set at £1,663 annually for typical households; however, approximately 40% of accounts on fixed tariffs remain unaffected, limiting negative impact on energy suppliers' variable-rate customers.",
+        "credit_flag": "negative",
+        "source": "Ofgem",
+        "url": "https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-july-and-30-september-2026"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever reconfirms 2026 guidance; Q2 results due July 28",
+        "summary": "Unilever completed its €1.5 billion share buyback programme in June 2026 and reconfirmed full-year guidance expecting underlying sales growth at the low end of 4-6% with at least 2% volume growth. The company will report Q2 and half-year results on July 28, with the €15.7 billion McCormick Foods combination deal advancing; debt management remains stable with planned €6 billion in buybacks from 2026-2029.",
+        "credit_flag": "neutral",
+        "source": "Unilever",
+        "url": "https://www.unilever.com/news/press-and-media/press-releases/2026/strong-volume-growth-full-year-outlook-reconfirmed/"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore H1 2026 earnings decline; dividend stable",
+        "summary": "Safestore reported H1 2026 results with EPS falling 58% to £0.15 from £0.36 in H1 2025, reflecting challenging operating environment. However, revenue grew 8.7% to £122.5 million and the company maintained dividend payments (10.2 pence per share), suggesting stable capital structure despite profit headwinds and lower utilisation rates across its 210-store European self-storage portfolio.",
+        "credit_flag": "watch",
+        "source": "Safestore Holdings",
+        "url": "https://simplywall.st/stocks/gb/real-estate/lse-safe/safestore-holdings-shares"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone VodafoneThree buyout progressing; capital-intensive transaction",
+        "summary": "Vodafone is proceeding with its acquisition of Three UK's remaining 49% stake for £13.85 billion enterprise value, funded from existing cash resources. The transaction requires UK National Security and Investment Act approval, with completion expected H2 2026. As of March 31, 2026, VodafoneThree had net debt of £5.08 billion; the buyout will increase Vodafone's pro forma net debt to Adjusted EBITDA by 0.4x, tightening leverage metrics.",
+        "credit_flag": "negative",
+        "source": "SEC Filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000839923/000119312526205077/d146385d6k.htm"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT groups signs Verizon international operations joint venture",
+        "summary": "BT Group and Verizon signed an agreement combining their respective international enterprise operations into a 50:50 joint venture, effective July 2026. The deal concludes BT's 18-month search to divest its struggling international business and allows refocus on core UK market operations. This strategic simplification should strengthen BT's balance sheet and reduce business complexity as it manages fibre and 5G capex commitments.",
+        "credit_flag": "positive",
+        "source": "Stockanalysis/News",
+        "url": "https://stockanalysis.com/quote/lon/BT.A/"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Strait of Hormuz disruptions drive elevated geopolitical risk to energy sector",
+        "summary": "The ongoing conflict between Iran and the U.S.-Israel coalition continues to disrupt the Strait of Hormuz, through which approximately 20% of global oil and LNG trade passes. Despite a brief ceasefire in June, renewed fighting in mid-July has again curtailed tanker traffic. Brent crude has declined to around $80/barrel from April peaks but remains elevated; prolonged disruptions pose refinancing and cashflow risks to energy producers and suppliers dependent on stable commodity prices.",
+        "credit_flag": "watch",
+        "source": "IEA/Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026_Iran_war_fuel_crisis"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell pauses $3B buyback program through ARC shareholder vote deadline",
+        "summary": "Shell temporarily suspended its $3 billion share buyback programme from June 12 through July 14, 2026, due to securities law requirements surrounding the pending $16.4 billion ARC Resources acquisition. The 75% share, 25% cash deal structure preserves balance sheet strength but adds execution and commodity price risk; ARC is expected to generate approximately $1.5 billion in average annual free cash flow based on normalized 2026-2030 assumptions.",
+        "credit_flag": "watch",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/news/shell-halts-3b-buybacks-arc-141000872.html"
+      },
+      {
+        "category": "industry",
+        "topic": "Retail",
+        "title": "Consumer pricing power challenged by wholesale cost volatility",
+        "summary": "Recent UK retail earnings show mixed ability to pass through inflation to consumers. Unilever's Q1 volume growth of 2.9% outpaced pricing gains of 0.9%, while Home Care showed no price increases despite cost pressures. The energy price cap increase of 13% from July 1 creates additional consumer headwinds that may further compress retail margins and limit retailers' ability to sustain profitability without volume sacrifice.",
+        "credit_flag": "negative",
+        "source": "Multiple",
+        "url": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-15",
     "date_display": "Wednesday, 15 July 2026",
     "items": [
