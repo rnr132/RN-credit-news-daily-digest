@@ -379,6 +379,7 @@ def main():
     
     # Format output
     week_start = (datetime.now() - timedelta(days=datetime.now().weekday())).strftime("%Y-%m-%d")
+    run_date = datetime.now().strftime("%Y-%m-%d")
     output = format_output(ranked, week_start)
     
     # Write to file (defaults to current dir; set OUTPUT_DIR to write
@@ -386,7 +387,7 @@ def main():
     output_dir = os.environ.get("OUTPUT_DIR", ".")
     os.makedirs(output_dir, exist_ok=True)
 
-    output_file = os.path.join(output_dir, f"article_ideas_{week_start}.md")
+    output_file = os.path.join(output_dir, f"article_ideas_{run_date}.md")
     with open(output_file, "w") as f:
         f.write(output)
 
@@ -394,7 +395,7 @@ def main():
     print("\n" + output)
 
     # Also return JSON for programmatic use
-    output_json = os.path.join(output_dir, f"article_ideas_{week_start}.json")
+    output_json = os.path.join(output_dir, f"article_ideas_{run_date}.json")
     with open(output_json, "w") as f:
         json.dump({"week": week_start, "ideas": ranked}, f, indent=2)
 
