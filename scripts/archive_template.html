@@ -225,6 +225,64 @@
 
   .item-source a { color: var(--ink-soft); }
 
+  .coverage-panel {
+    margin: 20px 0 8px;
+    border: 1px solid var(--rule);
+    background: var(--parchment-dark);
+    border-radius: 6px;
+    padding: 14px 18px 16px;
+  }
+
+  .coverage-panel-label {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+  }
+
+  .coverage-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .coverage-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--rule);
+    background: var(--parchment);
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+
+  .coverage-item:hover {
+    border-color: var(--ink-soft);
+  }
+
+  .coverage-detail {
+    font-size: 10px;
+    opacity: 0.85;
+  }
+
+  .coverage-fresh .coverage-detail { color: var(--positive); }
+  .coverage-stale .coverage-detail { color: var(--watch); font-weight: bold; }
+  .coverage-never { border-color: var(--negative); }
+  .coverage-never .coverage-detail { color: var(--negative); font-weight: bold; }
+
+  .coverage-item.active {
+    background: var(--ink);
+    border-color: var(--ink);
+  }
+  .coverage-item.active .coverage-name { color: var(--parchment); }
+  .coverage-item.active .coverage-detail { color: var(--parchment) !important; }
+
   .no-results {
     text-align: center;
     font-style: italic;
@@ -258,6 +316,13 @@
 
     <div class="back-link-row"><a href="index.html">&larr; Back to today's edition</a></div>
     <div class="meta-row">Last generated {{GENERATED_AT}}</div>
+
+    <div class="coverage-panel">
+      <div class="coverage-panel-label">Coverage status &middot; last mentioned</div>
+      <div class="coverage-grid" id="coverage-grid">
+        {{COVERAGE_STATUS}}
+      </div>
+    </div>
 
     <div class="controls">
       <input id="search-box" type="text" placeholder="Search headlines and summaries&hellip;" autocomplete="off">
@@ -293,6 +358,7 @@
       var searchBox = document.getElementById('search-box');
       var items = Array.prototype.slice.call(document.querySelectorAll('#items .item'));
       var topicChips = Array.prototype.slice.call(document.querySelectorAll('#topic-chips .chip'));
+      var coverageItems = Array.prototype.slice.call(document.querySelectorAll('#coverage-grid .coverage-item'));
       var flagChips = Array.prototype.slice.call(document.querySelectorAll('#flag-chips .chip'));
       var clearBtn = document.getElementById('clear-filters');
       var resultCount = document.getElementById('result-count');
@@ -334,6 +400,27 @@
         });
       });
 
+      coverageItems.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          var topic = chip.getAttribute('data-filter-topic');
+          if (activeTopics.has(topic)) {
+            activeTopics.delete(topic);
+            chip.classList.remove('active');
+          } else {
+            activeTopics.add(topic);
+            chip.classList.add('active');
+          }
+          // Keep the matching topic chip (if the topic has ever appeared)
+          // visually in sync with the coverage panel.
+          topicChips.forEach(function (tc) {
+            if (tc.getAttribute('data-filter-topic') === topic) {
+              tc.classList.toggle('active', activeTopics.has(topic));
+            }
+          });
+          applyFilters();
+        });
+      });
+
       flagChips.forEach(function (chip) {
         chip.addEventListener('click', function () {
           var flag = chip.getAttribute('data-filter-flag');
@@ -352,7 +439,7 @@
         activeTopics.clear();
         activeFlags.clear();
         searchBox.value = '';
-        topicChips.concat(flagChips).forEach(function (c) { c.classList.remove('active'); });
+        topicChips.concat(flagChips).concat(coverageItems).forEach(function (c) { c.classList.remove('active'); });
         applyFilters();
       });
 
