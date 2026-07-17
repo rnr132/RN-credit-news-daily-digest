@@ -1,5 +1,110 @@
 [
   {
+    "date": "2026-07-17",
+    "date_display": "Friday, 17 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP books $1bn impairment on low-carbon assets, shifts focus to oil and gas",
+        "summary": "BP announced a $1 billion writedown on its gas and low-carbon energy business in Q2 2026 as it refocuses on core hydrocarbon operations. This asset impairment signals a strategic retreat from energy transition investments and reflects balance-sheet pressures amid volatile energy markets. The move underscores BP's capital discipline reset but raises questions about long-term energy transition strategy.",
+        "credit_flag": "watch",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-14/bp-flags-1-billion-writedown-from-gas-and-low-carbon-business"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell guides higher integrated gas output on Iran volatility; strong trading",
+        "summary": "Shell raised integrated gas output guidance to 610k–650k boe/d (from 580k–640k prior), citing strong oil and gas trading results driven by Iran war-related market disruption. The company expects $1–6bn working-capital inflow in Q2, supporting cash conversion and balance-sheet improvement compared to peers. Earnings scheduled for July 29 will test whether elevated crude and trading profits translate to debt reduction.",
+        "credit_flag": "positive",
+        "source": "Invezz, Bloomberg",
+        "url": "https://invezz.com/news/2026/07/14/shell-bp-and-other-energy-stocks-jump-as-crude-oil-prices-rebound/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Xavier Niel acquires 16% Vodafone stake for £4.4bn, becomes largest shareholder",
+        "summary": "French billionaire Xavier Niel's investment vehicle Vega agreed to buy 16.21% of Vodafone from Emirates Telecom for £4.4 billion (~$5.9bn), making him the telecom's largest shareholder. The deal terminates e&'s relationship agreement and removes former e& director from the board. Niel signals long-term commitment and intent to engage with UK government; Vodafone reports Q2 results on July 27 amid VodafoneThree integration.",
+        "credit_flag": "positive",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-10/emirates-telecom-to-sell-vodafone-stake-in-6-billion-deal"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone completes buyout of CK Hutchison stake in VodafoneThree merger",
+        "summary": "Vodafone acquired full ownership of VodafoneThree (UK's largest mobile operator) by buying out CK Hutchison's remaining stake. Integration is running ahead of schedule with early coverage improvements visible. Full control eliminates joint-venture friction and allows Vodafone to capture entire synergy benefits during the critical integration phase, supporting debt reduction and cash flow improvement targets.",
+        "credit_flag": "positive",
+        "source": "Kalkine Media",
+        "url": "https://kalkinemedia.com/uk/stocks/communication/why-is-vodafone-doubling-down-on-britains-biggest-mobile-network-right-now"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT forms 50:50 joint venture with Verizon on international operations",
+        "summary": "BT and Verizon announced a binding agreement to combine their international enterprise operations into a 50:50 joint venture serving 3,000+ customers across 180+ countries. BT adjusted FY27 financial guidance following the deal, which represents a strategic refocus on domestic UK market and offloads lower-return international assets. The JV simplifies BT's portfolio and improves capital efficiency.",
+        "credit_flag": "positive",
+        "source": "Investegate, RTTNews",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/bt-group-sets-2026-agm-date-shares-steady-on-london-trade/69613974"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo Funds' $3.7bn acquisition of NSG moves to shareholder approval phase",
+        "summary": "Apollo Funds' $3.7 billion acquisition of NSG Group is progressing toward closing after shareholder approval and regulatory clearance. Apollo will invest equity and principal lenders will convert loans to equity, addressing NSG's long-standing debt burden from the 2006 Pilkington acquisition. Expected completion around March 2027; deal reinforces NSG's balance-sheet stability and growth trajectory in architectural, automotive and solar glass.",
+        "credit_flag": "positive",
+        "source": "Glass International",
+        "url": "https://www.glass-international.com/news/nsg-group-in-3-7-billion-glass-acquisition"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore H1 2026: revenue growth recovers, refinancing €150m USPP maturities",
+        "summary": "Safestore reported H1 2026 revenue growth of 5.6% and return to earnings growth (EPS +2.1% to 19.4p) despite new-store earnings drag and inflation headwinds. LFL occupancy improved to 77.0%; LTV remains healthy at 29.1%. Company arranged €150m new USPPs to refinance October 2026 maturities; interest cover at 3.9x provides adequate headroom. Interim dividend increased 1% to 10.2p, signaling board confidence.",
+        "credit_flag": "neutral",
+        "source": "Safestore RNS, Property Week",
+        "url": "https://corporate.safestore.com/getmedia/c1c21c2a-173e-41ea-a987-1deae0457bfc/26-06-11-Safestore-RNS-H1-Statement-FY26_FINAL.pdf"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "US-Iran escalation sustains crude at elevated levels; supermajors benefit",
+        "summary": "US port blockade and escort operations on Iran shipping continue to drive oil volatility and high prices. Low global inventories mean even modest supply disruption can push prices higher. BP and Shell benefit from crude-linked cash flows and strong trading desks; refiners see improved margins processing fuels to compensate for Middle East disruptions. Geopolitical risk remains key variable for energy credits through H2 2026.",
+        "credit_flag": "positive",
+        "source": "Invezz",
+        "url": "https://invezz.com/news/2026/07/14/shell-bp-and-other-energy-stocks-jump-as-crude-oil-prices-rebound/"
+      },
+      {
+        "category": "industry",
+        "topic": "Telecom",
+        "title": "Consolidation wave in European telecom; Niel & Verizon drive strategic restructuring",
+        "summary": "Xavier Niel's €5.1bn Vodafone investment and Verizon's JV with BT exemplify European telecom sector consolidation focused on asset optimization and debt reduction. Smaller players divesting non-core operations (international, low-return assets) to boost cash generation and simplify structures. Network integration, 5G capex and fiber rollout remain competitive priorities; credit quality likely to improve with restructuring and deleveraging.",
+        "credit_flag": "positive",
+        "source": "Bloomberg, Investegate",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-10/emirates-telecom-to-sell-vodafone-stake-in-6-billion-deal"
+      },
+      {
+        "category": "industry",
+        "topic": "Glass manufacturing",
+        "title": "NSG advances sustainability and solar glass capacity; supports sector transformation",
+        "summary": "NSG successfully demonstrated horizontal recycling of photovoltaic cover glass and continues solar glass production for First Solar's US expansion. Company targets 10%+ profit margins by 2030 through decarbonization, digital transformation and strategic capacity expansion. Sustainability initiatives and solar focus position NSG favorably as clean energy demand grows.",
+        "credit_flag": "positive",
+        "source": "Glass International, PV Tech",
+        "url": "https://www.glass-international.com/news/nsg-plans-new-initiatives-for-sales-growth"
+      },
+      {
+        "category": "industry",
+        "topic": "Self storage",
+        "title": "Self-storage demand recovery thesis forming; UK occupancy stabilising",
+        "summary": "Mid-2026 conditions suggest more supportive demand backdrop as UK housing transactions begin recovering and new-customer rates stabilize after pandemic normalization. Safestore's H1 occupancy recovery and European expansion (Paris, Spain, Benelux) point to structural long-term growth runway. Key watch: whether enquiry volumes and pricing can recover in tandem as rate-cut expectations ease refinancing pressure.",
+        "credit_flag": "watch",
+        "source": "Kalkine Media",
+        "url": "https://kalkine.co.uk/news/real-estate/safestore-holdings-could-self-storage-demand-turn-this-reit-into-2026s-quiet-recovery-story"
+      }
+    ]
+  },
+  {
     "date": "2026-07-16",
     "date_display": "Thursday, 16 July 2026",
     "items": [

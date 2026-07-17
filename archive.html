@@ -225,6 +225,64 @@
 
   .item-source a { color: var(--ink-soft); }
 
+  .coverage-panel {
+    margin: 20px 0 8px;
+    border: 1px solid var(--rule);
+    background: var(--parchment-dark);
+    border-radius: 6px;
+    padding: 14px 18px 16px;
+  }
+
+  .coverage-panel-label {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+  }
+
+  .coverage-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .coverage-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--rule);
+    background: var(--parchment);
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+
+  .coverage-item:hover {
+    border-color: var(--ink-soft);
+  }
+
+  .coverage-detail {
+    font-size: 10px;
+    opacity: 0.85;
+  }
+
+  .coverage-fresh .coverage-detail { color: var(--positive); }
+  .coverage-stale .coverage-detail { color: var(--watch); font-weight: bold; }
+  .coverage-never { border-color: var(--negative); }
+  .coverage-never .coverage-detail { color: var(--negative); font-weight: bold; }
+
+  .coverage-item.active {
+    background: var(--ink);
+    border-color: var(--ink);
+  }
+  .coverage-item.active .coverage-name { color: var(--parchment); }
+  .coverage-item.active .coverage-detail { color: var(--parchment) !important; }
+
   .no-results {
     text-align: center;
     font-style: italic;
@@ -251,20 +309,27 @@
 <body>
   <div class="wrap">
     <header class="masthead">
-      <div class="kicker">Archive · 13 Editions</div>
+      <div class="kicker">Archive · 14 Editions</div>
       <h1>The Watchlist</h1>
       <div class="subhead">Searchable archive of past editions</div>
     </header>
 
     <div class="back-link-row"><a href="index.html">&larr; Back to today's edition</a></div>
-    <div class="meta-row">Last generated 16 Jul 2026, 13:05 UTC</div>
+    <div class="meta-row">Last generated 17 Jul 2026, 09:14 UTC</div>
+
+    <div class="coverage-panel">
+      <div class="coverage-panel-label">Coverage status &middot; last mentioned</div>
+      <div class="coverage-grid" id="coverage-grid">
+        <button class="coverage-item coverage-fresh" data-filter-topic="Octopus Energy"><span class="coverage-name">Octopus Energy</span><span class="coverage-detail">2d ago</span></button><button class="coverage-item coverage-fresh" data-filter-topic="Retail"><span class="coverage-name">Retail</span><span class="coverage-detail">1d ago</span></button><button class="coverage-item coverage-fresh" data-filter-topic="Energy suppliers"><span class="coverage-name">Energy suppliers</span><span class="coverage-detail">1d ago</span></button><button class="coverage-item coverage-fresh" data-filter-topic="Unilever"><span class="coverage-name">Unilever</span><span class="coverage-detail">1d ago</span></button><button class="coverage-item coverage-fresh" data-filter-topic="Oil &amp; Gas"><span class="coverage-name">Oil &amp; Gas</span><span class="coverage-detail">today</span></button><button class="coverage-item coverage-fresh" data-filter-topic="Telecom"><span class="coverage-name">Telecom</span><span class="coverage-detail">today</span></button><button class="coverage-item coverage-fresh" data-filter-topic="Glass manufacturing"><span class="coverage-name">Glass manufacturing</span><span class="coverage-detail">today</span></button><button class="coverage-item coverage-fresh" data-filter-topic="Self storage"><span class="coverage-name">Self storage</span><span class="coverage-detail">today</span></button><button class="coverage-item coverage-fresh" data-filter-topic="BP plc"><span class="coverage-name">BP plc</span><span class="coverage-detail">today</span></button><button class="coverage-item coverage-fresh" data-filter-topic="Shell plc"><span class="coverage-name">Shell plc</span><span class="coverage-detail">today</span></button><button class="coverage-item coverage-fresh" data-filter-topic="Vodafone"><span class="coverage-name">Vodafone</span><span class="coverage-detail">today</span></button><button class="coverage-item coverage-fresh" data-filter-topic="British Telecom"><span class="coverage-name">British Telecom</span><span class="coverage-detail">today</span></button><button class="coverage-item coverage-fresh" data-filter-topic="NSG Group"><span class="coverage-name">NSG Group</span><span class="coverage-detail">today</span></button><button class="coverage-item coverage-fresh" data-filter-topic="Safestore"><span class="coverage-name">Safestore</span><span class="coverage-detail">today</span></button>
+      </div>
+    </div>
 
     <div class="controls">
       <input id="search-box" type="text" placeholder="Search headlines and summaries&hellip;" autocomplete="off">
 
       <div class="chip-group" id="topic-chips">
         <div class="chip-group-label">Filter by tag</div>
-        <button class="chip" data-filter-topic="BP plc">BP plc</button><button class="chip" data-filter-topic="British Telecom">British Telecom</button><button class="chip" data-filter-topic="Energy suppliers">Energy suppliers</button><button class="chip" data-filter-topic="European postal services">European postal services</button><button class="chip" data-filter-topic="Glass manufacturing">Glass manufacturing</button><button class="chip" data-filter-topic="NSG Group">NSG Group</button><button class="chip" data-filter-topic="Octopus Energy">Octopus Energy</button><button class="chip" data-filter-topic="Oil &amp; Gas">Oil &amp; Gas</button><button class="chip" data-filter-topic="Posten Bring">Posten Bring</button><button class="chip" data-filter-topic="Retail">Retail</button><button class="chip" data-filter-topic="Safestore">Safestore</button><button class="chip" data-filter-topic="Shell plc">Shell plc</button><button class="chip" data-filter-topic="Telecom">Telecom</button><button class="chip" data-filter-topic="Unilever">Unilever</button><button class="chip" data-filter-topic="Vodafone">Vodafone</button>
+        <button class="chip" data-filter-topic="BP plc">BP plc</button><button class="chip" data-filter-topic="British Telecom">British Telecom</button><button class="chip" data-filter-topic="Energy suppliers">Energy suppliers</button><button class="chip" data-filter-topic="European postal services">European postal services</button><button class="chip" data-filter-topic="Glass manufacturing">Glass manufacturing</button><button class="chip" data-filter-topic="NSG Group">NSG Group</button><button class="chip" data-filter-topic="Octopus Energy">Octopus Energy</button><button class="chip" data-filter-topic="Oil &amp; Gas">Oil &amp; Gas</button><button class="chip" data-filter-topic="Posten Bring">Posten Bring</button><button class="chip" data-filter-topic="Retail">Retail</button><button class="chip" data-filter-topic="Safestore">Safestore</button><button class="chip" data-filter-topic="Self storage">Self storage</button><button class="chip" data-filter-topic="Shell plc">Shell plc</button><button class="chip" data-filter-topic="Telecom">Telecom</button><button class="chip" data-filter-topic="Unilever">Unilever</button><button class="chip" data-filter-topic="Vodafone">Vodafone</button>
       </div>
 
       <div class="chip-group" id="flag-chips">
@@ -279,6 +344,105 @@
 
     <div id="items">
       
+        <article class="item" data-topic="BP plc" data-flag="watch" data-category="company" data-search="bp books $1bn impairment on low-carbon assets, shifts focus to oil and gas bp announced a $1 billion writedown on its gas and low-carbon energy business in q2 2026 as it refocuses on core hydrocarbon operations. this asset impairment signals a strategic retreat from energy transition investments and reflects balance-sheet pressures amid volatile energy markets. the move underscores bp&#x27;s capital discipline reset but raises questions about long-term energy transition strategy. bp plc bloomberg">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">BP plc &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">BP books $1bn impairment on low-carbon assets, shifts focus to oil and gas</h3>
+            <p class="item-summary">BP announced a $1 billion writedown on its gas and low-carbon energy business in Q2 2026 as it refocuses on core hydrocarbon operations. This asset impairment signals a strategic retreat from energy transition investments and reflects balance-sheet pressures amid volatile energy markets. The move underscores BP&#x27;s capital discipline reset but raises questions about long-term energy transition strategy.</p>
+            <div class="item-source"><a href="https://www.bloomberg.com/news/articles/2026-07-14/bp-flags-1-billion-writedown-from-gas-and-low-carbon-business" target="_blank" rel="noopener">Bloomberg</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Shell plc" data-flag="positive" data-category="company" data-search="shell guides higher integrated gas output on iran volatility; strong trading shell raised integrated gas output guidance to 610k–650k boe/d (from 580k–640k prior), citing strong oil and gas trading results driven by iran war-related market disruption. the company expects $1–6bn working-capital inflow in q2, supporting cash conversion and balance-sheet improvement compared to peers. earnings scheduled for july 29 will test whether elevated crude and trading profits translate to debt reduction. shell plc invezz, bloomberg">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Shell plc &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">Shell guides higher integrated gas output on Iran volatility; strong trading</h3>
+            <p class="item-summary">Shell raised integrated gas output guidance to 610k–650k boe/d (from 580k–640k prior), citing strong oil and gas trading results driven by Iran war-related market disruption. The company expects $1–6bn working-capital inflow in Q2, supporting cash conversion and balance-sheet improvement compared to peers. Earnings scheduled for July 29 will test whether elevated crude and trading profits translate to debt reduction.</p>
+            <div class="item-source"><a href="https://invezz.com/news/2026/07/14/shell-bp-and-other-energy-stocks-jump-as-crude-oil-prices-rebound/" target="_blank" rel="noopener">Invezz, Bloomberg</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Vodafone" data-flag="positive" data-category="company" data-search="xavier niel acquires 16% vodafone stake for £4.4bn, becomes largest shareholder french billionaire xavier niel&#x27;s investment vehicle vega agreed to buy 16.21% of vodafone from emirates telecom for £4.4 billion (~$5.9bn), making him the telecom&#x27;s largest shareholder. the deal terminates e&amp;&#x27;s relationship agreement and removes former e&amp; director from the board. niel signals long-term commitment and intent to engage with uk government; vodafone reports q2 results on july 27 amid vodafonethree integration. vodafone bloomberg">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Vodafone &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">Xavier Niel acquires 16% Vodafone stake for £4.4bn, becomes largest shareholder</h3>
+            <p class="item-summary">French billionaire Xavier Niel&#x27;s investment vehicle Vega agreed to buy 16.21% of Vodafone from Emirates Telecom for £4.4 billion (~$5.9bn), making him the telecom&#x27;s largest shareholder. The deal terminates e&amp;&#x27;s relationship agreement and removes former e&amp; director from the board. Niel signals long-term commitment and intent to engage with UK government; Vodafone reports Q2 results on July 27 amid VodafoneThree integration.</p>
+            <div class="item-source"><a href="https://www.bloomberg.com/news/articles/2026-07-10/emirates-telecom-to-sell-vodafone-stake-in-6-billion-deal" target="_blank" rel="noopener">Bloomberg</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Vodafone" data-flag="positive" data-category="company" data-search="vodafone completes buyout of ck hutchison stake in vodafonethree merger vodafone acquired full ownership of vodafonethree (uk&#x27;s largest mobile operator) by buying out ck hutchison&#x27;s remaining stake. integration is running ahead of schedule with early coverage improvements visible. full control eliminates joint-venture friction and allows vodafone to capture entire synergy benefits during the critical integration phase, supporting debt reduction and cash flow improvement targets. vodafone kalkine media">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Vodafone &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">Vodafone completes buyout of CK Hutchison stake in VodafoneThree merger</h3>
+            <p class="item-summary">Vodafone acquired full ownership of VodafoneThree (UK&#x27;s largest mobile operator) by buying out CK Hutchison&#x27;s remaining stake. Integration is running ahead of schedule with early coverage improvements visible. Full control eliminates joint-venture friction and allows Vodafone to capture entire synergy benefits during the critical integration phase, supporting debt reduction and cash flow improvement targets.</p>
+            <div class="item-source"><a href="https://kalkinemedia.com/uk/stocks/communication/why-is-vodafone-doubling-down-on-britains-biggest-mobile-network-right-now" target="_blank" rel="noopener">Kalkine Media</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="British Telecom" data-flag="positive" data-category="company" data-search="bt forms 50:50 joint venture with verizon on international operations bt and verizon announced a binding agreement to combine their international enterprise operations into a 50:50 joint venture serving 3,000+ customers across 180+ countries. bt adjusted fy27 financial guidance following the deal, which represents a strategic refocus on domestic uk market and offloads lower-return international assets. the jv simplifies bt&#x27;s portfolio and improves capital efficiency. british telecom investegate, rttnews">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">British Telecom &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">BT forms 50:50 joint venture with Verizon on international operations</h3>
+            <p class="item-summary">BT and Verizon announced a binding agreement to combine their international enterprise operations into a 50:50 joint venture serving 3,000+ customers across 180+ countries. BT adjusted FY27 financial guidance following the deal, which represents a strategic refocus on domestic UK market and offloads lower-return international assets. The JV simplifies BT&#x27;s portfolio and improves capital efficiency.</p>
+            <div class="item-source"><a href="https://www.ad-hoc-news.de/boerse/news/ueberblick/bt-group-sets-2026-agm-date-shares-steady-on-london-trade/69613974" target="_blank" rel="noopener">Investegate, RTTNews</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="NSG Group" data-flag="positive" data-category="company" data-search="apollo funds&#x27; $3.7bn acquisition of nsg moves to shareholder approval phase apollo funds&#x27; $3.7 billion acquisition of nsg group is progressing toward closing after shareholder approval and regulatory clearance. apollo will invest equity and principal lenders will convert loans to equity, addressing nsg&#x27;s long-standing debt burden from the 2006 pilkington acquisition. expected completion around march 2027; deal reinforces nsg&#x27;s balance-sheet stability and growth trajectory in architectural, automotive and solar glass. nsg group glass international">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">NSG Group &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">Apollo Funds&#x27; $3.7bn acquisition of NSG moves to shareholder approval phase</h3>
+            <p class="item-summary">Apollo Funds&#x27; $3.7 billion acquisition of NSG Group is progressing toward closing after shareholder approval and regulatory clearance. Apollo will invest equity and principal lenders will convert loans to equity, addressing NSG&#x27;s long-standing debt burden from the 2006 Pilkington acquisition. Expected completion around March 2027; deal reinforces NSG&#x27;s balance-sheet stability and growth trajectory in architectural, automotive and solar glass.</p>
+            <div class="item-source"><a href="https://www.glass-international.com/news/nsg-group-in-3-7-billion-glass-acquisition" target="_blank" rel="noopener">Glass International</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Safestore" data-flag="neutral" data-category="company" data-search="safestore h1 2026: revenue growth recovers, refinancing €150m uspp maturities safestore reported h1 2026 revenue growth of 5.6% and return to earnings growth (eps +2.1% to 19.4p) despite new-store earnings drag and inflation headwinds. lfl occupancy improved to 77.0%; ltv remains healthy at 29.1%. company arranged €150m new uspps to refinance october 2026 maturities; interest cover at 3.9x provides adequate headroom. interim dividend increased 1% to 10.2p, signaling board confidence. safestore safestore rns, property week">
+          <span class="flag flag-neutral" title="Credit signal: Neutral">Neutral</span>
+          <div class="item-body">
+            <div class="item-tag">Safestore &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">Safestore H1 2026: revenue growth recovers, refinancing €150m USPP maturities</h3>
+            <p class="item-summary">Safestore reported H1 2026 revenue growth of 5.6% and return to earnings growth (EPS +2.1% to 19.4p) despite new-store earnings drag and inflation headwinds. LFL occupancy improved to 77.0%; LTV remains healthy at 29.1%. Company arranged €150m new USPPs to refinance October 2026 maturities; interest cover at 3.9x provides adequate headroom. Interim dividend increased 1% to 10.2p, signaling board confidence.</p>
+            <div class="item-source"><a href="https://corporate.safestore.com/getmedia/c1c21c2a-173e-41ea-a987-1deae0457bfc/26-06-11-Safestore-RNS-H1-Statement-FY26_FINAL.pdf" target="_blank" rel="noopener">Safestore RNS, Property Week</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Oil &amp; Gas" data-flag="positive" data-category="industry" data-search="us-iran escalation sustains crude at elevated levels; supermajors benefit us port blockade and escort operations on iran shipping continue to drive oil volatility and high prices. low global inventories mean even modest supply disruption can push prices higher. bp and shell benefit from crude-linked cash flows and strong trading desks; refiners see improved margins processing fuels to compensate for middle east disruptions. geopolitical risk remains key variable for energy credits through h2 2026. oil &amp; gas invezz">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Oil &amp; Gas &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">US-Iran escalation sustains crude at elevated levels; supermajors benefit</h3>
+            <p class="item-summary">US port blockade and escort operations on Iran shipping continue to drive oil volatility and high prices. Low global inventories mean even modest supply disruption can push prices higher. BP and Shell benefit from crude-linked cash flows and strong trading desks; refiners see improved margins processing fuels to compensate for Middle East disruptions. Geopolitical risk remains key variable for energy credits through H2 2026.</p>
+            <div class="item-source"><a href="https://invezz.com/news/2026/07/14/shell-bp-and-other-energy-stocks-jump-as-crude-oil-prices-rebound/" target="_blank" rel="noopener">Invezz</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Telecom" data-flag="positive" data-category="industry" data-search="consolidation wave in european telecom; niel &amp; verizon drive strategic restructuring xavier niel&#x27;s €5.1bn vodafone investment and verizon&#x27;s jv with bt exemplify european telecom sector consolidation focused on asset optimization and debt reduction. smaller players divesting non-core operations (international, low-return assets) to boost cash generation and simplify structures. network integration, 5g capex and fiber rollout remain competitive priorities; credit quality likely to improve with restructuring and deleveraging. telecom bloomberg, investegate">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Telecom &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">Consolidation wave in European telecom; Niel &amp; Verizon drive strategic restructuring</h3>
+            <p class="item-summary">Xavier Niel&#x27;s €5.1bn Vodafone investment and Verizon&#x27;s JV with BT exemplify European telecom sector consolidation focused on asset optimization and debt reduction. Smaller players divesting non-core operations (international, low-return assets) to boost cash generation and simplify structures. Network integration, 5G capex and fiber rollout remain competitive priorities; credit quality likely to improve with restructuring and deleveraging.</p>
+            <div class="item-source"><a href="https://www.bloomberg.com/news/articles/2026-07-10/emirates-telecom-to-sell-vodafone-stake-in-6-billion-deal" target="_blank" rel="noopener">Bloomberg, Investegate</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Glass manufacturing" data-flag="positive" data-category="industry" data-search="nsg advances sustainability and solar glass capacity; supports sector transformation nsg successfully demonstrated horizontal recycling of photovoltaic cover glass and continues solar glass production for first solar&#x27;s us expansion. company targets 10%+ profit margins by 2030 through decarbonization, digital transformation and strategic capacity expansion. sustainability initiatives and solar focus position nsg favorably as clean energy demand grows. glass manufacturing glass international, pv tech">
+          <span class="flag flag-positive" title="Credit signal: Positive">Positive</span>
+          <div class="item-body">
+            <div class="item-tag">Glass manufacturing &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">NSG advances sustainability and solar glass capacity; supports sector transformation</h3>
+            <p class="item-summary">NSG successfully demonstrated horizontal recycling of photovoltaic cover glass and continues solar glass production for First Solar&#x27;s US expansion. Company targets 10%+ profit margins by 2030 through decarbonization, digital transformation and strategic capacity expansion. Sustainability initiatives and solar focus position NSG favorably as clean energy demand grows.</p>
+            <div class="item-source"><a href="https://www.glass-international.com/news/nsg-plans-new-initiatives-for-sales-growth" target="_blank" rel="noopener">Glass International, PV Tech</a></div>
+          </div>
+        </article>
+        <article class="item" data-topic="Self storage" data-flag="watch" data-category="industry" data-search="self-storage demand recovery thesis forming; uk occupancy stabilising mid-2026 conditions suggest more supportive demand backdrop as uk housing transactions begin recovering and new-customer rates stabilize after pandemic normalization. safestore&#x27;s h1 occupancy recovery and european expansion (paris, spain, benelux) point to structural long-term growth runway. key watch: whether enquiry volumes and pricing can recover in tandem as rate-cut expectations ease refinancing pressure. self storage kalkine media">
+          <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
+          <div class="item-body">
+            <div class="item-tag">Self storage &middot; Friday, 17 July 2026</div>
+            <h3 class="item-title">Self-storage demand recovery thesis forming; UK occupancy stabilising</h3>
+            <p class="item-summary">Mid-2026 conditions suggest more supportive demand backdrop as UK housing transactions begin recovering and new-customer rates stabilize after pandemic normalization. Safestore&#x27;s H1 occupancy recovery and European expansion (Paris, Spain, Benelux) point to structural long-term growth runway. Key watch: whether enquiry volumes and pricing can recover in tandem as rate-cut expectations ease refinancing pressure.</p>
+            <div class="item-source"><a href="https://kalkine.co.uk/news/real-estate/safestore-holdings-could-self-storage-demand-turn-this-reit-into-2026s-quiet-recovery-story" target="_blank" rel="noopener">Kalkine Media</a></div>
+          </div>
+        </article>
         <article class="item" data-topic="Shell plc" data-flag="watch" data-category="company" data-search="shell boosting q2 gas production forecast amid geopolitical volatility shell raised its second-quarter gas production forecast and signalled significantly stronger gas trading, driving a 2.4% share price gain. the company&#x27;s cash capital expenditure guidance for 2026 is now $24-$26 billion (including $4 billion for the arc resources acquisition), with net debt at $52.6 billion and gearing at 23.2%, reflecting balance sheet pressure from elevated lease liabilities related to middle east shipping disruptions. shell plc bloomberg/reuters">
           <span class="flag flag-watch" title="Credit signal: Watch">Watch</span>
           <div class="item-body">
@@ -1526,6 +1690,7 @@
       var searchBox = document.getElementById('search-box');
       var items = Array.prototype.slice.call(document.querySelectorAll('#items .item'));
       var topicChips = Array.prototype.slice.call(document.querySelectorAll('#topic-chips .chip'));
+      var coverageItems = Array.prototype.slice.call(document.querySelectorAll('#coverage-grid .coverage-item'));
       var flagChips = Array.prototype.slice.call(document.querySelectorAll('#flag-chips .chip'));
       var clearBtn = document.getElementById('clear-filters');
       var resultCount = document.getElementById('result-count');
@@ -1567,6 +1732,27 @@
         });
       });
 
+      coverageItems.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          var topic = chip.getAttribute('data-filter-topic');
+          if (activeTopics.has(topic)) {
+            activeTopics.delete(topic);
+            chip.classList.remove('active');
+          } else {
+            activeTopics.add(topic);
+            chip.classList.add('active');
+          }
+          // Keep the matching topic chip (if the topic has ever appeared)
+          // visually in sync with the coverage panel.
+          topicChips.forEach(function (tc) {
+            if (tc.getAttribute('data-filter-topic') === topic) {
+              tc.classList.toggle('active', activeTopics.has(topic));
+            }
+          });
+          applyFilters();
+        });
+      });
+
       flagChips.forEach(function (chip) {
         chip.addEventListener('click', function () {
           var flag = chip.getAttribute('data-filter-flag');
@@ -1585,7 +1771,7 @@
         activeTopics.clear();
         activeFlags.clear();
         searchBox.value = '';
-        topicChips.concat(flagChips).forEach(function (c) { c.classList.remove('active'); });
+        topicChips.concat(flagChips).concat(coverageItems).forEach(function (c) { c.classList.remove('active'); });
         applyFilters();
       });
 
