@@ -434,7 +434,78 @@ def render_archive_card(item: dict, date_display: str) -> str:
         </article>"""
 
 
-def render_archive(history: list) -> str:
+def compute_coverage_status(history: list, config: dict) -> list:
+    """For every configured sector/company, find the most recent edition date
+    it was mentioned in. history is ordered newest-first, so the first
+    edition containing a topic is its most recent mention. Topics with no
+    mentions at all get never=True so they can be flagged distinctly from
+    merely-stale ones."""
+    coverage_names = list(config.get("sectors", [])) + list(config.get("companies", []))
+    last_seen = {}  # topic -> (date_str, date_display)
+
+    for edition in history:
+        for item in edition["items"]:
+            topic = item.get("topic", "")
+            if topic and topic not in last_seen:
+                last_seen[topic] = (edition["date"], edition["date_display"])
+
+    today = datetime.now(timezone.utc).date()
+    status = []
+    for name in coverage_names:
+        if name in last_seen:
+            date_str, date_display = last_seen[name]
+            try:
+                last_date = datetime.strptime(date_str, "%Y-%m-%d").date()
+                days_ago = (today - last_date).days
+            except ValueError:
+                days_ago = None
+            status.append({
+                "name": name,
+                "date_display": date_display,
+                "days_ago": days_ago,
+                "never": False,
+            })
+        else:
+            status.append({
+                "name": name,
+                "date_display": None,
+                "days_ago": None,
+                "never": True,
+            })
+
+    # Stalest / never-mentioned first, so gaps surface at the top.
+    status.sort(key=lambda s: (not s["never"], -(s["days_ago"] if s["days_ago"] is not None else 0)))
+    return status
+
+
+def render_coverage_status(status: list, stale_threshold_days: int = 5) -> str:
+    """Render the coverage-status panel: one row per configured sector/company
+    showing last-mention recency, clickable to filter the archive by that topic."""
+    rows = []
+    for s in status:
+        name_esc = html.escape(s["name"])
+        if s["never"]:
+            state_class = "coverage-never"
+            detail = "no mentions yet"
+        elif s["days_ago"] is not None and s["days_ago"] >= stale_threshold_days:
+            state_class = "coverage-stale"
+            days = s["days_ago"]
+            detail = f"{days}d ago"
+        else:
+            state_class = "coverage-fresh"
+            days = s["days_ago"]
+            detail = "today" if days == 0 else f"{days}d ago"
+
+        rows.append(
+            f'<button class="coverage-item {state_class}" data-filter-topic="{name_esc}">'
+            f'<span class="coverage-name">{name_esc}</span>'
+            f'<span class="coverage-detail">{html.escape(detail)}</span>'
+            f'</button>'
+        )
+    return "".join(rows)
+
+
+def render_archive(history: list, config: dict) -> str:
     """Render a standalone, searchable archive page covering every edition in
     history, with client-side text search and tag/topic/flag filter chips.
     Filtering runs entirely in the browser (no server), so it works on a
@@ -458,11 +529,15 @@ def render_archive(history: list) -> str:
         for flag, label in FLAG_LABEL.items()
     )
 
+    coverage_status = compute_coverage_status(history, config)
+    coverage_html = render_coverage_status(coverage_status)
+
     generated_at = datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC")
 
     out = template.replace("{{ITEMS}}", "".join(cards))
     out = out.replace("{{TOPIC_CHIPS}}", topic_buttons)
     out = out.replace("{{FLAG_CHIPS}}", flag_buttons)
+    out = out.replace("{{COVERAGE_STATUS}}", coverage_html)
     out = out.replace("{{GENERATED_AT}}", html.escape(generated_at))
     out = out.replace("{{EDITION_COUNT}}", str(len(history)))
     return out
@@ -496,7 +571,7 @@ def main():
     save_history(history, config.get("history_editions_to_keep", 30))
 
     OUTPUT_PATH.write_text(render_html(history), encoding="utf-8")
-    ARCHIVE_PATH.write_text(render_archive(history), encoding="utf-8")
+    ARCHIVE_PATH.write_text(render_archive(history, config), encoding="utf-8")
     print(f"Digest generated: {len(items)} items. Wrote {OUTPUT_PATH} and {ARCHIVE_PATH}")
 
 
