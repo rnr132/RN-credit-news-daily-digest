@@ -1,5 +1,119 @@
 [
   {
+    "date": "2026-07-18",
+    "date_display": "Saturday, 18 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP flags $1bn writedown on gas and low-carbon assets",
+        "summary": "BP announced $1bn in impairments on gas and low-carbon energy business in Q2 2026 as it refocuses on oil and gas. The charges exclude underlying profit but signal strategic de-prioritization of energy transition assets, raising questions about capital allocation discipline amid debt-reduction commitments.",
+        "credit_flag": "negative",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-14/bp-flags-1-billion-writedown-from-gas-and-low-carbon-business"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP forecasts $1-6bn Q2 working capital inflow; eyes debt deleveraging",
+        "summary": "BP guided for $1-6bn Q2 working-capital release, signaling improved cash conversion versus Q1 when a $6bn working-capital build offset strong earnings. CEO emphasizes fewer, better choices and debt reduction at front of reset; cash flow quality critical to validate turnaround narrative.",
+        "credit_flag": "positive",
+        "source": "Bloomberg/TS2.tech",
+        "url": "https://ts2.tech/en/bp-stock-jumps-2-before-q2-update-the-cash-test-behind-its-shell-catch-up/"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell raises integrated gas output guidance; Q2 trading strong on Iran tensions",
+        "summary": "Shell upgraded full-year integrated gas guidance to 610-650k boe/d and reported strong oil and gas trading results in Q2 from Iran-conflict volatility. Guidance upgrade and trading gains support downstream and upstream cash generation, though geopolitical de-escalation risk remains.",
+        "credit_flag": "positive",
+        "source": "Invezz/Bloomberg",
+        "url": "https://invezz.com/news/2026/07/14/shell-bp-and-other-energy-stocks-jump-as-crude-oil-prices-rebound/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Xavier Niel acquires 16% stake; board change signals fresh governance",
+        "summary": "French billionaire Xavier Niel's family vehicle Vega agreed to buy 16%+ of Vodafone for ~$6bn at 112.5p per share (13% premium). Niel becomes largest shareholder with track record in minority telecom positions. Removes UAE e& relation agreement; signals potential strategic engagement ahead of Q2 results July 27.",
+        "credit_flag": "watch",
+        "source": "Bloomberg/Reuters",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-10/emirates-telecom-to-sell-vodafone-stake-in-6-billion-deal"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone completes VodafoneThree ownership consolidation",
+        "summary": "Vodafone acquiring CK Hutchison stake to assume 100% ownership of VodafoneThree, the merged UK mobile operator. Network integration ahead of schedule with coverage improvements visible; consolidation removes JV frictions and simplifies decision-making during critical integration phase.",
+        "credit_flag": "positive",
+        "source": "Kalkine Media",
+        "url": "https://kalkinemedia.com/uk/stocks/communication/why-is-vodafone-doubling-down-on-britains-biggest-mobile-network-right-now"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT revises guidance for 50/50 Verizon joint venture accounting",
+        "summary": "BT announced 50/50 JV with Verizon to combine international enterprise operations, serving 3,000+ customers across 180+ countries. Company revised down annual guidance to reflect accounting treatment change. JV ends 18+ month search for international buyer; material capital structure shift.",
+        "credit_flag": "watch",
+        "source": "RTTNews/Stock Analysis",
+        "url": "https://stockanalysis.com/quote/lon/BT.A/"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "US Iran blockade resumption lifts crude; geopolitical risk premium intact",
+        "summary": "US resumed Iran port blockade and ship escorts, driving oil price rebound. Low global inventories amplify disruption risk. BP and Shell positioned to benefit from tighter supply dynamics, though rapid de-escalation poses downside risk to current crude-linked cash flows.",
+        "credit_flag": "positive",
+        "source": "Invezz",
+        "url": "https://invezz.com/news/2026/07/14/shell-bp-and-other-energy-stocks-jump-as-crude-oil-prices-rebound/"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo acquisition advances toward June shareholder vote completion",
+        "summary": "Apollo Funds' $3.7bn acquisition of NSG moving forward with shareholder approval at late-June AGM. Deal includes debt-to-equity conversion by major Japanese banks, substantially reducing NSG's long-standing Pilkington-related debt burden. Closes expected by ~March 2027; material deleveraging event.",
+        "credit_flag": "positive",
+        "source": "Apollo/Glass International",
+        "url": "https://www.glass-international.com/news/nsg-group-in-3-7-billion-glass-acquisition"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "NSG advances solar glass and decarbonization strategy amid operational reset",
+        "summary": "NSG opened solar glass production line for First Solar and deployed PV cover glass horizontal recycling in Japan. 2030 Vision targets 10%+ profit margin (vs 7% FY27 forecast). Architectural glass coating facilities in Japan and Poland advancing. Capex programs align with Apollo partnership.",
+        "credit_flag": "positive",
+        "source": "Glass International",
+        "url": "https://www.glass-international.com/news/nsg-plans-new-initiatives-for-sales-growth"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Mid-2026 conditions support recovery as occupancy normalizes",
+        "summary": "Safestore facing cyclical demand reset from pandemic highs but mid-2026 backdrop suggests stabilization. UK housing transactions recovering as rate cycle peaks; occupancy below pandemic levels but stabilizing. European expansion maturing; refinancing outcomes and rate-cut timing key credit catalysts.",
+        "credit_flag": "watch",
+        "source": "Kalkine",
+        "url": "https://kalkine.co.uk/news/real-estate/safestore-holdings-could-self-storage-demand-turn-this-reit-into-2026s-quiet-recovery-story"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Union recognition push tests Octopus as it scales; labour relations shift",
+        "summary": "GMB union preparing formal recognition proposal at Octopus Energy, citing workload and training concerns. Octopus is now UK's largest household supplier (~7.5m accounts post-Shell acquisition) but only large British energy supplier without union recognition. Signals labour standards tension as challenger becomes incumbent.",
+        "credit_flag": "watch",
+        "source": "Energy Live News/HR Magazine",
+        "url": "https://www.energylivenews.com/2026/07/08/octopus-union-rights-battle-underway/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy Generation reaches £8.5bn AUM in renewable assets",
+        "summary": "Octopus Energy Generation expanded managed renewable portfolio to £8.5bn following rapid year-long expansion. Assets nearly tripled since 2021 with nine new institutional fund mandates from pension schemes and insurers. Signals successful capital-light growth model and institutional investor confidence.",
+        "credit_flag": "positive",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/07/03/octopus-energy-generation-reaches-8-5-billion-in-renewable-assets/"
+      }
+    ]
+  },
+  {
     "date": "2026-07-17",
     "date_display": "Friday, 17 July 2026",
     "items": [
