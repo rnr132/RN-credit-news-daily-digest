@@ -1,5 +1,65 @@
 [
   {
+    "date": "2026-07-20",
+    "date_display": "Monday, 20 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Q2 net debt to fall sharply to $22–23bn on higher commodity prices",
+        "summary": "BP forecasts net debt reduction to $22–23 billion at end-Q2 (from $25.3bn at Q1) despite $1bn impairment on low-carbon ventures, supported by €2.5bn hybrid redemption and strong oil/gas realizations. Net debt guidance to $14–18bn by end-2027 remains on track despite production headwinds.",
+        "credit_flag": "positive",
+        "source": "Reuters/SEC filings",
+        "url": "https://www.stocktitan.net/sec-filings/BP/6-k-bp-plc-current-report-foreign-issuer-d6f73b075bd6.html"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell confirms strong Q2 gas trading ahead of 30 July results release",
+        "summary": "Shell raised Q2 forecast for Integrated Gas trading to be significantly higher than Q1 despite reduced Qatar LNG output from conflict damage. Liquefaction volumes upgraded to 7.4–7.8 million tonnes. Strong oil trading expected in line with Q1, supporting cash generation guidance.",
+        "credit_flag": "positive",
+        "source": "Bloomberg/Shell trading update",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-07/shell-signals-strong-oil-and-gas-trading-profit-on-iran-war"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Niel stake now in advanced closing stages; regulatory approvals expected by year-end",
+        "summary": "Xavier Niel's Vega vehicle has binding agreement to acquire e& stake (16.2% of share capital, 17.13% voting rights) for £4.4bn. Financial instruments with counterparty banks will physically settle pending customary regulatory approvals. Settlement expected in near future, with completion targeted before year-end.",
+        "credit_flag": "neutral",
+        "source": "MarketScreener/Globe Newswire",
+        "url": "https://www.marketscreener.com/news/update-on-investment-in-vodafone-ce7f5ed2d08df22d"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "H1 2026 results due 28 July; consensus expects 4.1% sales growth, modest EPS uplift",
+        "summary": "Unilever set to report H1 2026 results with consensus forecasting 4.1% underlying sales growth but only 1.6% EPS growth, reflecting margin pressure. Company reaffirmed guidance for full-year growth at bottom end of 4–6% range. McCormick Foods deal closing expected mid-2027.",
+        "credit_flag": "neutral",
+        "source": "Unilever/TechStock",
+        "url": "https://ts2.tech/en/unilever-plc-lonulvr-shares-decline-with-ongoing-volume-gains-awaiting-profit-boost"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo acquisition shareholder vote completed; deal on track for March 2027 close",
+        "summary": "NSG shareholder approval vote held in late June 2026 as scheduled for Apollo's $3.7bn acquisition. Transaction proceeds toward regulatory clearances with expected completion around March 2027. Lenders set to convert portion of loans to equity, stabilizing balance sheet post-restructuring.",
+        "credit_flag": "positive",
+        "source": "Apollo/Glass Magazine",
+        "url": "https://ir.apollo.com/news-events/press-releases/detail/614/apollo-funds-announce-strategic-investment-in-nsg-group-a"
+      },
+      {
+        "category": "industry",
+        "topic": "Energy suppliers",
+        "title": "Higher energy costs expected to weigh on UK inflation into H2 2026",
+        "summary": "Rising oil and gas prices driven by Iran tensions pose downside risk to UK inflation trajectory. Manufacturing, logistics, retail sectors monitoring higher operating costs. Energy price volatility remains key macroeconomic risk; central banks likely to monitor energy-driven inflation before easing cycle.",
+        "credit_flag": "negative",
+        "source": "Kalkine",
+        "url": "https://kalkine.co.uk/news/economy/will-rising-energy-prices-threaten-the-uks-inflation-outlook-in-july-2026"
+      }
+    ]
+  },
+  {
     "date": "2026-07-19",
     "date_display": "Sunday, 19 July 2026",
     "items": [
