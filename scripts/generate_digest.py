@@ -23,6 +23,7 @@ import re
 import sys
 import json
 import html
+import difflib
 import imaplib
 import email as email_lib
 from email.header import decode_header
@@ -151,7 +152,36 @@ def fetch_email_items(config: dict) -> list:
 # Claude API call
 # ---------------------------------------------------------------------------
 
-def build_prompt(config: dict, email_items: list) -> str:
+def summarize_recent_coverage(history: list, days: int = 6, max_items: int = 60) -> str:
+    """Build a compact 'already reported' block from recent editions, so the
+    model can avoid re-reporting the same underlying story. Only titles +
+    topics are included (not full summaries) to keep this cheap in tokens.
+    Caps at max_items total to bound prompt size even with a busy week."""
+    if not history:
+        return "No prior editions yet — this is the first one."
+
+    cutoff = datetime.now(timezone.utc).date() - timedelta(days=days)
+    lines = []
+    for edition in history:
+        try:
+            edition_date = datetime.strptime(edition["date"], "%Y-%m-%d").date()
+        except (ValueError, KeyError):
+            continue
+        if edition_date < cutoff:
+            break  # history is newest-first, so we can stop early
+        for item in edition.get("items", []):
+            lines.append(f"- [{item.get('topic', '?')}] {item.get('title', '')}")
+            if len(lines) >= max_items:
+                break
+        if len(lines) >= max_items:
+            break
+
+    if not lines:
+        return "No prior editions in the last few days."
+    return "\n".join(lines)
+
+
+def build_prompt(config: dict, email_items: list, recent_coverage: str) -> str:
     today = datetime.now(timezone.utc).strftime("%A, %d %B %Y")
 
     sources_line = (
@@ -193,7 +223,24 @@ TASK
 2. Also incorporate the inbox content below where relevant.
 3. Skip generic/non-credit-relevant stories (marketing news, minor product launches) unless
    they have a plausible credit angle.
-4. Deduplicate — do not report the same underlying event twice.
+4. CRITICAL — avoid re-reporting old news. The ALREADY REPORTED section below lists
+   headlines from the last several editions. Before including an item, check it against
+   that list:
+   - If it's the same underlying story/event as something already reported (even if
+     phrased differently, or from a different outlet), DO NOT include it, UNLESS there is
+     a genuinely new, material development (e.g. a deal that was "progressing" has now
+     closed; a "guidance range" has been replaced by actual results; a rumour is now
+     confirmed). If including a follow-up, make the headline and summary clearly reflect
+     what specifically changed since the last report, not a restatement of the same facts.
+   - A running situation (e.g. an ongoing M&A process, an ongoing geopolitical situation
+     affecting commodity prices) should only reappear when there's a concrete new
+     development, not as a general recap of the situation's current state.
+   - When in doubt, leave it out — it is much better to return fewer items than to pad
+     the digest with repeats.
+
+ALREADY REPORTED (last several editions — do not repeat these unless there's a
+genuinely new development, per the rule above)
+{recent_coverage}
 
 INBOX CONTENT
 {email_block}
@@ -214,9 +261,12 @@ these fields:
   "source": either the publication name (e.g. "Reuters") or, for inbox items, the sender
   "url": the source URL if from the web, or "" if from an inbox email
 
-Return between 6 and 16 items total, covering as much of the sector/company list as
-genuine news allows. If there is truly nothing credit-relevant for a sector or company,
-simply omit it rather than inventing something."""
+Return up to 16 items, covering as much of the sector/company list as genuine *new*
+news allows. There is no minimum — on a quiet news day, or a day where most ongoing
+stories haven't materially advanced, it is completely acceptable to return only 2-3
+items, or even zero for a sector/company. If there is truly nothing credit-relevant
+and new for a sector or company, simply omit it rather than inventing something or
+re-reporting old news to pad the count."""
 
 
 def call_claude(config: dict, prompt: str) -> list:
@@ -274,6 +324,97 @@ def call_claude(config: dict, prompt: str) -> list:
     return parse_json_items(final_text)
 
 
+def _normalize_title(title: str) -> str:
+    """Lowercase, strip punctuation/numbers noise for similarity comparison."""
+    t = title.lower()
+    t = re.sub(r"[^a-z\s]", " ", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+
+def _is_similar(a: str, b: str, threshold: float = 0.72) -> bool:
+    return difflib.SequenceMatcher(None, _normalize_title(a), _normalize_title(b)).ratio() >= threshold
+
+
+_STOPWORDS = {
+    "the", "a", "an", "to", "for", "on", "in", "of", "and", "or", "as", "at",
+    "amid", "with", "from", "over", "into", "its", "is", "are", "up", "down",
+}
+
+
+def _keywords(title: str) -> set:
+    """Extract distinctive words from a title (proper nouns, numbers, key
+    terms) for a cruder but more reliable overlap check than pure string
+    similarity, since this project's model tends to reword headlines
+    substantially even when reporting the identical underlying story."""
+    words = _normalize_title(title).split()
+    return {w for w in words if w not in _STOPWORDS and len(w) > 2}
+
+
+def _is_same_story(a: str, b: str, sim_threshold: float = 0.72, keyword_overlap_threshold: float = 0.55) -> bool:
+    """Two signals, either sufficient: (1) high string similarity, or (2) high
+    overlap in distinctive keywords (catches heavily-reworded repeats of the
+    same story that string similarity misses)."""
+    if _is_similar(a, b, threshold=sim_threshold):
+        return True
+    kw_a, kw_b = _keywords(a), _keywords(b)
+    if not kw_a or not kw_b:
+        return False
+    overlap = len(kw_a & kw_b) / min(len(kw_a), len(kw_b))
+    return overlap >= keyword_overlap_threshold
+
+
+def dedupe_items(items: list) -> list:
+    """Drop items that are near-duplicates of an earlier item in the same list
+    (same topic + similar title = almost certainly the same underlying story
+    reported twice by the model in one response)."""
+    kept = []
+    for it in items:
+        is_dupe = False
+        for prior in kept:
+            if it["topic"] == prior["topic"] and _is_same_story(it["title"], prior["title"]):
+                is_dupe = True
+                break
+        if not is_dupe:
+            kept.append(it)
+    dropped = len(items) - len(kept)
+    if dropped:
+        print(f"[dedupe] Dropped {dropped} same-day duplicate item(s).")
+    return kept
+
+
+def filter_against_recent_history(items: list, history: list, days: int = 4, threshold: float = 0.78) -> list:
+    """Safety net: drop items that are near-duplicates of something already
+    published in the last N editions. This runs AFTER the prompt-level
+    instruction, catching anything that slips through despite it. Slightly
+    higher similarity threshold than same-day dedup, since day-to-day
+    phrasing naturally varies more and we only want to catch clear repeats,
+    not legitimately-related follow-ups."""
+    cutoff = datetime.now(timezone.utc).date() - timedelta(days=days)
+    recent_titles = []  # (topic, title)
+    for edition in history:
+        try:
+            edition_date = datetime.strptime(edition["date"], "%Y-%m-%d").date()
+        except (ValueError, KeyError):
+            continue
+        if edition_date < cutoff:
+            break
+        for it in edition.get("items", []):
+            recent_titles.append((it.get("topic", ""), it.get("title", "")))
+
+    kept = []
+    for it in items:
+        is_repeat = any(
+            it["topic"] == topic and _is_same_story(it["title"], title, sim_threshold=threshold, keyword_overlap_threshold=0.65)
+            for topic, title in recent_titles
+        )
+        if is_repeat:
+            print(f"[dedupe] Dropped likely repeat of recent story: {it['title'][:70]}")
+            continue
+        kept.append(it)
+    return kept
+
+
 def parse_json_items(text: str) -> list:
     # Defensive: strip any citation markup the model may have inserted despite
     # instructions not to (Anthropic auto-inserts these when web_search is used).
@@ -308,7 +449,7 @@ def parse_json_items(text: str) -> list:
             "source": it.get("source", ""),
             "url": it.get("url", ""),
         })
-    return valid_items
+    return dedupe_items(valid_items)
 
 
 # ---------------------------------------------------------------------------
@@ -549,15 +690,19 @@ def render_archive(history: list, config: dict) -> str:
 
 def main():
     config = load_config()
+    history = load_history()
 
     email_items = fetch_email_items(config)
-    prompt = build_prompt(config, email_items)
+    recent_coverage = summarize_recent_coverage(history)
+    prompt = build_prompt(config, email_items, recent_coverage)
 
     try:
         items = call_claude(config, prompt)
     except Exception as exc:
         print(f"Error generating digest: {exc}", file=sys.stderr)
         sys.exit(1)
+
+    items = filter_against_recent_history(items, history)
 
     now = datetime.now(timezone.utc)
     edition = {
@@ -566,7 +711,6 @@ def main():
         "items": items,
     }
 
-    history = load_history()
     history.insert(0, edition)
     save_history(history, config.get("history_editions_to_keep", 30))
 
