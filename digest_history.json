@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-21",
+    "date_display": "Tuesday, 21 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Niel-controlled Vega signs binding agreement for 16.2% stake",
+        "summary": "Xavier Niel's Vega vehicle has entered a binding agreement to acquire e&'s 16.2% stake in Vodafone for £4.4bn, making Niel the largest shareholder upon regulatory approval. Completion is expected by year-end. The move provides strategic governance influence and validates Vodafone's simplified European asset base under CEO Della Valle.",
+        "credit_flag": "neutral",
+        "source": "London Stock Exchange announcement",
+        "url": "https://www.globenewswire.com/news-release/2026/07/10/3325313/0/en/investment-in-vodafone.html"
+      },
+      {
+        "category": "industry",
+        "topic": "Energy suppliers",
+        "title": "UK energy price cap rises 13% from July 1 amid Middle East crisis",
+        "summary": "The Ofgem energy price cap increased 13% from July 1 through September 30 due to higher wholesale gas costs from the US-Iran conflict and Strait of Hormuz disruptions. UK household bills reached £1,862 annually. This sustained wholesale cost pressure will impact supplier margins and working capital through H2 2026.",
+        "credit_flag": "negative",
+        "source": "Ofgem",
+        "url": "https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-july-and-30-september-2026"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Q2 net debt targets $22-23bn as energy prices support deleveraging",
+        "summary": "BP's updated Q2 2026 trading statement flags net debt reduction to $22-23bn driven by stronger oil and gas prices from the Iran conflict. Gas & low carbon realizations expected +$0.5-0.7bn versus Q1. However, the company expects circa $1bn impairments on low-carbon energy assets, signaling continued pressure on energy transition investments.",
+        "credit_flag": "positive",
+        "source": "SEC Filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000313807/000165495426006633/a1632m.htm"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell revises Q2 Integrated Gas output guidance downward; results July 30",
+        "summary": "Shell updated its Q2 2026 outlook, cutting Integrated Gas production guidance to 610-650 kboe/d from prior 580-640k boe/d range, reflecting production impacts from Middle East disruptions and a halt to Qatar LNG expansion plans after tanker attack near Hormuz. Full Q2 results scheduled for July 30 will clarify cash flow implications.",
+        "credit_flag": "watch",
+        "source": "Company announcement",
+        "url": "https://www.stocktitan.net/news/SHEL/shell-second-quarter-2026-update-p0ezlx1ftefn.html"
+      },
+      {
+        "category": "industry",
+        "topic": "Glass manufacturing",
+        "title": "ResponsibleGlass launches first global glass sustainability standard",
+        "summary": "ResponsibleGlass, a not-for-profit established in 2025, has published the draft International Standard for Glassmaking and opened a 60-day public consultation. Founding members include NSG Group, signaling industry-wide move toward sustainability certification and potential regulatory cost implications for glass manufacturers.",
+        "credit_flag": "neutral",
+        "source": "Packaging News",
+        "url": "https://www.packagingnews.co.uk/news/materials/glass/worlds-first-global-sustainability-standard-for-glass-launched-for-consultation-21-07-2026"
+      }
+    ]
+  },
+  {
     "date": "2026-07-20",
     "date_display": "Monday, 20 July 2026",
     "items": [
