@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-07-24",
+    "date_display": "Friday, 24 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP restructures into two divisions; deleveraging focus intensifies",
+        "summary": "BP shifted to a two-division operating model on July 1 (upstream production and downstream refining/sales), with cost and capital discipline at centre of strategy. CEO Meg O'Neill emphasizes 'fewer, better choices'. Balance sheet deleveraging remains priority despite commodity price support.",
+        "credit_flag": "watch",
+        "source": "TechStock²",
+        "url": "https://ts2.tech/en/bp-stock-jumps-2-before-q2-update-the-cash-test-behind-its-shell-catch-up/"
+      },
+      {
+        "category": "industry",
+        "topic": "Energy suppliers",
+        "title": "UK energy price cap rises 13% to £1,862 effective July 1; structural costs spike",
+        "summary": "Ofgem confirmed energy price cap of £1,862 per year (July-Sept 2026), a 13% jump from April and driven primarily by Middle East conflict pushing wholesale costs higher. Risk persists into H2 2026 if geopolitical tensions sustain.",
+        "credit_flag": "negative",
+        "source": "Ofgem",
+        "url": "https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-july-and-30-september-2026"
+      }
+    ]
+  },
+  {
     "date": "2026-07-23",
     "date_display": "Thursday, 23 July 2026",
     "items": []
