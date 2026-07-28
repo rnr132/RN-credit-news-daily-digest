@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-28",
+    "date_display": "Tuesday, 28 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever H1 results beat; volume growth strongest in decade",
+        "summary": "Unilever reported H1 2026 underlying revenue growth of 5.8%, driven by exceptional 5.5% volume growth—the strongest in more than a decade. McCormick combination separation work progressing well with secondary London listing announced July 23, tracking completion by mid-2027. Results reflect strong demand recovery and pricing power maintenance.",
+        "credit_flag": "positive",
+        "source": "RetailDetail EU; Unilever",
+        "url": "https://www.unilever.com/news/press-and-media/press-releases/2026/desire-at-scale-powering-strong-h1-performance/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone Q1 FY27 beats expectations; guidance lifted despite UK pressure",
+        "summary": "Vodafone's Q1 FY27 trading update released July 27 showed total revenue of €10.3bn (+10% YoY) and organic service revenue growth of 5.2%, beating analyst expectations. Company raised full-year guidance for adjusted EBITDA AL and free cash flow. UK market showed mixed trends with widened mobile subscriber losses offset by Safaricom contribution.",
+        "credit_flag": "positive",
+        "source": "Investing.com; MarketScreener",
+        "url": "https://www.investing.com/news/stock-market-news/why-is-vodafone-stock-rallying-today-93CH-4813123"
+      },
+      {
+        "category": "company",
+        "topic": "Oil & Gas",
+        "title": "Oil prices fall sharply as US-Iran peace talks resume",
+        "summary": "Brent crude fell 8.7% to $86.58/bbl on July 28 as diplomatic negotiations resumed between US and Iran following a pause in military strikes. Price decline signals market expectation of restored supply flows from Middle East. WTI also retreated significantly. Downside pressure favours energy suppliers but hits upstream cash generation for BP and Shell ahead of earnings.",
+        "credit_flag": "negative",
+        "source": "Trading Economics; Bloomberg; Fortune",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "Oil price correction hits BP shares; Q2 earnings on Aug 4",
+        "summary": "BP shares fell 3.4% on July 27-28 as crude prices retreated sharply from highs above $100/bbl. Company faces headwinds into Q2 results due August 4. Q2 working capital guidance of $1-6bn inflow and earnings quality will be closely scrutinised given deleveraging imperative under new two-division structure announced July 1.",
+        "credit_flag": "watch",
+        "source": "GuruFocus; Yahoo Finance Canada",
+        "url": "https://ca.finance.yahoo.com/news/bp-shell-harbour-energy-led-082000344.html"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Q2 earnings imminent amid oil price pullback",
+        "summary": "Shell will release Q2 2026 results July 30 (before market open). Guidance issued earlier highlighted lower Integrated Gas output due to Middle East impact but strong refining margins (~$20/bbl) and working capital inflow of $1-6bn. Oil price retreat to ~$86-89/bbl from recent $100+ peaks creates risk to upstream earnings beat expectations.",
+        "credit_flag": "watch",
+        "source": "Shell Global; Seeking Alpha",
+        "url": "https://www.shell.com/news-and-insights/newsroom/news-and-media-releases/2026/advance-notice-of-second-quarter-2026-results-and-second-quarter-2026-interim-dividend-announcement.html"
+      }
+    ]
+  },
+  {
     "date": "2026-07-27",
     "date_display": "Monday, 27 July 2026",
     "items": [
