@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-07-31",
+    "date_display": "Friday, 31 July 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Q2 2026 results released with 19% gearing, $3bn buyback commenced",
+        "summary": "Shell published Q2 2026 results with net debt of $42bn and gearing of 19%, announcing a $3bn buyback programme plus $1.2bn deferred from prior suspension. Balance sheet remains strong with capex guidance unchanged at $24-26bn for 2026. Portfolio high-grading ongoing with Jiffy Lube and SPRNG Energy divestments.",
+        "credit_flag": "positive",
+        "source": "Globe Newswire",
+        "url": "https://www.globenewswire.com/news-release/2026/07/30/3335787/0/en/Shell-plc-publishes-second-quarter-2026-press-release.html"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone AGM: Board reshuffle and final dividend approved at July 27 meeting",
+        "summary": "Vodafone shareholders approved final dividend of 2.3625 eurocents per share and board changes including Hatem Dowidar's resignation withdrawal, Amparo Moraleda's retirement, and new committee appointments. All substantive resolutions passed with strong majorities; governance clarity secured.",
+        "credit_flag": "neutral",
+        "source": "SEC Filing / TipRanks",
+        "url": "https://www.tipranks.com/news/company-announcements/vodafone-agm-backs-dividend-governance-changes-and-board-refresh"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo Funds acquisition of NSG Group progresses toward late June completion",
+        "summary": "Apollo Funds' $3.7bn acquisition of Nippon Sheet Glass advanced with shareholder approval at late June AGM. Transaction includes equity investment and lender transition to equity, strengthening NSG's balance sheet and enabling investment in growth and technology. Regulatory approvals ongoing.",
+        "credit_flag": "positive",
+        "source": "Apollo / Glass Industry reports",
+        "url": "https://www.apollo.com/insights-news/pressreleases/2026/03/apollo-funds-announce-strategic-investment-in-nsg-group-a-global-leader-in-glass-manufacturing-3260933"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Brent crude holds near $88-92, geopolitical support offsets supply ease",
+        "summary": "Brent crude traded at $88.67-92.27/bbl as of July 30-31 after surging 23.9% in the past month amid US-Iran military escalation. Hormuz tanker traffic recovering but geopolitical risks remain elevated. Oil prices up 27% year-on-year, supporting supermajor cashflows and debt servicing capacity.",
+        "credit_flag": "positive",
+        "source": "Trading Economics / Fortune",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      }
+    ]
+  },
+  {
     "date": "2026-07-30",
     "date_display": "Thursday, 30 July 2026",
     "items": [
