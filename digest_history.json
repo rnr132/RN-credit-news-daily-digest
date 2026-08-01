@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-08-01",
+    "date_display": "Saturday, 01 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP cuts 700 jobs citing looming oil and gas glut",
+        "summary": "BP plans to reduce headcount by 700 non-frontline staff, with executives warning of potential oversupply and lower oil/gas prices in coming months despite current market tightness. Cost-cutting signal reflects managements expectations of weaker fundamentals ahead, raising questions about cash generation sustainability.",
+        "credit_flag": "watch",
+        "source": "Yahoo Finance / Upstream Online",
+        "url": "https://finance.yahoo.com/energy/articles/bp-warns-too-much-oil-165555520.html"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone completes £4.3bn buyout of CK Hutchison Three stake",
+        "summary": "Vodafone has completed acquisition of CK Hutchison's 49% stake in VodafoneThree for £4.3 billion in cash, securing full ownership of the UK's largest mobile operator. The deal increases pro forma net leverage by 0.4x and was funded from existing cash, with regulatory approval granted in six weeks.",
+        "credit_flag": "neutral",
+        "source": "The Register / RCR Wireless News",
+        "url": "https://www.theregister.com/networks/2026/07/31/three-becomes-one-as-vodafone-buys-out-merger-partner/5281722"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Xavier Niel secures binding deal for 16.21% Vodafone stake",
+        "summary": "UAE-based e& Group has signed binding agreement to sell its entire 16.21% Vodafone shareholding to Niel family vehicle Vega for $5.95 billion. Once approved, Niel becomes largest shareholder, completing his strategic push into UK telecom after VodafoneThree consolidation.",
+        "credit_flag": "watch",
+        "source": "Geekfence M&A Monthly",
+        "url": "https://geekfence.com/ma-monthly-july-august-2026/"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Q2 2026 net profit beats at $9.84bn amid trading gains",
+        "summary": "Shell reported second-quarter profit of $9.84 billion, exceeding consensus of $8.9 billion, driven by strong oil trading gains amid Middle East volatility despite falling gas production. Profit nearly doubled quarter-on-quarter as trader operations capitalized on supply disruption.",
+        "credit_flag": "positive",
+        "source": "No2NuclearPower",
+        "url": "https://www.no2nuclearpower.org.uk/news/fossil-fuels-31-7-26/"
+      }
+    ]
+  },
+  {
     "date": "2026-07-31",
     "date_display": "Friday, 31 July 2026",
     "items": [
