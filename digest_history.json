@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-08-02",
+    "date_display": "Sunday, 02 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP appoints new exec leads for trading and HR; Howle retires as deputy CEO",
+        "summary": "Carol Howle is retiring after 26 years and brief stint as deputy CEO. Sam Skerry takes EVP trading/shipping role and Sonya Adams takes EVP people/culture role, both effective Aug 1. Leadership changes follow earlier May 2026 board chair removal for governance breaches.",
+        "credit_flag": "neutral",
+        "source": "MarketScreener",
+        "url": "https://www.marketscreener.com/news/bp-plc-announces-executive-changes-ce7f5fddde89f426"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP explores North Sea business sale amid portfolio optimization",
+        "summary": "BP is evaluating a potential sale of its North Sea operations as part of ongoing portfolio rationalization. Move reflects company's strategy to optimize asset base following recent production cuts and leadership restructuring.",
+        "credit_flag": "neutral",
+        "source": "TipRanks",
+        "url": "https://www.cnn.com/markets/stocks/BP"
+      }
+    ]
+  },
+  {
     "date": "2026-08-01",
     "date_display": "Saturday, 01 August 2026",
     "items": [
