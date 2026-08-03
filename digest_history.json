@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-08-03",
+    "date_display": "Monday, 03 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell agrees sale of European renewables portfolio to TotalEnergies",
+        "summary": "Shell has agreed to sell its European onshore renewables assets across UK, Italy, Spain and Netherlands to TotalEnergies for an undisclosed value, subject to regulatory approval and expected completion by year-end. The transaction reflects Shell's portfolio high-grading strategy and allows monetization of development-stage and operational renewable assets, improving balance sheet flexibility.",
+        "credit_flag": "positive",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/08/02/stock-market-today-live-updates.html"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore H1 2026 results show contraction ending, modest earnings growth",
+        "summary": "Safestore reported H1 2026 revenue of £120.6m (+6.9%, +5.6% at constant currency) with EBITDAR of £67.9m, confirming the end of its cyclical contraction phase. Adjusted diluted EPRA EPS rose 2.1% to 19.4p. The company maintains 16 consecutive years of dividend growth and a 5.1% yield, backed by manageable leverage at 29.1% LTV.",
+        "credit_flag": "positive",
+        "source": "ABC Money",
+        "url": "https://www.abcmoney.co.uk/2026/08/safestore-dividend-growth-record-backs-a-quiet-value-case"
+      }
+    ]
+  },
+  {
     "date": "2026-08-02",
     "date_display": "Sunday, 02 August 2026",
     "items": [
