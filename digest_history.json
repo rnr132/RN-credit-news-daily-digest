@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-08-06",
+    "date_display": "Thursday, 06 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Q2 2026: $1-2bn impairments, $8-9bn divestment plan outlined",
+        "summary": "BP reported Q2 2026 results with asset impairments of $1-2 billion and refining margin headwinds of $500-700 million. New CEO Meg O'Neill announced divestment guidance of $8-9 billion (including ~$6bn from Castrol sale) and 700 job cuts, signaling aggressive portfolio optimization. Earnings call stressed performance has not met shareholder expectations, indicating credit stress despite 140% net income jump.",
+        "credit_flag": "negative",
+        "source": "24/7 Wall St., BP",
+        "url": "https://www.bp.com/press-and-publications/press-releases/second-quarter-2026-trading-statement"
+      },
+      {
+        "category": "company",
+        "topic": "Oil & Gas",
+        "title": "Brent crude pulls back to ~$80/bbl on Strait of Hormuz deal optimism",
+        "summary": "Brent crude fell to approximately $80 per barrel as US-Iran negotiations on Strait of Hormuz access advance, easing geopolitical premium. This 10%+ pullback from the $88-92 range pressures cash flow and earnings visibility for European majors BP and Shell, with implications for debt service capacity and refinancing costs if prices remain subdued.",
+        "credit_flag": "negative",
+        "source": "Trading Economics, Oilprice.com",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT Group H1 2026: revenue and net income decline amid rising finance costs",
+        "summary": "BT Group H1 2026 results show revenue down 3% to £9.81bn and net income down 14% to £651m, with profit margin compression and higher finance costs pressuring earnings. Despite cost savings and fibre build progress, deteriorating operational trends and debt service headwinds indicate credit metrics weakening relative to sector peers. Dividend maintained at 5.87p suggests commitment to shareholder returns despite earnings pressure.",
+        "credit_flag": "watch",
+        "source": "Simply Wall St, Yahoo Finance",
+        "url": "https://simplywall.st/stocks/gb/telecom/lse-bt.a/bt-group-shares/past"
+      }
+    ]
+  },
+  {
     "date": "2026-08-05",
     "date_display": "Wednesday, 05 August 2026",
     "items": []
