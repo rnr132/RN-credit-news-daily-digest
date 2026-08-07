@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-08-07",
+    "date_display": "Friday, 07 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Q2 2026: CEO announces sweeping North Sea and renewables exit",
+        "summary": "BP reported Q2 2026 underlying profit of $5.7bn, beating expectations, with new CEO Meg O'Neill announcing major portfolio reset including North Sea business sale, Archaea Energy divestment, and Bay du Nord exit. Net debt fell to $22.3bn and dividend raised 4%, demonstrating strong cash generation despite the strategic pivot.",
+        "credit_flag": "watch",
+        "source": "BP investor relations",
+        "url": "https://www.bp.com/press-and-publications/press-releases/second-quarter-2026-results"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever raises FY26 sales outlook on 5.8% Q2 growth beat",
+        "summary": "Unilever reported Q2 underlying sales growth of 5.8%, significantly ahead of 4.3% consensus, driven by strongest quarterly volume growth in over a decade at 5.5%. Company raised full-year sales outlook, with operating margin improving to 17.9% and new €1.5bn buyback programme announced, signalling confidence in cash generation.",
+        "credit_flag": "positive",
+        "source": "Investing.com",
+        "url": "https://www.investing.com/news/earnings/unilever-raises-2026-sales-outlook-after-strong-q2-volume-growth-4815525"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Brent crude rallies to $83+ on Hormuz shipping agreement optimism",
+        "summary": "Brent crude rose to $83.34/bbl on August 6 as Iran and Oman progressed toward shipping framework for Strait of Hormuz reopening, though with stringent conditions including prohibitions on US/Israeli vessels. Continued uncertainty as Iranian parliament reviews proposal and Houthi attacks persist, keeping crude volatility elevated above $80/bbl.",
+        "credit_flag": "neutral",
+        "source": "Trading Economics / Oilprice.com",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      }
+    ]
+  },
+  {
     "date": "2026-08-06",
     "date_display": "Thursday, 06 August 2026",
     "items": [
