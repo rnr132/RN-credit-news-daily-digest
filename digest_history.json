@@ -1,5 +1,65 @@
 [
   {
+    "date": "2026-08-08",
+    "date_display": "Saturday, 08 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone completes £4.3bn buyout of CK Hutchison VodafoneThree stake",
+        "summary": "Vodafone has completed acquisition of CK Hutchison's 49% stake in VodafoneThree for £4.3 billion, achieving 100% ownership of the UK's largest mobile operator. The deal was funded from existing cash, which avoids equity dilution but consumes significant liquidity. Completion removes shared control complexity and accelerates strategy execution, though raises net leverage by 0.4x.",
+        "credit_flag": "watch",
+        "source": "VoIP Review",
+        "url": "https://voip.review/2026/08/03/vodafone-takes-full-control-vodafonethree-5g-push/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "e& Group completes €5.95bn share sale of Vodafone stake to Niel family",
+        "summary": "UAE-based e& Group has completed binding agreement to sell its 16.21% stake in Vodafone to French billionaire Xavier Niel's Vega vehicle for $5.95 billion. Niel will become Vodafone's largest shareholder upon regulatory clearance, signalling significant shareholder composition change. Deal awaits regulatory approval and closes a major overhang for the telco.",
+        "credit_flag": "neutral",
+        "source": "TeleGeography",
+        "url": "https://resources.telegeography.com/mergers-acquisitions-july-august-2026"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP North Sea disposal attracts multiple buyer approaches within days",
+        "summary": "BP has received unsolicited approaches from several potential acquirers for its North Sea business just days after launch of the formal sale process. CEO Meg O'Neill cited policy uncertainty and balance sheet strengthening as drivers for exit. Strong early buyer interest suggests asset may realise closer to asking price than feared, supporting divestment guidance.",
+        "credit_flag": "positive",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-04/bp-is-seeing-strong-interest-in-its-north-sea-business-ceo-says"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP ahead of schedule on $14–18bn net debt target following Q2 cash reduction",
+        "summary": "BP reduced financial obligations by approximately $7 billion in Q2 2026, bringing net debt to $22.3 billion and signalling acceleration toward its $14–18 billion target range ahead of plan. This demonstrates accelerated deleveraging from strong Q2 cash flow and divestment proceeds. Achievement of debt targets ahead of schedule strengthens credit profile and may support dividend sustainability.",
+        "credit_flag": "positive",
+        "source": "GuruFocus",
+        "url": "https://finance.yahoo.com/energy/articles/bp-plc-bp-q2-2026-190321653.html"
+      },
+      {
+        "category": "company",
+        "topic": "Glass manufacturing",
+        "title": "NSG Group cites pent-up demand despite interest rate, tariff headwinds",
+        "summary": "NSG Group cited high interest rates, labour shortages, inflation and tariff unpredictability as brakes on growth, but notes pent-up demand from developers awaiting economic stabilisation. Commentary reflects cautious near-term environment with structural demand tailwinds. Relevant as NSG is under Apollo acquisition (closing expected March 2027).",
+        "credit_flag": "watch",
+        "source": "Glass Magazine",
+        "url": "https://www.glassmagazine.com/news/global-and-local-tensions-complicate-glass-industry-outlook"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "GMB union pushes for recognition at UK's largest energy supplier",
+        "summary": "The GMB union is formally seeking voluntary recognition at Octopus Energy, the UK's largest energy supplier, citing ethical credentials. Octopus has indicated no current need or employee demand for unionisation. While unlikely to be material, unionisation attempt signals emerging labour friction at a previously non-unionised tech-driven energy retail operation.",
+        "credit_flag": "watch",
+        "source": "No2NuclearPower",
+        "url": "https://www.no2nuclearpower.org.uk/news/octopus-7-8-26/"
+      }
+    ]
+  },
+  {
     "date": "2026-08-07",
     "date_display": "Friday, 07 August 2026",
     "items": [
