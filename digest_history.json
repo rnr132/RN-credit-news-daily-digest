@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-13",
+    "date_display": "Thursday, 13 August 2026",
+    "items": [
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "US-Iran talks deadlocked as Brent slips from $90 highs",
+        "summary": "Crude fell to $88 on August 13 as negotiations over Strait of Hormuz reopening faltered despite fading optimism. Higher US inventories and contradictory signals on diplomatic progress weighed on prices, though geopolitical premium remains embedded given ongoing shipping disruptions and Middle East conflict.",
+        "credit_flag": "watch",
+        "source": "Trading Economics",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      }
+    ]
+  },
+  {
     "date": "2026-08-12",
     "date_display": "Wednesday, 12 August 2026",
     "items": []
