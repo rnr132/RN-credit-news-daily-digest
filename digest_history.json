@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-14",
+    "date_display": "Friday, 14 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever upgrades FY2026 guidance on volume-led outperformance",
+        "summary": "Unilever raised full-year 2026 underlying sales growth outlook to 4-6% (from prior guidance range) after Q2 volume growth of 5.5% — best quarterly performance since 2010. Management cautious on H2 pricing elasticity but margin profile remains resilient, with free cash flow up 33% YoY. However, analysts note World Cup stockpiling may have flattered results.",
+        "credit_flag": "positive",
+        "source": "Unilever investor reports",
+        "url": "https://www.unilever.com/files/unilever-q2-2026-results-full-announcement.pdf"
+      }
+    ]
+  },
+  {
     "date": "2026-08-13",
     "date_display": "Thursday, 13 August 2026",
     "items": [
