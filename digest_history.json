@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-08-15",
+    "date_display": "Saturday, 15 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "South Africa court permanently blocks Wild Coast oil exploration",
+        "summary": "South Africa's Constitutional Court has permanently set aside Shell's offshore exploration rights on the Wild Coast, ending a five-year legal battle. The court found communities had not been meaningfully consulted and rejected Shell's chance to fix defects through renewal applications. This forecloses a significant exploration opportunity valued at approximately $68 million in prior spending.",
+        "credit_flag": "negative",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/business/energy/south-africas-top-court-rules-shell-exploration-off-wild-coast-cannot-proceed-2026-08-14/"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP secures Loran Phase 2 gas license offshore Venezuela with UAE and Qatar partners",
+        "summary": "BP has been awarded an exploration and production license for Venezuela's offshore Loran Phase 2 gas field containing 4 trillion cubic feet of recoverable gas. BP will operate the 33-33-33 joint venture with UAE firm XRG and Qatar's UCC Holding. The parallel-phase development signals normalization of US-Venezuela energy relations and marks BP's significant return to Venezuelan offshore gas.",
+        "credit_flag": "positive",
+        "source": "Oil & Gas Journal",
+        "url": "https://www.ogj.com/general-interest/news/55398195/bp-awarded-loran-phase-2-license-offshore-venezuela"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "e& divests 16% Vodafone stake for $5.95 billion to Xavier Niel's family firm",
+        "summary": "UAE-based e& Group has signed a binding agreement to sell its entire 16.21% stake in Vodafone to Vega, a vehicle owned by the Niel family group, for $5.95 billion. The deal awaits regulatory clearance under UK National Security and Investment rules. Upon completion, French billionaire Xavier Niel will become Vodafone's largest shareholder, marking a significant governance and strategic shift.",
+        "credit_flag": "watch",
+        "source": "TeleGeography",
+        "url": "https://resources.telegeography.com/mergers-acquisitions-july-august-2026"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy pays out £100m to solar-powered households in past year",
+        "summary": "Octopus Energy reported distributing nearly £100 million to solar-powered households that exported electricity back to the grid over the past 12 months. This reflects strong renewable energy market participation and the company's scale as the UK's largest energy supplier with 14 million customer accounts, supporting high-volume distributed generation activity.",
+        "credit_flag": "neutral",
+        "source": "BusinessGreen",
+        "url": "https://www.businessgreen.com/news/4534318/sunshine-cash-octopus-energy-pays-100m-solar-powered-households"
+      }
+    ]
+  },
+  {
     "date": "2026-08-14",
     "date_display": "Friday, 14 August 2026",
     "items": [
