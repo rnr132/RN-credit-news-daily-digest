@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-08-16",
+    "date_display": "Sunday, 16 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP accelerates net debt target, plans hybrid redemption in Q3",
+        "summary": "BP reported Q2 2026 underlying profit of $5.7bn (up 78% QoQ) and net debt of $22.3bn. The company now expects to achieve its $14–18bn net debt target in FY2026, ahead of original plan, and will repay $1bn of perpetual hybrid securities in Q3. Operating cash flow of $10.9bn and a 4% dividend increase signal strong balance sheet progress under new leadership.",
+        "credit_flag": "positive",
+        "source": "BP Q2 2026 earnings call",
+        "url": "https://www.aol.com/articles/bp-bp-q2-2026-earnings-061439000.html"
+      },
+      {
+        "category": "company",
+        "topic": "BT Group",
+        "title": "BT FY2026 results show revenue decline, EPS miss, modest dividend rise",
+        "summary": "BT reported FY2026 revenue of £19.7bn (down 3.5% YoY) and EPS of 11p (flat YoY but missed analyst estimates by 14%). However, net income rose 2.2% to £1.08bn and the company increased its full-year dividend to 8.32p (up 2%). Results reflect a mature telecom operator navigating competitive pressure and cost transformation.",
+        "credit_flag": "watch",
+        "source": "BT Group FY2026 full-year results",
+        "url": "https://simplywall.st/stocks/gb/telecom/lse-bt.a/bt-group-shares"
+      }
+    ]
+  },
+  {
     "date": "2026-08-15",
     "date_display": "Saturday, 15 August 2026",
     "items": [
