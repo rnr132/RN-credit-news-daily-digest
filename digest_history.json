@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-08-18",
+    "date_display": "Tuesday, 18 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP North Sea sale enters bidding phase as documentation released",
+        "summary": "BP has released confidential sale documents for its £2.5bn North Sea portfolio, prompting multiple bidders to formally express interest. The move marks a concrete progression toward divestiture, with potential buyers reportedly including Neo Next+, Adura, and Ithaca Energy, signaling active market competition and improving visibility on capital recycling.",
+        "credit_flag": "positive",
+        "source": "ad-hoc-news.de / Yahoo Finance",
+        "url": "https://finance.yahoo.com/energy/articles/buyers-line-2-5bn-bp-181022664.html"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Inheritance tax scheme directed pensioner funds to Octopus-owned firms without disclosure",
+        "summary": "Telegraph investigation reveals Octopus Inheritance Tax Service (OITS), which raised funds from 18,000 pensioners, directed capital into Fern Trading, which then loaned to Octopus Group-owned companies with undisclosed connections. This includes a £64m loan to One Healthcare that collapsed, leaving pensioners with a £42m loss, raising regulatory and reputational risks.",
+        "credit_flag": "negative",
+        "source": "The Telegraph / Yahoo Finance",
+        "url": "https://finance.yahoo.com/small-business/articles/octopus-used-pensioners-cash-fund-050000282.html"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone Business partners with TCS for enterprise digital transformation",
+        "summary": "Vodafone Business announced a strategic partnership with Tata Consultancy Services covering cloud, AI, cybersecurity, and network modernisation for UK enterprise customers. The deal builds on VodafoneThree's £11bn network investment and expands service capabilities across multiple sectors including healthcare and financial services.",
+        "credit_flag": "neutral",
+        "source": "Business Standard / Telecoms.com",
+        "url": "https://www.telecoms.com/enterprise-telecoms/vodafone-teams-up-with-tcs-for-uk-enterprise-push"
+      }
+    ]
+  },
+  {
     "date": "2026-08-17",
     "date_display": "Monday, 17 August 2026",
     "items": []
