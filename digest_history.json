@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-08-20",
+    "date_display": "Thursday, 20 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP executes first Venezuelan crude trading operations post-Maduro",
+        "summary": "BP has commenced physical trading of Venezuelan crude oil, with its first tanker loading 400,000 barrels of heavy fuel oil from state producer PDVSA. The move operationalises BP's presence in the Venezuelan market and puts it in direct competition with established traders Trafigura and Vitol, though political/regulatory risks and thin margins in a crowded field present headwinds.",
+        "credit_flag": "watch",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-18/bp-joins-venezuelan-oil-trade-to-challenge-trafigura-and-vitol"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone aligns subordination terms across €2.75bn capital securities",
+        "summary": "Vodafone amended subordination conditions on four hybrid and subordinated note series maturing 2078–2086 to achieve pari passu ranking with recently issued 2055 notes. The restructuring clarifies the subordinated capital structure and streamlines treatment across instruments spanning six decades of maturity, benefiting existing holders.",
+        "credit_flag": "neutral",
+        "source": "Investing.com UK",
+        "url": "https://uk.investing.com/news/stock-market-news/vodafone-amends-subordination-terms-on-275bn-of-securities-93CH-4836901"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone fined €750k in Spain for supplier data breach",
+        "summary": "Spain's data protection regulator imposed a €750,000 fine on Vodafone for customer data exposed in a cyber hack affecting third-party supplier systems. Vodafone was held responsible as data controller despite outsourcing, citing insufficient encryption, lack of verification, and missing processor agreements. Adds to cumulative regulatory/compliance risk.",
+        "credit_flag": "negative",
+        "source": "MLex",
+        "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2514767"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus IHT scheme loan writeoffs spark heightened scrutiny",
+        "summary": "Fresh reporting reveals that Fern Trading, the core vehicle of Octopus' £3.2bn Inheritance Tax Service, wrote off £64m in loans to One Healthcare (part-owned by parent Octopus Group) without full transparency to 18,000 pensioner investors. The undisclosed related-party lending and subsequent losses intensify regulatory scrutiny and conflict-of-interest concerns around the scheme.",
+        "credit_flag": "negative",
+        "source": "Professional Adviser",
+        "url": "https://www.professionaladviser.com/news/4534500/octopus-defends-3bn-iht-scheme-scrutiny-intensifies-lending-disclosure"
+      }
+    ]
+  },
+  {
     "date": "2026-08-19",
     "date_display": "Wednesday, 19 August 2026",
     "items": []
