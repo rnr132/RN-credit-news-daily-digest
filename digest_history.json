@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-08-21",
+    "date_display": "Friday, 21 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "Ofcom moves to block Openreach wholesale pricing offers",
+        "summary": "Ofcom has provisionally proposed blocking BT's Openreach division from implementing new FTTP wholesale discounts, citing risks to sustainable competition. The regulator is consulting until 27 August with final decision expected by end-September. This threatens a key wholesale revenue lever for BT's future profitability.",
+        "credit_flag": "negative",
+        "source": "Kalkine Media / ISPreview",
+        "url": "https://www.ispreview.co.uk/index.php/2026/07/ofcom-provisionally-propose-blocking-openreachs-new-fttp-broadband-discount.html"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Deutsche Bank downgrades Safestore on sector pricing pressure",
+        "summary": "Deutsche Bank cut Safestore to 'hold' from 'buy' and reduced price target from 880p to 700p, citing aggressive pricing competition, weak housing transactions, and rising property costs. The European self-storage sector faces earnings headwinds from occupancy and rental-rate pressure.",
+        "credit_flag": "negative",
+        "source": "Yahoo Finance UK / Proactive Investors",
+        "url": "https://uk.finance.yahoo.com/news/safestore-shares-slide-deutsche-bank-085426829.html"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever upgrades 2026 guidance on strong H1 volume momentum",
+        "summary": "Unilever raised FY2026 guidance following 4.8% H1 underlying sales growth led by 4.2% volume expansion—its strongest volume performance in over a decade. Q2 accelerated to 5.8% growth with 5.5% volume, signaling market share gains without heavy pricing. Positive for debt sustainability and cash generation.",
+        "credit_flag": "positive",
+        "source": "Unilever / AD HOC News",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/unilever-stock-holds-steady-as-volume-driven-growth-lifts-first-half-sales/69960665"
+      },
+      {
+        "category": "company",
+        "topic": "Shell",
+        "title": "Brent crude rallies to $94/bbl amid Middle East supply concerns",
+        "summary": "Brent crude reached $94.06 per barrel on 20 August as Middle East geopolitical tensions continue to support energy prices. Higher oil prices improve cash generation for Shell's upstream and LNG operations, supporting debt reduction ambitions and dividend capacity.",
+        "credit_flag": "positive",
+        "source": "AD HOC News",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/shell-stock-rises-as-oil-hits-a-3-week-high/69976610"
+      }
+    ]
+  },
+  {
     "date": "2026-08-20",
     "date_display": "Thursday, 20 August 2026",
     "items": [
