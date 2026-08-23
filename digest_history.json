@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-08-23",
+    "date_display": "Sunday, 23 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "NSG delisting confirmed for late September following Apollo capital injection",
+        "summary": "Nippon Sheet Glass has set August 31, 2026 for completion of Apollo's JPY 165 billion capital injection via third-party share allotment, with Tokyo Stock Exchange delisting effective September 28, 2026. The transaction marks the culmination of the March-announced $3.7 billion restructuring designed to eliminate the Pilkington legacy debt and reposition NSG toward solar and automotive glass markets.",
+        "credit_flag": "positive",
+        "source": "TipRanks",
+        "url": "https://www.tipranks.com/news/company-announcements/nippon-sheet-glass-sets-august-date-for-apollo-backed-share-issue-and-delisting"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Federal judge dismisses 7 of 10 counts in Ben & Jerry's activism lawsuit",
+        "summary": "A US federal judge has narrowed the Ben & Jerry's lawsuit against Unilever by dismissing seven claims and part of an eighth from the original 10-count complaint. Only claims relating to missed payments ($2.5m to Ben & Jerry's, $2m for Palestinian farmers) survive in full, with Magnum (which now owns Ben & Jerry's) replacing Unilever as primary defendant. This significantly reduces Unilever's legal exposure on this dispute.",
+        "credit_flag": "positive",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/legal/government/judge-narrows-ben-jerrys-lawsuit-accusing-unilever-silencing-social-activism-2026-08-22/"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP secures Loran Phase 2 gas licence in Venezuela as operator with equal partners",
+        "summary": "BP has been granted an exploration and production licence for the second phase of Venezuela's Loran field (Plataforma Deltana) as of August 13, 2026, with rights to up to 4 trillion cubic feet of gas. BP will operate the development alongside equal partners XRG (UAE/ADNOC) and Qatar's UCC Holding. This formalizes BP's return to Venezuelan upstream operations beyond the earlier crude trading arrangements.",
+        "credit_flag": "positive",
+        "source": "MercoPress",
+        "url": "https://en.mercopress.com/2026/08/21/bp-shell-and-gulf-partners-return-to-venezuelan-gas-on-the-trinidad-and-tobago-border"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Brent crude holds near $94/bbl as Middle East supply concerns persist",
+        "summary": "Brent crude reached $94.06/barrel on August 20, 2026, reflecting ongoing supply uncertainty from Middle East tensions. The price rally supports upstream cash generation for supermajors with significant oil exposure, though Shell's Q2 free cash flow of $17.5bn has already been priced into equities.",
+        "credit_flag": "neutral",
+        "source": "Ad Hoc News",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/shell-stock-rises-as-oil-hits-a-3-week-high/69976610"
+      }
+    ]
+  },
+  {
     "date": "2026-08-22",
     "date_display": "Saturday, 22 August 2026",
     "items": []
