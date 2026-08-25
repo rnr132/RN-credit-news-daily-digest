@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-08-25",
+    "date_display": "Tuesday, 25 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell launches formal sale process for $8bn US chemicals portfolio",
+        "summary": "Shell is seeking buyers for its underperforming US chemicals assets, valued at up to $8 billion. Exxon Mobil, LyondellBasell, Apollo and Kuwait Petroleum have submitted non-binding bids. The sale reflects Shell's strategy to refocus capital on higher-return oil and gas operations and close valuation gaps with larger peers.",
+        "credit_flag": "positive",
+        "source": "Financial Times",
+        "url": "https://www.ft.com/content/d6f1eb66-1684-4b4f-8e4f-cc429d5dd4b0"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP accelerates deleveraging with $2.9bn hybrid bond redemption in Q2",
+        "summary": "BP completed $2.9 billion in perpetual hybrid bond redemptions in Q2 2026 and plans to repay an additional $1 billion in Q3, supporting CEO O'Neill's balance-sheet strengthening agenda. Full-year divestment proceeds are guided at $8-9 billion, reflecting disciplined capital allocation.",
+        "credit_flag": "positive",
+        "source": "Motley Fool (BP Q2 2026 Earnings Call Transcript)",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/08/12/bp-bp-q2-2026-earnings-call-transcript/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "UK government launches formal review of franchising sector after Vodafone controversy",
+        "summary": "The Department for Business and Trade commissioned in-depth reports into franchising regulation following Guardian investigations and high-profile allegations surrounding Vodafone's treatment of franchise partners. The government is considering new protective legislation for franchisees.",
+        "credit_flag": "watch",
+        "source": "The Guardian / AOL",
+        "url": "https://www.aol.co.uk/articles/uk-orders-reviews-franchising-sector-070025000.html"
+      }
+    ]
+  },
+  {
     "date": "2026-08-24",
     "date_display": "Monday, 24 August 2026",
     "items": []
