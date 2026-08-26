@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-08-26",
+    "date_display": "Wednesday, 26 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Non-binding bids received for $8bn US chemicals portfolio",
+        "summary": "Exxon, LyondellBasell, Apollo, and Kuwait Petroleum have submitted non-binding indicative offers for Shell's US chemicals business. The portfolio comprises four plants in Louisiana, Texas, and Pennsylvania and could be valued at up to $8bn. Multiple bidders signal strong interest in assets Shell regards as underperforming.",
+        "credit_flag": "positive",
+        "source": "Financial Times (via BIC Magazine)",
+        "url": "https://www.bicmagazine.com/industry/refining-petrochem/exxon-lyondell-among-suitors-for-shells-us-chemical-assets-could-fetch-8-billion/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "UK National Security clearance granted for CK Hutchison buyout",
+        "summary": "Vodafone has received regulatory approval under the UK National Security and Investment Act for its £4.3bn acquisition of CK Hutchison's 49% stake in VodafoneThree. The deal, expected to close in H2 2026, removes a key regulatory hurdle and enables Vodafone to consolidate full ownership of the UK's largest mobile operator.",
+        "credit_flag": "positive",
+        "source": "UK Government / GOV.UK",
+        "url": "https://www.gov.uk/government/publications/merger-between-hutchison-3g-uk-holdings-limited-and-vodafone-limited-notice-of-final-order/acquisition-of-ck-hutchisons-49-stake-in-vodafone-three-holdings-limited-by-vodafone-group-plc-notice-of-final-order-variation"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Barclays upgrades to overweight on superior capital dynamics",
+        "summary": "Barclays upgraded Safestore to overweight from equal weight, citing superior free cash flow outlook versus peers despite sector headwinds. The bank lowered FY26 EPS forecasts by 3% and FY30 by 11% but retained Safestore as its preferred self-storage exposure, with a 670p price target. Reflects Barclays' shift to free-cash-flow valuation methodology.",
+        "credit_flag": "watch",
+        "source": "Investing.com (Barclays research)",
+        "url": "https://uk.investing.com/news/stock-market-news/barclays-backs-safestore-as-big-yellow-shurgard-face-growth-risks-4843883"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Brent crude falls sharply to $86.2 on Iran-Oman Strait negotiations",
+        "summary": "Brent crude fell 2.6% to $86.2/bbl on Aug 26, extending a three-day decline as Iran and Oman discuss reopening the Strait of Hormuz under a temporary maritime corridor arrangement. The drop reflects a reduction in geopolitical risk premium, though negotiations remain uncertain and market remains sensitive to Gulf developments.",
+        "credit_flag": "negative",
+        "source": "HDFCSky / Trading Economics",
+        "url": "https://hdfcsky.com/news/brent-crude-oil-price-today-august-26-2026-crude-falls-2-6percent-to-86-2-per-barrel-as-iran-oman-talks-raise-hopes-of-strait-of-hormuz-reopening"
+      }
+    ]
+  },
+  {
     "date": "2026-08-25",
     "date_display": "Tuesday, 25 August 2026",
     "items": [
