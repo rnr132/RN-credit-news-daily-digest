@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-27",
+    "date_display": "Thursday, 27 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell lists Houston HQ campus for $325M sale-leaseback",
+        "summary": "Shell has listed its U.S. headquarters in Houston's Energy Corridor for approximately $325 million in a partial sale-leaseback, vacating over 700,000 sq ft while leasing back 750,000 sq ft for 15 years. The transaction reflects Shell's real estate optimization and capital discipline amid ongoing portfolio rationalization.",
+        "credit_flag": "neutral",
+        "source": "Houston Business Journal",
+        "url": "https://www.khou.com/article/money/business/houston-business-journal/shell-houston-headquarters-campus-sale/285-5e64e42f-e8c2-4fae-a4fa-b04a96446032"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Whiting refinery labor dispute drags on; unions claim unfair practices",
+        "summary": "BP's Whiting refinery labor lockout has exceeded 5 months with 800 USW workers idle. Union claims BP is engaging in unfair practices; sides remain far apart on job cuts, wages and strike notice terms. Operational risk from prolonged stalemate remains, though BP says refinery continues safe production with management staff.",
+        "credit_flag": "watch",
+        "source": "MarketScreener",
+        "url": "https://www.marketscreener.com/news/bp-calls-out-labor-group-for-delays-on-pay-package-talks-for-workers-at-us-refinery-ce7858ded98fff2d"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "Eni and BP targeting Egypt gas FID in coming months; fast-track development",
+        "summary": "Eni, BP and Egyptian authorities aim for final investment decision on Denise West offshore gas discovery (2 Tcf) within months, targeting first gas in under 2 years. Fast-track development using existing infrastructure positions for rapid cash flow generation and reduces execution risk.",
+        "credit_flag": "positive",
+        "source": "World Oil",
+        "url": "https://www.worldoil.com/news/2026/8/26/eni-targets-fid-for-2-tcf-denise-west-gas-discovery-offshore-egypt/"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "NSG executes refinancing; ¥330B syndicated loan replaces domestic debt",
+        "summary": "Nippon Sheet Glass has secured a ¥330 billion ($2.3B) syndicated loan from city and regional banks with strict financial covenants through 2031 to refinance existing domestic borrowings. This follows the Apollo capital injection announced earlier and supports balance-sheet stabilization post-privatization.",
+        "credit_flag": "positive",
+        "source": "Dealroom.co",
+        "url": "https://app.dealroom.co/news/feed/nippon-sheet-glass-secures-2-3b-syndicated-loan-with-strict-financial-covenants-through-2031"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus inheritance tax scheme implodes; major wealth managers pull recommendations",
+        "summary": "St James's Place, Fairstone and Openwork Partnership have stopped recommending Octopus Group's inheritance tax scheme following exposure of losses including £42m on failed hospital chain. Reputational damage and distribution channel collapse threaten product viability and Octopus Group's broader advisory credibility.",
+        "credit_flag": "negative",
+        "source": "The Telegraph",
+        "url": "https://www.telegraph.co.uk/business/2026/08/27/wealth-managers-ditch-octopus-inheritance-tax-scheme/"
+      }
+    ]
+  },
+  {
     "date": "2026-08-26",
     "date_display": "Wednesday, 26 August 2026",
     "items": [
