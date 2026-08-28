@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-08-28",
+    "date_display": "Friday, 28 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "Energean enters exclusive talks for BP Egypt oil & gas assets",
+        "summary": "Energean advanced to exclusive negotiations to acquire BP's Egyptian upstream assets including West Nile Delta interests and Temsah concession stake in a deal worth approximately $1 billion. This represents progress on BP's stated deleveraging program, with BP retaining only Zohr field interests through separate JV structure. The deal supports BP's cost-reduction and portfolio rationalization strategy.",
+        "credit_flag": "positive",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/business/energy/energean-exclusive-talks-buy-bp-oil-gas-assets-egypt-say-sources-2026-08-27/"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell ends Schwedt refinery stake sale negotiations with Unimot",
+        "summary": "Shell terminated multi-year negotiations with Poland's Unimot to divest its 37.5% stake in Germany's PCK Schwedt refinery, ending attempts to exit the Russia-linked asset amid geopolitical complications. The failed sale prolongs Shell's exposure to the troubled refinery under German government trusteeship over Rosneft's majority stake.",
+        "credit_flag": "negative",
+        "source": "Bloomberg/Reuters",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-27/shell-unimot-talks-on-russia-linked-refinery-said-to-have-ended"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever to divest Colman's mustard ahead of McCormick deal close",
+        "summary": "Unilever announced it is marketing the Colman's mustard brand for sale to third parties to address regulatory competition concerns from the planned McCormick combination. The divestiture is a proactive remedial measure, as McCormick already owns French's mustard; Colman's holds over 50% UK mustard market share. Rothschild has been retained to manage the sale process.",
+        "credit_flag": "watch",
+        "source": "Sky News / Just Food",
+        "url": "https://news.sky.com/story/historic-mustard-brand-colmans-spreads-wings-after-48bn-unilever-deal-13577673"
+      }
+    ]
+  },
+  {
     "date": "2026-08-27",
     "date_display": "Thursday, 27 August 2026",
     "items": [
