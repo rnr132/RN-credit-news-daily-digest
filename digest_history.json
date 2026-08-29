@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-08-29",
+    "date_display": "Saturday, 29 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "London Science Museum ends BP Academy sponsorship",
+        "summary": "London Science Museum Group has ended its decades-long partnership with BP, concluding its funding of the Science Museum Academy established in 2018. This marks a significant erosion of BP's remaining cultural sponsorships in the UK arts world, following similar exits by Tate, Royal Opera House, National Gallery and others. The move signals growing ESG and reputational headwinds for the oil major.",
+        "credit_flag": "watch",
+        "source": "AOL/The Guardian",
+        "url": "https://www.aol.co.uk/articles/london-science-museum-cuts-links-164319000.html"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Brent crude weakens to $88 amid Iran-Oman Strait revenue-sharing deal",
+        "summary": "Brent crude fell to $88.29/bbl on Aug 28 as markets weighed diplomatic progress in the Middle East, including an Iran-Oman revenue-sharing agreement over the Strait of Hormuz. The move reflects easing geopolitical supply concerns, though Tehran stressed the arrangement does not guarantee immediate strait reopening. Pricing supports downstream refining economics.",
+        "credit_flag": "positive",
+        "source": "Trading Economics",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      }
+    ]
+  },
+  {
     "date": "2026-08-28",
     "date_display": "Friday, 28 August 2026",
     "items": [
