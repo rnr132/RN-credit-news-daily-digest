@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-08-30",
+    "date_display": "Sunday, 30 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "Aberdeen fund suffers £200m loss on Airband broadband collapse",
+        "summary": "UK asset manager Aberdeen's infrastructure fund has taken a material £200 million loss following the collapse of broadband provider Airband, which it had invested in. The failure highlights significant challenges in the UK altnet sector where multiple operators struggle with unsustainable economics, raising credit concerns for investors backing fibre roll-out schemes.",
+        "credit_flag": "negative",
+        "source": "Caproasia",
+        "url": "https://www.caproasia.com/2026/08/29/uk-784-billion-asset-manager-aberdeen-investments-infrastructure-fund-incurred-271-million-loss-due-to-collapse-of-uk-broadband-company-airband-which-was-sold-to-uk-broadband-company-voneus/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone Ireland suffers broadband outages affecting thousands of customers",
+        "summary": "Vodafone Ireland experienced service interruptions disrupting broadband customers across multiple regions including Cork, Cavan and Monaghan on August 29-30, 2026. Operational outages of this scale raise service reliability and customer retention risks, particularly relevant given Vodafone's turnaround strategy and the ongoing CK Hutchison acquisition process.",
+        "credit_flag": "watch",
+        "source": "Cork Beo / Anglo Celt",
+        "url": "https://www.corkbeo.ie/news/vodafone-users-report-broadband-outages-34539915"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Caspian Sea platform turnaround completed ahead of schedule",
+        "summary": "BP has finished planned maintenance at its Caspian Sea platform earlier than expected, with production now ramping back to pre-maintenance levels. Early completion of major capex projects improves cash flow profile and supports deleveraging targets outlined in the group's recent earnings guidance.",
+        "credit_flag": "positive",
+        "source": "Offshore-Energy.biz",
+        "url": "https://www.offshore-energy.biz/bp-wraps-up-caspian-sea-platform-turnaround-ahead-of-schedule-production-ramp-up-underway/"
+      }
+    ]
+  },
+  {
     "date": "2026-08-29",
     "date_display": "Saturday, 29 August 2026",
     "items": [
