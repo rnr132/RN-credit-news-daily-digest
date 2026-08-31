@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-31",
+    "date_display": "Monday, 31 August 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell completes Sonnen battery storage sale to Tiven",
+        "summary": "Shell completed the divestment of its Sonnen residential battery storage subsidiary to Tiven on August 31, 2026. The transaction signals continued portfolio optimization in renewables, reallocating capital toward higher-returning segments as part of Shell's broader strategic focus.",
+        "credit_flag": "neutral",
+        "source": "Ad-Hoc News",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/shell-stock-holds-above-89-as-eps-outlook-for-2026-is-raised/70028467"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone completes CK Hutchison buyout, gains full UK ownership",
+        "summary": "Vodafone completed its £4.3bn acquisition of CK Hutchison's 49% stake in VodafoneThree on July 30, 2026, achieving full ownership of the UK's largest mobile operator. The transaction was funded from cash reserves; full operational control removes joint-venture governance constraints and enables faster strategic execution.",
+        "credit_flag": "watch",
+        "source": "UK Government CMA Cases",
+        "url": "https://www.gov.uk/cma-cases/vodafone-slash-ck-hutchison-jv-merger-inquiry"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "NSG to delist as Apollo-backed acquisition progresses toward completion",
+        "summary": "Nippon Sheet Glass is moving toward delisting following Apollo Funds' $3.7bn acquisition announced in March 2026. The deal includes transition of lender debt to equity, materially strengthening the balance sheet and positioning NSG for continued operations under Apollo's ownership pending final regulatory and shareholder approvals.",
+        "credit_flag": "positive",
+        "source": "TipRanks",
+        "url": "https://www.tipranks.com/news/company-announcements/nippon-sheet-glass-to-delist-as-apollo-backed-vehicle-becomes-parent"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP renews $40bn debt issuance programme prospectus",
+        "summary": "BP updated its debt issuance programme prospectus dated August 7, 2026, maintaining its $40bn facility for ongoing refinancing flexibility. The renewal reflects BP's continued disciplined approach to balance-sheet management and deleveraging, supporting its target net debt of $14–18bn by end 2027.",
+        "credit_flag": "neutral",
+        "source": "BP Investors",
+        "url": "https://www.bp.com/investors/debt-investor-information/documents-related-to-debt-issuance"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT declares modest 2% final dividend increase despite revenue headwinds",
+        "summary": "British Telecom declared a final dividend of 5.87p per share on August 6, 2026, bringing full-year FY2026 dividend to 8.32p, up 2% year-on-year. While the increase signals dividend confidence, it comes amid 3.5% revenue decline, raising questions about dividend sustainability in a declining legacy telecom market.",
+        "credit_flag": "watch",
+        "source": "Simply Wall St",
+        "url": "https://simplywall.st/stocks/gb/telecom/lse-bt.a/bt-group-shares/dividend"
+      }
+    ]
+  },
+  {
     "date": "2026-08-30",
     "date_display": "Sunday, 30 August 2026",
     "items": [
