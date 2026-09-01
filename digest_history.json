@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-09-01",
+    "date_display": "Tuesday, 01 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP accelerates Fayoum-4 Egypt gas well start-up two years ahead of schedule",
+        "summary": "BP brought the Fayoum-4 well in Egypt's West Nile Delta into production on 31 August 2026, adding 80 MMcf/d of gas two years early by leveraging existing infrastructure and avoiding new subsea investment. The accelerated delivery de-risks development timelines and cash flow projections, enhancing the upstream portfolio's near-term production growth.",
+        "credit_flag": "positive",
+        "source": "AGBI / OilPrice.com",
+        "url": "https://www.agbi.com/oil-and-gas/2026/09/bp-brings-egyptian-gas-well-online-as-import-bill-rises/"
+      },
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Brent crude rallies to $90+ on renewed US-Iran Strait of Hormuz tensions",
+        "summary": "Brent crude rose to $90-91/bbl on 1 September 2026 (up ~3% from $88 lows), driven by fresh military escalation between US and Iran that threatens prolonged Hormuz closure. LNG supply tightness and European gas storage below historical seasonal norms heighten energy costs for UK suppliers heading into winter, pressuring margins for hedged and unhedged retail operators.",
+        "credit_flag": "negative",
+        "source": "Trading Economics / Bloomberg",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      }
+    ]
+  },
+  {
     "date": "2026-08-31",
     "date_display": "Monday, 31 August 2026",
     "items": [
