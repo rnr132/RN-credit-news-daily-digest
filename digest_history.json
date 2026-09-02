@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-09-02",
+    "date_display": "Wednesday, 02 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP appoints Ian Tyler as permanent chairman",
+        "summary": "Ian Tyler appointed permanent chairman effective immediately, ending a three-month search following Albert Manifold's surprise dismissal in May. Tyler, former Balfour Beatty CEO, has been interim chair since May. The appointment resolves a significant governance vacuum at the FTSE 100 supermajor, though questions remain regarding board continuity.",
+        "credit_flag": "positive",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/business/bp-appoints-ian-tyler-chairman-board-2026-09-02/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Société Générale acquires Drahi's 50% stake in OXG German fiber JV",
+        "summary": "Société Générale has agreed to acquire Patrick Drahi's 50% stake in Vodafone's OXG German fiber joint venture, with Vodafone retaining its 50% interest. The deal removes a key overhang by resolving Drahi's lengthy exit efforts and brings a committed funding partner for the €7 billion network rollout. Vodafone gains strategic flexibility while OXG secures capital continuity through 2029.",
+        "credit_flag": "positive",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/business/vodafone-ogs-fibre-joint-venture-gets-new-shareholder-and-funding-2026-09-02/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy acquires Danish algo-trader BD Energy",
+        "summary": "Octopus Energy acquired Aarhus-based BD Energy A/S, a 31-person algorithmic power trading platform operating across 25 electricity pricing zones in 15 countries. The acquisition strengthens Octopus's energy trading division, providing access to proprietary algorithms and expanded capital to increase trading volumes and geographic reach in wholesale power markets.",
+        "credit_flag": "positive",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-01/octopus-energy-buys-danish-algo-trader-in-power-markets-push"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT receives £99m upfront for copper recycling, eyes £2bn+ windfall",
+        "summary": "BT received a second £99m upfront payment from EMR for surplus copper scrap as part of a forward-sale agreement covering ~20,000 tonnes over four years. The company is on track for a £2bn+ windfall over the coming decade as soaring copper prices (driven by AI datacenters and electrification) compound gains from network fiber conversion, providing material non-operating cash benefit.",
+        "credit_flag": "positive",
+        "source": "Light Reading",
+        "url": "https://www.lightreading.com/sustainability/eurobites-bt-hits-copper-recycling-jackpot-report"
+      }
+    ]
+  },
+  {
     "date": "2026-09-01",
     "date_display": "Tuesday, 01 September 2026",
     "items": [
