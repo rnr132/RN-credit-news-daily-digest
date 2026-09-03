@@ -1,5 +1,65 @@
 [
   {
+    "date": "2026-09-03",
+    "date_display": "Thursday, 03 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore Issues FY26 EPS Downward Guidance After Q3 Update",
+        "summary": "Safestore reported Q3 revenue growth of 4.1% at constant exchange rates to £62.2m, but guided that full-year adjusted diluted EPRA EPS will come in the lower half of analyst consensus (41.4p range: 39.6-42.4p), citing occupancy pressure. Management is reviewing the phasing of 2027-28 UK pipeline expansion in light of current trading conditions.",
+        "credit_flag": "negative",
+        "source": "Directors Talk Interviews",
+        "url": "https://www.directorstalkinterviews.com/safestore-q3-revenue-rises-4-1-as-uk-and-expansion-markets-grow/4121261685"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Completes Tri-Star Energy Acquisition, Doubles US Retail Footprint",
+        "summary": "Shell increased its equity stake in Tri-Star Energy from 33% to 100%, acquiring 320 company-owned fuel and convenience retail sites across Tennessee and surrounding states, plus supply agreements with 552 dealer locations. The deal, expected to close by end-2026, more than doubles Shell's company-owned convenience retail presence in the US and aligns with the supermajor's capital reallocation strategy toward higher-return markets.",
+        "credit_flag": "neutral",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/energy/articles/shell-acquire-tri-star-energy-142723007.html"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy Closes Majority Investment in Uplight Grid Flexibility Platform",
+        "summary": "Octopus Energy completed its acquisition of a majority stake in Uplight, a US-focused grid flexibility management platform serving 85+ utilities. The closed investment supports Octopus's expansion into US demand-side management, with targets to deliver $1bn in customer savings and double flexible capacity to 20 GW over five years. Schneider Electric retains a significant minority stake.",
+        "credit_flag": "positive",
+        "source": "GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2026/09/01/3354237/0/en/octopus-energy-completes-investment-in-uplight-accelerating-plans-to-save-us-customers-1-billion-and-double-grid-flexibility.html"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Senior Independent Director Amanda Blanc to Depart Board in 2027",
+        "summary": "BP announced that senior independent director Dame Amanda Blanc will not seek re-election at the 2027 annual general meeting and will step down once her successor is appointed. Blanc, who led the search for both the departed Albert Manifold and permanent chairman Ian Tyler, cited four years of board tenure as an appropriate departure time, removing a key governance figure amid recent boardroom turmoil.",
+        "credit_flag": "watch",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/09/02/bp-chair-ian-tyler-appointment.html"
+      },
+      {
+        "category": "company",
+        "topic": "Gamma Communications",
+        "title": "Epiris Agrees £1.08bn Takeover of Gamma Communications",
+        "summary": "Gamma Communications agreed to a recommended cash offer from Epiris-backed Bradbury Bidco at 1,120p per share (53% premium to April 7 pre-talks price), valuing the business at approximately £1.08bn including debt. The deal concludes a four-month bidding process and requires shareholder and court approval, with completion expected in H1 2027. Epiris plans to accelerate product development and AI adoption as a private company.",
+        "credit_flag": "neutral",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-01/epiris-agrees-to-buy-uk-s-gamma-communications-for-1-billion"
+      },
+      {
+        "category": "industry",
+        "topic": "Energy suppliers",
+        "title": "UK Ofgem Price Cap to Rise 4% from October; Gas Costs Drive Wholesale Pressure",
+        "summary": "Ofgem announced the price cap for October-December 2026 will rise 4% to £1,723 per year for a typical dual-fuel household, compared to £1,663 in July-September. The modest quarter-on-quarter rise reflects lower wholesale gas costs versus prior periods but remains elevated due to Middle East geopolitical tensions. Energy suppliers face continued margin pressure under the capped regime.",
+        "credit_flag": "negative",
+        "source": "Ofgem",
+        "url": "https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026"
+      }
+    ]
+  },
+  {
     "date": "2026-09-02",
     "date_display": "Wednesday, 02 September 2026",
     "items": [
