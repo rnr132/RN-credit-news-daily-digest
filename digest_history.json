@@ -1,5 +1,74 @@
 [
   {
+    "date": "2026-09-04",
+    "date_display": "Friday, 04 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Completes $16.5bn ARC Resources Acquisition",
+        "summary": "Shell has completed its acquisition of Canadian energy producer ARC Resources for ~$16.5bn enterprise value. The deal adds ~370 kboe/d production immediately and targets 4% annual production CAGR through 2030. Expected to deliver double-digit returns and be accretive to free cash flow from 2027 onwards.",
+        "credit_flag": "positive",
+        "source": "Shell Global / Reuters",
+        "url": "https://www.shell.com/news-and-insights/newsroom/news-and-media-releases/2026/shell-completes-acquisition-of-arc-resources.html"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Farms Out Brazil and GoM Exploration Stakes to Shell",
+        "summary": "BP has agreed to sell Shell a 50% stake in the Tupinambá exploration block offshore Brazil and 30% in the Conifer prospect in the US Gulf. BP retains operatorship of both assets. The deal reduces BP's capital exposure while maintaining operational control of high-potential deepwater prospects.",
+        "credit_flag": "neutral",
+        "source": "BP Press Release",
+        "url": "https://www.bp.com/press-and-publications/press-releases/bp-welcomes-shell-into-exploration-prospects-in-brazil-and-gulf-of-america"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "EnQuest Signals Bid Interest in BP's North Sea Portfolio",
+        "summary": "EnQuest CEO confirmed publicly that the company is interested in acquiring BP's UK North Sea assets currently being marketed for sale. BP launched the sale process in July targeting $1.75-3bn in proceeds. EnQuest has prior experience acquiring North Sea assets from BP.",
+        "credit_flag": "watch",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/09/03/bp-north-sea-oil-gas-enquest.html"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Brazil Suspends Cleaning Product Manufacturing at Unilever Plant",
+        "summary": "Brazil's Anvisa health regulator suspended cleaning product manufacturing at Unilever's Vinhedo plant after inspectors identified quality control failures, though no products on sale were recalled. Suspension is preventive pending corrective action. Unilever stated corrective measures are underway.",
+        "credit_flag": "negative",
+        "source": "Valor Internacional",
+        "url": "https://valorinternational.globo.com/business/news/2026/09/03/unilever-plant-halts-some-production-over-quality-control-failures.ghtml"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore Downgrades FY26 EPS Guidance to Lower Forecast Range",
+        "summary": "Safestore reported Q3 revenue growth of 4.1% but guided FY26 adjusted diluted EPRA EPS to the lower half of analyst forecasts (~39.6-42.4p range). Occupancy pressures and weaker trading conditions drove the downgrade; company is reviewing 2027-28 UK development pipeline timing.",
+        "credit_flag": "negative",
+        "source": "Investing.com",
+        "url": "https://uk.investing.com/news/stock-market-news/safestore-shares-fall-as-q3-revenue-rises-eps-seen-in-lower-half-of-forecasts-4856684"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "VodafoneThree Launches SuperMobile 5G Service and Vodafone TV",
+        "summary": "VodafoneThree announced commercial launch of Vodafone SuperMobile (5G+ network slicing with 15 Mbps minimum speed guarantee for £3/month add-on) and Vodafone TV (October launch bundling Netflix, HBO Max and linear channels). Moves position merged entity to compete on triple-play bundles against Sky and Virgin Media.",
+        "credit_flag": "positive",
+        "source": "ISPreview / Reuters",
+        "url": "https://www.ispreview.co.uk/index.php/2026/09/vodafone-uk-launch-pay-tv-and-5g-supermobile-broadband-service.html"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Whiting Refinery Lockout Continues as Labor Dispute Persists",
+        "summary": "BP's Whiting, Indiana refinery lockout of ~800 unionized workers has exceeded 150 days with no resolution. Dispute centres on pay, staffing cuts, strike rights and automation. BP used contractors to maintain operations. Reuters reports lockout signals shift in Big Oil labor tactics.",
+        "credit_flag": "watch",
+        "source": "Reuters / AOL",
+        "url": "https://www.aol.com/articles/big-oil-playbook-bps-us-100354000.html"
+      }
+    ]
+  },
+  {
     "date": "2026-09-03",
     "date_display": "Thursday, 03 September 2026",
     "items": [
