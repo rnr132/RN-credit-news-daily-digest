@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-09-05",
+    "date_display": "Saturday, 05 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Goldman Sachs Upgrades Vodafone to Buy; Price Target 155p",
+        "summary": "Goldman Sachs upgraded Vodafone from Sell to Buy on September 4, 2026, raising its price target from 85p to 155p—an 82% increase. The upgrade reflects improved cash flow and leverage outlook as the merged VodafoneThree group pursues cost reduction and benefits from UK market repair, with estimates now above consensus for first time in years.",
+        "credit_flag": "positive",
+        "source": "Investing.com",
+        "url": "https://www.investing.com/news/stock-market-news/vodafone-gets-a-doubleupgrade-at-goldman-in-digital-infrastructure-reshuffle-4858450"
+      },
+      {
+        "category": "company",
+        "topic": "BP",
+        "title": "RBC Capital Backs BP with 700p Target; Raises Estimates",
+        "summary": "RBC Capital Markets on September 4, 2026 issued a bullish assessment of BP, raising earnings estimates and setting a 700p price target. The upgrade highlights expected debt reduction and improved cash flow, underlining positive momentum on capital discipline and shareholder returns.",
+        "credit_flag": "positive",
+        "source": "Proactive Investors",
+        "url": "https://www.proactiveinvestors.co.uk/companies/news/1098113/bp-backed-by-rbc-with-700p-target-as-earnings-estimates-jump-1098113.html"
+      }
+    ]
+  },
+  {
     "date": "2026-09-04",
     "date_display": "Friday, 04 September 2026",
     "items": [
