@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-09-06",
+    "date_display": "Sunday, 06 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Executes €1.64M Share Buyback on 3 September 2026",
+        "summary": "Shell completed a 1.64 million share repurchase on 3 September 2026 as part of its buyback programme announced 30 July, with Goldman Sachs as independent broker. Ongoing capital return programme supports shareholder returns and demonstrates confidence despite commodity volatility.",
+        "credit_flag": "positive",
+        "source": "KalkineMedia",
+        "url": "https://kalkinemedia.com/uk/news/announcements/shell-plc-shel-executes-buy-back-of-over-16-million-shares-on-september-3-2026-managed-by-goldman-sachs"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Brazil CADE Unconditionally Approves McCormick Foods Acquisition",
+        "summary": "Brazil's competition authority granted unconditional approval for McCormick's acquisition of substantially all of Unilever's global foods business, removing a key regulatory hurdle for the $44.8bn deal. Deal now advances toward mid-2027 closure with US and other jurisdictions still to follow.",
+        "credit_flag": "positive",
+        "source": "MLex",
+        "url": "https://www.mlex.com/mlex/mergers-acquisitions/articles/2522036"
+      }
+    ]
+  },
+  {
     "date": "2026-09-05",
     "date_display": "Saturday, 05 September 2026",
     "items": [
