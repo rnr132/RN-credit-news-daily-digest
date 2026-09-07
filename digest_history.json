@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-09-07",
+    "date_display": "Monday, 07 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Gamma Communications",
+        "title": "Waterland Launches Rival Takeover Bid for Gamma; Epiris Deal Under Threat",
+        "summary": "Dutch PE firm Waterland has emerged as a competing bidder for UK telecom Gamma Communications with an offer exceeding Epiris's £1.08bn bid announced on 1 September. Waterland must announce a firm intention by 18 September 2026. The bidding contest raises execution risk for shareholders and debt-holders pending clarity on the ultimate buyer and deal structure.",
+        "credit_flag": "watch",
+        "source": "Reuters/Sunday Times",
+        "url": "https://www.reuters.com/legal/transactional/britains-gamma-get-higher-bid-dutch-private-equity-firm-sunday-times-says-2026-09-06/"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT Secures £99m Upfront Payment from Copper Recycling Deal with EMR",
+        "summary": "BT has received £99m upfront from cable recycler EMR for stripped copper from its legacy landline network replacement programme. The forward sale deal covers ~20,000 tonnes over four years. Total windfall potential now estimated at £2bn+ as AI data centre and renewable energy demand boosts copper prices, with Openreach on track to recover 200,000 tonnes by 2030s. Material near-term cash boost for liquidity.",
+        "credit_flag": "positive",
+        "source": "Engadget/Guardian",
+        "url": "https://www.engadget.com/2248735/bts-old-copper-network-could-be-worth-over-dollar2-billion/"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever to Divest Colman's Mustard Brand to Address Regulatory Concerns",
+        "summary": "Unilever has instructed Rothschild to market Colman's mustard as a standalone business ahead of its £33bn McCormick Foods deal closure. The divestment aims to preempt competition regulator objections, given McCormick's ownership of French's mustard. No valuation disclosed; sale represents proactive deal mitigation to preserve primary transaction completion.",
+        "credit_flag": "neutral",
+        "source": "Bloomberg/Sky News",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-27/unilever-seeks-buyers-for-iconic-british-mustard-brand-colman-s"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Acquires 30% Interest in BP's Conifer Deepwater Prospect (GoM)",
+        "summary": "Shell has agreed to acquire a 30% interest in BP's Conifer exploration prospect in the US Gulf of Mexico (Keathley Canyon), with BP retaining 70% and remaining operator. First well expected 2027. Strategic portfolio expansion in high-pressure deepwater; limited immediate production impact but adds development optionality.",
+        "credit_flag": "neutral",
+        "source": "PRNewswire/Reuters",
+        "url": "https://www.prnewswire.com/news-releases/shell-acquires-interest-in-gulf-of-america-prospect-302867934.html"
+      }
+    ]
+  },
+  {
     "date": "2026-09-06",
     "date_display": "Sunday, 06 September 2026",
     "items": [
