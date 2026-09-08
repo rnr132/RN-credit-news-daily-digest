@@ -1,5 +1,74 @@
 [
   {
+    "date": "2026-09-08",
+    "date_display": "Tuesday, 08 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Launches Formal Sale Process for North Sea Portfolio",
+        "summary": "BP formally initiated the sale process for its five core North Sea production hubs (Andrew, ETAP, Glen Lyon, Clair, Clair Ridge) valued at approximately £2 billion. The move reflects BP's strategy to reallocate capital toward higher-return opportunities while managing the exit from mature, tax-challenged assets after 60 years of UK operations.",
+        "credit_flag": "watch",
+        "source": "Reuters",
+        "url": "https://www.akm.ru/eng/news/bp-sells-five-assets-on-british-north-sea-shelf-/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Moody's Upgrades Vodafone Hybrid Debt to Baa3 After Terms Amendment",
+        "summary": "Moody's upgraded four Vodafone hybrid securities from Ba1 to Baa3 following contractual amendments, treating them equally with September 2025 hybrids at 50% equity/50% debt for leverage calculations. Stable outlook reflects expected operating improvement post-FY26 with gradual debt/EBITDA decline through 2028.",
+        "credit_flag": "positive",
+        "source": "Moody's / EconoTimes",
+        "url": "http://www.econotimes.com/Moodys-Upgrades-Vodafone-Hybrid-Debt-Ratings-to-Baa3-1749823"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "McCormick Discloses Operating Model for Combined Food Business; Secondary LSE Listing Planned",
+        "summary": "McCormick outlined the integrated operating structure post-acquisition of Unilever Foods, comprising four commercial divisions. The combined company will maintain NYSE primary listing while pursuing secondary listing on the London Stock Exchange; management to provide synergy and cost details by end-September 2026.",
+        "credit_flag": "watch",
+        "source": "Food Dive",
+        "url": "https://www.fooddive.com/news/mccormick-outlines-operating-structure-ahead-of-unilever-combination/826051/"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Apollo-Led NSG Recapitalization Nearing Completion; European Approval Secured",
+        "summary": "The €1 billion Apollo-led recapitalization of Nippon Sheet Glass received European Commission approval; delisting expected by November 2026. Transaction includes debt-to-equity conversion with major Japanese lenders and restructuring to exit the 20-year 'Pilkington debt trap,' repositioning toward solar and EV glass segments.",
+        "credit_flag": "positive",
+        "source": "Glass International",
+        "url": "https://www.glass-international.com/news/nsg-acquisition-approved-by-european-commission/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy Completes Uplight Investment; Doubles Flexibility Capacity Target",
+        "summary": "Octopus Energy closed its investment in Uplight on 1 September, supporting growth targets of $1 billion customer savings and doubling flexible grid capacity to 20 GW within five years. Current management of 8.5 GW across 85+ utilities; transaction strengthens Octopus's US demand-response platform positioning.",
+        "credit_flag": "neutral",
+        "source": "Renewable Energy Magazine",
+        "url": "https://www.renewableenergymagazine.com/panorama/octopus-energy-completes-investment-in-uplight-20260904"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore H1 2026 Results Affirm Growth; Dividend Maintained Amid Rate Headwinds",
+        "summary": "Safestore delivered H1 2026 revenue growth of 5.6% (constant FX) to £120.6 million with underlying pre-tax profit up 2.3%, maintaining dividend despite higher interest costs. Recently opened stores projected to add £30–£35 million EBITDA over time; full-year growth guidance maintained though flagged lower end of range.",
+        "credit_flag": "positive",
+        "source": "Yahoo Finance UK",
+        "url": "https://uk.finance.yahoo.com/news/safestore-delivers-return-earnings-growth-072353232.html"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "BT Group FY26 EPS Flat; CFO Succession Announced; Capex Peak Behind",
+        "summary": "BT reported FY26 EPS of £0.11 (flat YoY) with revenue down 3.5% but net income up 2.2%; payout ratio 76% supported by cash flow. Patricia Cobian (Virgin Media O2 CFO) to replace retiring Simon Lowth; guidance emphasises approaching capex peak, with free cash flow growth expected as investment normalises.",
+        "credit_flag": "neutral",
+        "source": "Simply Wall St",
+        "url": "https://simplywall.st/stocks/gb/telecom/lse-bt.a/bt-group-shares/"
+      }
+    ]
+  },
+  {
     "date": "2026-09-07",
     "date_display": "Monday, 07 September 2026",
     "items": [
