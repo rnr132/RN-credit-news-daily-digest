@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-09-09",
+    "date_display": "Wednesday, 09 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP North Sea Portfolio Attracts Multiple Bidders; Adura, NEO Next+ Lead",
+        "summary": "BP's £2.5bn UK North Sea asset sale has drawn interest from Adura and NEO Next+, with EnQuest, Harbour Energy, Ithaca Energy, Serica Energy and Var Energi also studying the assets. The formal marketing phase with confidential data room access began recently, marking a material advance in the disposal process toward achieving rapid exit from the basin.",
+        "credit_flag": "positive",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-09/bp-north-sea-assets-draw-interest-from-suitors-including-adura-neo-next"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell-Exxon Abort Viaro Deal; Strategic Bacton Terminal Retained",
+        "summary": "Shell and Exxon Mobil have cancelled their planned sale of UK North Sea gas assets—including the strategically critical Bacton terminal—to Viaro Energy after regulatory review stalled and completion conditions were unmet. Shell will retain and continue operating the assets, eliminating planned exit from Southern North Sea portfolio.",
+        "credit_flag": "watch",
+        "source": "Reuters/Bloomberg",
+        "url": "https://finance.yahoo.com/news/shell-exxon-halt-sale-key-163400734.html"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore FY26 EPS Guidance Lowered to Bottom Half of Consensus Range",
+        "summary": "Safestore expects full-year 2026 adjusted diluted EPRA EPS to come in at the lower half of analyst consensus (39.6p–42.4p, with consensus 41.4p), citing occupancy headwinds as group closing occupancy fell to 77.5% YoY and like-for-like revenue grew only 1.9% in Q3. Company is also reviewing timing of 2027–28 UK development pipeline amid current trading conditions.",
+        "credit_flag": "negative",
+        "source": "Investing.com",
+        "url": "https://in.investing.com/news/stock-market-news/safestore-shares-fall-as-q3-revenue-rises-eps-seen-in-lower-half-of-forecasts-5580758"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Q2 2026: Strong Cash Flow, Record Refinery Utilisation Supports Buybacks",
+        "summary": "Shell delivered Q2 2026 adjusted earnings of $9.8bn and operating cash flow exceeding $21bn, with record 102% refinery utilisation and net debt declining to $42bn. The company maintained 2026 capex guidance at $24–26bn and announced $3bn in buybacks, demonstrating robust cash generation despite Middle East geopolitical disruptions.",
+        "credit_flag": "positive",
+        "source": "Shell/MarketBeat",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-shell-posts-q2-2026-revenue-beat-as-eps-misses-93CH-4825211"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever-McCormick Operating Model, London Listing, Management Team Finalized",
+        "summary": "McCormick announced the combined company's planned operating structure (four commercial divisions), executive leadership team blending talent from both firms, and intention to seek a secondary London listing. Completion remains targeted for mid-2027, subject to McCormick shareholder approval and regulatory clearance, with deal proceeding as planned on $600m cost synergy target.",
+        "credit_flag": "neutral",
+        "source": "Food Dive / McCormick IR",
+        "url": "https://www.fooddive.com/news/mccormick-unilever-merger-operating-structure-executive-team/826051/"
+      }
+    ]
+  },
+  {
     "date": "2026-09-08",
     "date_display": "Tuesday, 08 September 2026",
     "items": [
