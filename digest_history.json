@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-09-10",
+    "date_display": "Thursday, 10 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "Ofcom Relaxes Copper Price Deregulation Threshold for Openreach",
+        "summary": "Ofcom announced that Openreach can alter wholesale copper broadband prices from April 2029 in areas where ultrafast broadband (300 Mbps+) is available to 90% of premises, rather than the previous 100% requirement. This regulatory change accelerates copper network retirement and provides pricing flexibility, supporting BT's transition to fibre and cost management.",
+        "credit_flag": "positive",
+        "source": "Ofcom/telecoms.com",
+        "url": "https://www.telecoms.com/regulation/ofcom-lets-openreach-hike-more-copper-prices"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone Deutschland and OXG Reach One Million Fibre Homes Milestone",
+        "summary": "Vodafone Deutschland and OXG announced they have passed one million fibre homes as part of their joint network rollout, describing it as one of the fastest deployments. This operational milestone reflects progress in Germany's fibre infrastructure transition and supports long-term revenue stability for Vodafone's German operations.",
+        "credit_flag": "neutral",
+        "source": "Broadband TV News",
+        "url": "https://www.broadbandtvnews.com/2026/09/10/vodafone-and-oxg-reach-one-million-fibre-homes-passed/"
+      }
+    ]
+  },
+  {
     "date": "2026-09-09",
     "date_display": "Wednesday, 09 September 2026",
     "items": [
