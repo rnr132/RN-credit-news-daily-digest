@@ -1,5 +1,65 @@
 [
   {
+    "date": "2026-09-12",
+    "date_display": "Saturday, 12 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Whiting Refinery Resumes Labor Talks With USW Union",
+        "summary": "BP will resume contract negotiations on September 16 with United Steelworkers Local 7-1 over wages, job security, and contract modernization at its 440,000 bbl/day Whiting refinery in Indiana. Nearly 800 workers have been locked out since March 19 after negotiations failed. The dispute centers on BP's proposed competency-based pay structures and workforce reductions.",
+        "credit_flag": "watch",
+        "source": "Inside Indiana Business",
+        "url": "https://www.insideindianabusiness.com/articles/bp-union-set-to-resume-talks-over-contract-for-whiting-refinery-workers"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Liberty Global Agrees €669m VodafoneZiggo Tower Sale to DigitalBridge Consortium",
+        "summary": "Liberty Global has agreed to sell VodafoneZiggo's tower assets to a DigitalBridge-led consortium for €669 million, valuing the Dutch towers at 16.2x 2025 EBITDA. Proceeds will retire debt ahead of the planned 2027 Ziggo Group IPO. The deal is subject to regulatory approval and expected to close by end of 2026.",
+        "credit_flag": "positive",
+        "source": "DataCenter Dynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/liberty-global-agrees-669m-sale-of-vodafoneziggo-tower-assets-to-digitalbridge-led-consortium/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "SBI-Led Lenders Approve $3.5bn Financing Facility for Vodafone Idea",
+        "summary": "A consortium led by State Bank of India has agreed to provide approximately $3.5 billion in debt financing to Vodafone Idea Ltd. over roughly 10 years to fund network infrastructure upgrades. Conditions include Kumar Mangalam Birla remaining as chairman throughout the loan tenure and repayment guarantees. The facility supports Vodafone Idea's competitive revival against Airtel and Jio.",
+        "credit_flag": "positive",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-10/sbi-led-group-said-to-provide-3-5-billion-debt-to-vodafone-idea"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever Launches CEO Succession Process With Egon Zehnder",
+        "summary": "Unilever has engaged executive search firm Egon Zehnder to conduct a formal search for a successor to Paul Polman as chief executive. Sky News reports Polman is not expected to depart for approximately 18 months. The process addresses leadership continuity after Polman's tenure since 2009.",
+        "credit_flag": "neutral",
+        "source": "Campaign UK",
+        "url": "https://www.campaignlive.co.uk/article/unilever-begins-preparations-exit-chief-executive-paul-polman/4hnbh32jvg6823q4dc8e5r2cma"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus Energy Union Recognition Bid Escalates Amid Management Dispute",
+        "summary": "The GMB union has launched a formal recognition bid at Octopus Energy, writing to founder Greg Jackson after the CEO stated he does not believe unions are needed. The move represents an escalation in labor relations at the UK's largest energy supplier amid ongoing debates over employment representation.",
+        "credit_flag": "watch",
+        "source": "Energy Live News",
+        "url": "https://www.energylivenews.com/2026/09/11/octopus-ceo-doesnt-believe-unions-are-needed-gmb-disagree/"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Signs US Power Plant Asset Transactions",
+        "summary": "Shell Energy North America has signed two power plant transactions as part of active portfolio management. The deals represent ongoing optimization of Shell's US energy assets in response to market conditions and strategic priorities.",
+        "credit_flag": "neutral",
+        "source": "Shell Global",
+        "url": "https://www.shell.com/news-and-insights/newsroom/news-and-media-releases/2026/shell-signs-us-power-plant-transactions-as-part-of-active-portfolio-management.html"
+      }
+    ]
+  },
+  {
     "date": "2026-09-10",
     "date_display": "Thursday, 10 September 2026",
     "items": [
