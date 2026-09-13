@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-09-13",
+    "date_display": "Sunday, 13 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Completes Rhode Island Power Plant Sale to Constellation Energy",
+        "summary": "Shell has signed a transaction to sell RISEC Holdings (Rhode Island State Energy Center), a 609-MW natural gas plant, to Constellation Energy for $715 million, with expected close in Q1 2027. This represents active portfolio management and capital release from Shell's US power generation assets.",
+        "credit_flag": "neutral",
+        "source": "Globe and Mail / PRNewswire",
+        "url": "https://www.fool.com/investing/2026/09/12/shell-just-sold-a-usd715-million-stake-in-a-major-new-england-asset-to-constellation-energy-here-s-what-investors-need-to-know/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Goldman Sachs Double-Upgrades Vodafone to Buy; Forecasts 14% Free Cash Flow CAGR",
+        "summary": "Goldman Sachs upgraded Vodafone from Sell to Buy with a 155p price target (vs. 85p previously) and forecasted 14% free cash flow growth for the telecom sector through 2030, outpacing defensive comparables. Goldman also projects net debt-to-EBITDA leverage declining by 2x over three years, signalling improved credit trajectory.",
+        "credit_flag": "positive",
+        "source": "Parameter / Multiple analysts",
+        "url": "https://parameter.io/vodafone-vod-stock-surges-following-goldman-sachs-dramatic-rating-reversal/"
+      },
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Permanently Appoints Ian Tyler as Chairman; Blanc to Step Down by 2027 AGM",
+        "summary": "BP has confirmed Ian Tyler as permanent chairman (from interim role since May 2026), cementing stability under CEO Meg O'Neill. Senior Independent Director Amanda Blanc will depart after 2027 AGM, marking planned board transition. This resolves leadership uncertainty but signals ongoing governance renewal amid CEO strategy review.",
+        "credit_flag": "neutral",
+        "source": "Bloomberg / CNBC / Multiple outlets",
+        "url": "https://www.cnbc.com/2026/09/02/bp-chair-ian-tyler-appointment.html"
+      }
+    ]
+  },
+  {
     "date": "2026-09-12",
     "date_display": "Saturday, 12 September 2026",
     "items": [
