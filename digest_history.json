@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-09-14",
+    "date_display": "Monday, 14 September 2026",
+    "items": [
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Brent Crude Surges to $108+ on Saudi Pipeline Disruption",
+        "summary": "Brent crude rallied to 4-month highs above $108/barrel on September 14 as Saudi Arabia temporarily halted its East-West pipeline following regional tensions, disrupting flows to Red Sea export routes with 7m b/d capacity. The 25% rally over one month supports upstream cash generation for BP and Shell but masks underlying demand headwinds, including IEA guidance cuts and elevated Middle East geopolitical risk.",
+        "credit_flag": "positive",
+        "source": "Trading Economics, Fortune, Financial Times",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Jefferies Reiterates Buy on Shell; 4,500 GBX Price Target (25% Upside)",
+        "summary": "Jefferies reiterated a Buy rating on Shell on September 14, 2026, setting a price target of 4,500 GBX (45 GBP), implying approximately 25% upside from mid-September trading levels near 3,600 GBX. The upgrade reflects strong upstream cash flow support and portfolio reshaping including renewable power expansion and asset sales; energy stocks broadly rose 1.1% with Shell gaining similarly.",
+        "credit_flag": "positive",
+        "source": "AD HOC NEWS",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/shell-stock-gains-as-jefferies-reiterates-buy-rating-and-lifts-upside/70099479"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Jackdaw Decision Pushed to Late Autumn; Electoral Delay Confirmed",
+        "summary": "The UK government is expected to delay its decision on Shell and Equinor's Jackdaw North Sea gas project until after the October 8 parliamentary by-election, pushing approval timelines into late autumn instead of mid-September as previously reported. The project, 99% physically complete, now faces regulatory uncertainty that could defer first gas revenue into 2027 and extends refinancing/hedging execution risk.",
+        "credit_flag": "negative",
+        "source": "Telegraph / Reuters",
+        "url": "https://www.thenews.com.pk/latest/1415853-why-the-uk-is-delaying-the-jackdaw-gas-field-decision"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore Shares Hit 52-Week Low; Analyst Targets Suggest 29-43% Upside",
+        "summary": "Safestore Holdings closed at 550.50 GBX on September 9, 2026, marking a fresh 52-week low, as rate headwinds and H1 dividend pressures weigh on the self-storage operator's valuation. Consensus analyst price target stands at 709.33 GBX (29% upside); Jefferies maintains Buy at 788 GBX (43% upside), though downward revisions to earnings guidance earlier in the year suggest near-term sentiment headwinds may persist.",
+        "credit_flag": "watch",
+        "source": "AD HOC NEWS",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/safestore-stock-holds-at-52-week-low-as-analyst-targets-signal-upside/70088122"
+      }
+    ]
+  },
+  {
     "date": "2026-09-13",
     "date_display": "Sunday, 13 September 2026",
     "items": [
