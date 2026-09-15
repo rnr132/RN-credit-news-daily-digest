@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-09-15",
+    "date_display": "Tuesday, 15 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Whiting Refinery Labor Talks Resume; Constructive Negotiations Underway",
+        "summary": "After six months of lockout affecting 800 unionized workers, BP and United Steelworkers Local 7-1 resumed bargaining on September 14 with both parties describing discussions as constructive. BP's latest proposal includes 13% wage increases over four years, $2,500 signing bonuses, and a 150-day industrial peace clause, signaling potential movement toward resolving North America's largest inland refinery labor dispute.",
+        "credit_flag": "watch",
+        "source": "The Bullet",
+        "url": "https://www.wwbl.com/2026/09/13/labor-talks-resume-bp-whiting-standoff-reaches-critical-juncture/"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore Downgrades FY26 EPS Guidance to Lower Half of Consensus Range",
+        "summary": "Safestore reported Q3 2026 revenue of £62.2 million (+4.1% constant currency) but significantly narrowed earnings expectations, guiding FY26 adjusted diluted EPRA EPS to the lower half of the 39.6p-42.4p consensus range. Paris weakness, occupancy pressure (down to 77.5%), and capital deployment caution point to near-term earnings headwinds despite solid expansion market growth.",
+        "credit_flag": "negative",
+        "source": "Investing.com",
+        "url": "https://ca.investing.com/news/stock-market-news/safestore-shares-fall-as-q3-revenue-rises-eps-seen-in-lower-half-of-forecasts-4826874"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone Idea India Secures $3.5bn SBI-Led Debt Facility Approval",
+        "summary": "A consortium of lenders led by State Bank of India has approved approximately $3.5 billion in debt financing for Vodafone Idea Ltd, India's telecom joint venture. The facility aims to support network infrastructure strengthening and expansion as Vodafone Idea competes against larger rivals Jio and Airtel, addressing liquidity pressures in the struggling operator.",
+        "credit_flag": "positive",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-10/sbi-led-group-said-to-provide-3-5-billion-debt-to-vodafone-idea"
+      }
+    ]
+  },
+  {
     "date": "2026-09-14",
     "date_display": "Monday, 14 September 2026",
     "items": [
