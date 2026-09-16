@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-09-16",
+    "date_display": "Wednesday, 16 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone faces €1.1bn earnings impact from Drahi OXG stake sale",
+        "summary": "Financial Times reports that Drahi's sale of Altice's 50% stake in German fibre joint venture OXG to Société Générale could cost Vodafone up to €1.1bn in lost future earnings, raising questions about the joint venture's long-term value accretion despite Vodafone retaining its own 50% stake.",
+        "credit_flag": "negative",
+        "source": "Financial Times",
+        "url": "https://www.ft.com/content/7612d53d-5179-4a53-afcc-564781baf290"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "CMA launches formal probe into McCormick acquisition of Unilever foods",
+        "summary": "UK Competition and Markets Authority has opened a formal investigation into McCormick's proposed €45bn acquisition of Unilever's food business, examining potential competition concerns. The deal remains on track for mid-2027 closing but regulatory risk has formally escalated beyond initial consultation phase.",
+        "credit_flag": "watch",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/legal/litigation/mccormick-unilever-food-deal-faces-uk-competition-scrutiny-2026-09-16/"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore share price collapses to fresh 52-week low amid Q3 weakness",
+        "summary": "Safestore shares touched GBX 533 on 15 September 2026, down 25% year-to-date, as Q3 like-for-like revenue growth slowed to just 1.9%. The company is reviewing timing of 2027-28 UK development pipeline, signalling caution on capital deployment amid occupancy headwinds.",
+        "credit_flag": "negative",
+        "source": "ad-hoc-news",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/safestore-stock-hits-fresh-52-week-low-as-london-trading-volume-spikes/70105123"
+      }
+    ]
+  },
+  {
     "date": "2026-09-15",
     "date_display": "Tuesday, 15 September 2026",
     "items": [
