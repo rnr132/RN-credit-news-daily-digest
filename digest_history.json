@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-09-17",
+    "date_display": "Thursday, 17 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Oddo BHF Downgrades Safestore to Neutral; Target Cut 29% to 600p",
+        "summary": "Oddo BHF downgraded Safestore Holdings from Outperform to Neutral on Sept 16 and slashed its price target by 240 pence to 600p, citing weaker near-term trading conditions and higher real estate financing costs. The stock trades at 534p, 27% below 52-week highs, signalling analyst reassessment amid rising rates and property valuation pressures.",
+        "credit_flag": "negative",
+        "source": "Morningstar/Ad-Hoc News",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/safestore-stock-slips-as-oddo-bhf-cuts-rating-and-price-target/70111458"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever Refuses Global Worker Guarantee in McCormick Deal; Union Escalates",
+        "summary": "Unilever rejected demands from the International Union of Food Workers (IUF) on Sept 16 to extend the two-year employment guarantee agreed with European workers to all staff globally in its $65bn McCormick merger. The company signalled it will negotiate only at local/regional levels, escalating labor tensions ahead of expected mid-2027 deal close.",
+        "credit_flag": "watch",
+        "source": "Reuters/ESM Magazine",
+        "url": "https://www.esmmagazine.com/a-brands/unilever-wont-discuss-worker-guarantee-in-mccormick-deal-iuf-says-321627"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Signs Multi-Year U.S. LNG Supply Deal with MET Group",
+        "summary": "Shell and Swiss energy trader MET Group signed a new long-term liquefied natural gas supply agreement on Sept 14-15, expanding Shell's access to U.S. LNG export markets and supporting European energy security. The deal builds on existing 10-year FOB agreement and represents revenue diversification for Shell's LNG marketing portfolio.",
+        "credit_flag": "positive",
+        "source": "Offshore Energy/OE Digital",
+        "url": "https://www.offshore-energy.biz/shell-and-met-group-pen-new-multi-year-us-lng-supply-deal/"
+      }
+    ]
+  },
+  {
     "date": "2026-09-16",
     "date_display": "Wednesday, 16 September 2026",
     "items": [
