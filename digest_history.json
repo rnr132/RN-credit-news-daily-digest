@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-09-18",
+    "date_display": "Friday, 18 September 2026",
+    "items": [
+      {
+        "category": "industry",
+        "topic": "Oil & Gas",
+        "title": "Shell, Equinor Warn Energy Shock Absorbers Weakening Amid Disruptions",
+        "summary": "Senior executives from Shell and Equinor warned that global energy markets face extended tight supply and price volatility, with the industry's ability to offset Middle East disruptions dwindling. Shell calculates 36 million tonnes of LNG and 1.6 billion barrels of crude have been lost, but market resilience mechanisms are showing strain.",
+        "credit_flag": "watch",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/business/energy-market-shock-absorbers-weakening-shell-equinor-warn-2026-09-16/"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "CMA Formally Launches Phase 1 Merger Inquiry into McCormick Foods Deal",
+        "summary": "The UK Competition and Markets Authority formally opened a Phase 1 investigation on Sept 16 into McCormick's $44.8 billion acquisition of Unilever's foods business. The CMA will decide by Nov 11 whether to escalate to Phase 2, with Unilever already divesting Colman's mustard to address competition concerns.",
+        "credit_flag": "watch",
+        "source": "Food Navigator",
+        "url": "https://www.foodnavigator.com/Article/2026/09/17/cma-probes-unilever-mccormick-foods-mega-deal/"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore Q3 FY26 Results Show 4.1% Revenue Growth, EPS Guidance to Lower Half",
+        "summary": "Safestore reported Q3 2026 constant-currency revenue growth of 4.1% supported by UK and expansion markets, with full-year adjusted diluted EPRA EPS now expected to be in the lower half of analyst consensus (41.4p range: 39.6-42.4p). The company is reviewing pipeline phasing for 2027-28 in line with disciplined capital allocation.",
+        "credit_flag": "negative",
+        "source": "Directors Talk Interviews",
+        "url": "https://www.directorstalkinterviews.com/safestore-q3-revenue-rises-4-1-as-uk-and-expansion-markets-grow/4121261685"
+      }
+    ]
+  },
+  {
     "date": "2026-09-17",
     "date_display": "Thursday, 17 September 2026",
     "items": [
