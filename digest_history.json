@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-09-19",
+    "date_display": "Saturday, 19 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Sells 5% Browse Stake to Osaka Gas; Further Portfolio Monetization",
+        "summary": "BP has agreed to sell a 5% stake in the Woodside-operated Browse LNG project offshore Western Australia to Japan's Osaka Gas for 550,000 tonnes of annual LNG supply. The deal continues BP's asset-divestment programme and reduces its working interest to 34.33%, signalling ongoing deleveraging amid energy market volatility.",
+        "credit_flag": "positive",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/business/energy/osaka-gas-buy-5-stake-australias-browse-gas-project-bp-2026-09-18/"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell LNG Canada Phase 2 FID Could Arrive Early October; Capacity to Double",
+        "summary": "Partners in Shell-led LNG Canada may reach final investment decision on Phase 2 expansion as early as October 2026, potentially doubling facility capacity from 14 to 28 mtpa. The project would add significant long-term cash-generative capacity in response to tight global LNG markets and Asian buyer demand for supply diversification.",
+        "credit_flag": "positive",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/business/energy/shell-led-lng-canada-could-approve-phase-2-expansion-by-early-october-sources-2026-09-17/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Vodafone Proposes Transparent Governance Framework for Network Shutdowns",
+        "summary": "Vodafone published a report showing government shutdowns reached 313 instances across 52 countries in 2025, affecting 800m people and causing ~$20bn in economic damage. The company proposed a Transparent Governance Framework to constrain shutdowns, addressing operational and reputational risks to its African and emerging-market operations.",
+        "credit_flag": "watch",
+        "source": "Mobile World Live",
+        "url": "https://www.mobileworldlive.com/vodafone/vodafone-pushes-for-change-in-network-shutdowns/"
+      },
+      {
+        "category": "company",
+        "topic": "Octopus Energy",
+        "title": "Octopus OITS Withdrawal Block Extended; Fern Trading Transaction Ongoing",
+        "summary": "Octopus Investments has extended the temporary pause on Octopus Inheritance Tax Service (OITS) applications and withdrawals beyond initial expectations, citing valuation uncertainty from an ongoing transaction involving Fern Trading's portfolio assets. The extended illiquidity heightens credit and reputational risk as the scheme affects 18,000 investors with locked capital.",
+        "credit_flag": "negative",
+        "source": "Telegraph",
+        "url": "https://www.telegraph.co.uk/business/2026/09/17/octopus-further-block-withdrawals-inheritance-tax-scheme/"
+      }
+    ]
+  },
+  {
     "date": "2026-09-18",
     "date_display": "Friday, 18 September 2026",
     "items": [
