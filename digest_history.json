@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-20",
+    "date_display": "Sunday, 20 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever Offers Only 1-Year Safeguards for Non-European Workers in McCormick Deal",
+        "summary": "Unilever has extended only one-year employment protections to food business workers outside Europe, significantly shorter than the two-year guarantee given to European employees post-McCormick merger. The International Union of Food Workers has formally escalated criticism, saying Unilever refuses to engage on a global worker guarantee despite non-Europe markets representing 53% of food sales. This creates integration execution risk and potential for labor disputes during merger completion.",
+        "credit_flag": "negative",
+        "source": "Yahoo Finance / IUF memo (reported September 18-19, 2026)",
+        "url": ""
+      }
+    ]
+  },
+  {
     "date": "2026-09-19",
     "date_display": "Saturday, 19 September 2026",
     "items": [
