@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-09-21",
+    "date_display": "Monday, 21 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "Société Générale Replaces Drahi in OXG; €1.1bn Earnout at Risk",
+        "summary": "Société Générale acquired Patrick Drahi's 50% stake in German broadband JV OXG, but reports indicate the French bank will not assume Drahi's deferred (€487m) and earnout (€595m) payment obligations. Vodafone faces potential loss of up to €1.1bn in future earnings, materially impacting group cash flow and earnings guidance.",
+        "credit_flag": "negative",
+        "source": "Financial Times/MarketScreener",
+        "url": "https://www.marketscreener.com/news/vodafone-s-oxg-earnings-hit-by-drahi-stake-sale-ce785bd2da8ff32d"
+      },
+      {
+        "category": "industry",
+        "topic": "Energy suppliers",
+        "title": "January 2027 Price Cap Forecast to Rise 9-25% Amid Geopolitical Tensions",
+        "summary": "Analysts and energy suppliers forecast the Ofgem price cap for January 2027 to jump 9-25% beyond the October 4% rise, driven by elevated wholesale gas costs linked to Middle East conflict. For suppliers like Octopus Energy and major players, margin compression and default risk on fixed-tariff customers intensify during winter months.",
+        "credit_flag": "negative",
+        "source": "Cornwall Insight/Octopus Energy/EDF Energy",
+        "url": "https://octopus.energy/blog/energy-prices-from-october-2026-and-what-they-mean-for-you/"
+      },
+      {
+        "category": "company",
+        "topic": "Unilever",
+        "title": "Unilever Divests Zwitsal Baby Care Brand to Royal Sanders",
+        "summary": "Unilever agreed to sell Zwitsal baby care brand to Dutch personal-care specialist Royal Sanders, expected to complete in Q1 2027. Divestment reflects Unilever's portfolio streamlining strategy to focus on global brands with international scale. Continues pattern of non-core brand sales supporting debt reduction amid McCormick transaction uncertainty.",
+        "credit_flag": "neutral",
+        "source": "RetailDetail EU/Baker McKenzie",
+        "url": "https://www.retaildetail.eu/news/beauty-care/unilever-is-now-also-showing-zwitsal-the-door/"
+      }
+    ]
+  },
+  {
     "date": "2026-09-20",
     "date_display": "Sunday, 20 September 2026",
     "items": [
