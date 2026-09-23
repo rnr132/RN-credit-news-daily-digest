@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-23",
+    "date_display": "Wednesday, 23 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "Telecom",
+        "title": "TalkTalk PXC Sale Collapses; Refinancing Deadline End-September",
+        "summary": "Exclusive negotiations between TalkTalk and Octopus Investments to sell the PXC wholesale broadband arm have ended as of September 21-22, with only a remote chance of deal completion. TalkTalk faces a critical refinancing deadline by end-September tied to upcoming BT Openreach payments, with Ofcom undertaking emergency meetings to assess Supplier of Last Resort contingency planning and potential need for creditor (Ares Management) capital injections.",
+        "credit_flag": "negative",
+        "source": "Sky News / ISPreview",
+        "url": "https://www.ispreview.co.uk/index.php/2026/09/octopus-goes-cold-on-bid-for-talktalks-uk-wholesale-business-pxc.html"
+      }
+    ]
+  },
+  {
     "date": "2026-09-22",
     "date_display": "Tuesday, 22 September 2026",
     "items": []
