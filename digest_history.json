@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-09-24",
+    "date_display": "Thursday, 24 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "JP Morgan Upgrades BP to Overweight, 675p Target",
+        "summary": "JP Morgan upgraded BP from Neutral to Overweight on 23 September with a 675p price target (up 20% from 550p), citing balance sheet repair as critical starting point. JPMorgan models deleveraging inflecting from H2 2026 with gearing falling into line with peers by end-2027 at $75 Brent, and sees BP's restructuring carrying value equivalent to high-single-digit three-year earnings growth.",
+        "credit_flag": "positive",
+        "source": "JP Morgan / Seeking Alpha",
+        "url": "https://seekingalpha.com/news/4646235-bp-upgraded-at-jp-morgan-after-lagging-rivals-for-years-totalenergies-cut-to-neutral"
+      },
+      {
+        "category": "company",
+        "topic": "Shell plc",
+        "title": "Shell Completes Na Kika Gulf of America Sale for $840m",
+        "summary": "Shell completed sale of 50% non-operated interest in Na Kika platform and Coulomb tieback in Gulf of America, receiving $840 million in cash proceeds. Originally valued at $1.7 billion at signing, the transaction closes remaining earn-out exposure and supports Shell's portfolio shaping for resilient upstream business.",
+        "credit_flag": "positive",
+        "source": "PR Newswire",
+        "url": "https://www.securities.io/shell-closes-gulf-of-america-asset-sale-with-840-million-proceeds/"
+      },
+      {
+        "category": "company",
+        "topic": "Vodafone",
+        "title": "VodafoneThree Accelerates Copper Withdrawal to October 2026",
+        "summary": "VodafoneThree is pulling forward formal legacy copper service withdrawal to October 2026, ahead of industry-wide January 2027 PSTN closure. ISP partners have raised concerns about impact on vulnerable customers, creating potential regulatory and reputational pressure as Vodafone manages copper network decommissioning.",
+        "credit_flag": "watch",
+        "source": "ISPreview",
+        "url": "https://www.ispreview.co.uk/index.php/2026/09/vodafone-uk-partners-under-pressure-from-oct-2026-withdrawal-of-legacy-copper-services.html"
+      }
+    ]
+  },
+  {
     "date": "2026-09-23",
     "date_display": "Wednesday, 23 September 2026",
     "items": [
