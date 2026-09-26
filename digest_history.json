@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-09-26",
+    "date_display": "Saturday, 26 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Walks Away from Devon Energy Eagle Ford Deal",
+        "summary": "BP has abandoned its exploration of acquiring Devon Energy's Eagle Ford shale assets, valued around $3.5–$4.5 billion, after studying the deal. The decision reflects BP's caution on US shale valuations amid geopolitical-driven oil price volatility, despite the company's stated pivot back to oil and gas growth under new CEO Meg O'Neill.",
+        "credit_flag": "neutral",
+        "source": "Reuters/Euronext",
+        "url": "https://live.euronext.com/en/financial-news/exclusive-bp-explored-deal-devons-eagle-ford-asset-sources-say"
+      },
+      {
+        "category": "company",
+        "topic": "British Telecom",
+        "title": "Bernstein Elevates BT to Top European Telecom Pick",
+        "summary": "Bernstein upgraded BT to Outperform with a raised 235p price target, citing structural stabilisation and cash-flow growth as fibre investment nears completion and line losses plateau. The move contrasts with a downgrade of Deutsche Telekom, positioning BT as the sector's preferred exposure.",
+        "credit_flag": "positive",
+        "source": "Investing.com",
+        "url": "https://uk.investing.com/news/stock-market-news/bernstein-cuts-deutsche-telekom-on-tmobile-us-risks-names-bt-top-pick-4883016"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore Guidance Miss, Analyst Downgrade on Occupancy Slump",
+        "summary": "Safestore reported Q3 revenue growth of 4.1% but signalled full-year EPRA EPS in the lower half of guidance due to occupancy declining 90bps to 77.5%. Oddo BHF downgraded the stock to Neutral and slashed price target from 840p to 600p, citing occupancy and pipeline timing risks.",
+        "credit_flag": "negative",
+        "source": "Investing.com",
+        "url": "https://www.investing.com/news/stock-market-news/safestore-shares-fall-as-q3-revenue-rises-eps-seen-in-lower-half-of-forecasts-4887109"
+      },
+      {
+        "category": "company",
+        "topic": "TalkTalk",
+        "title": "TalkTalk's PXC Sale Collapses; Octopus Withdraws, Opus Makes Lowball Bid",
+        "summary": "Exclusive talks between TalkTalk and Octopus Investments over PXC wholesale business have ended, with insiders rating deal probability as remote. Opus Broadband has tabled a revised £100m offer for TalkTalk's consumer arm, well below earlier valuations, as the group faces end-September refinancing deadline.",
+        "credit_flag": "negative",
+        "source": "ISPreview",
+        "url": "https://www.ispreview.co.uk/index.php/2026/09/octopus-goes-cold-on-bid-for-talktalks-uk-wholesale-business-pxc.html"
+      },
+      {
+        "category": "company",
+        "topic": "NSG Group",
+        "title": "Nippon Sheet Glass Delisting Effective September 28, Apollo Recapitalisation Complete",
+        "summary": "NSG's delisting from Tokyo Stock Exchange took effect on September 28, 2026, completing Apollo's €3.7bn acquisition via Lumina Japan Acquisition and marking the conclusion of a quasi-debt-to-equity swap with creditor banks. The transaction removes liquidity for public shareholders and shifts operational control to private equity.",
+        "credit_flag": "watch",
+        "source": "TipRanks",
+        "url": "https://www.tipranks.com/news/company-announcements/nippon-sheet-glass-to-delist-after-apollo-backed-share-allotment"
+      }
+    ]
+  },
+  {
     "date": "2026-09-25",
     "date_display": "Friday, 25 September 2026",
     "items": []
