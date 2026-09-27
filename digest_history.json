@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-09-27",
+    "date_display": "Sunday, 27 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "TalkTalk",
+        "title": "TalkTalk Refinancing Reaches Completion; Debt Maturities Extended to 2027–2028",
+        "summary": "TalkTalk confirmed its refinancing is proceeding to completion, with £235m in new cash facilities secured from existing shareholders and all RCF lenders approving terms. Revolving Credit Facilities and Senior Secured Notes mature dates extended to September 2027 and March 2028, providing runway to conclude asset sales. Addresses immediate liquidity pressure after PXC sale process stalled.",
+        "credit_flag": "positive",
+        "source": "TalkTalk Group",
+        "url": "https://www.talktalkgroup.com/newsroom/refinancing-update-proceeding-to-completion"
+      },
+      {
+        "category": "company",
+        "topic": "Safestore",
+        "title": "Safestore Guides to Lower Half of Earnings Consensus; Occupancy Slips Despite Rate Growth",
+        "summary": "Safestore issued Q3 2026 trading update showing 4.1% revenue growth but significantly downgraded FY2026 EBITDA guidance to lower half of analyst consensus (39.6–42.4p EPS). Like-for-like occupancy fell 80 bps year-over-year to 79.6%. Oddo BHF downgraded stock to Neutral on September 16, citing occupancy headwinds offsetting pricing power.",
+        "credit_flag": "negative",
+        "source": "Safestore Holdings / MarketScreener",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/safestore-stock-trades-near-its-52-week-low-after-q3-update/70179350"
+      }
+    ]
+  },
+  {
     "date": "2026-09-26",
     "date_display": "Saturday, 26 September 2026",
     "items": [
