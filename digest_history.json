@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-28",
+    "date_display": "Monday, 28 September 2026",
+    "items": [
+      {
+        "category": "company",
+        "topic": "BP plc",
+        "title": "BP Advances $700M Egypt Drilling Program to Boost Gas Output",
+        "summary": "BP is progressing a $700 million capital program in Egypt focused on new drilling and gas production expansion, meeting with Egypt's petroleum minister. This represents continued execution of the company's refocused upstream strategy and capital discipline post-Eagle Ford exit.",
+        "credit_flag": "positive",
+        "source": "MEED",
+        "url": "https://www.meed.com/bp-preparing-to-drill-egypt-well-as-part-of-700m-campaign"
+      }
+    ]
+  },
+  {
     "date": "2026-09-27",
     "date_display": "Sunday, 27 September 2026",
     "items": [
